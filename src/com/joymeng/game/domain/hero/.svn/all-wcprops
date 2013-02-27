@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/8F_TEAM/!svn/ver/8188/CODE/Server/src/com/joymeng/game/domain/hero
+END
+SimplePlayerHero.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/6814/CODE/Server/src/com/joymeng/game/domain/hero/SimplePlayerHero.java
+END
+PlayerHero.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/8188/CODE/Server/src/com/joymeng/game/domain/hero/PlayerHero.java
+END
+Hero.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/7728/CODE/Server/src/com/joymeng/game/domain/hero/Hero.java
+END
+HeroOptType.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/311/CODE/Server/src/com/joymeng/game/domain/hero/HeroOptType.java
+END
+HeroManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/8162/CODE/Server/src/com/joymeng/game/domain/hero/HeroManager.java
+END
+PlayerHeroManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/8F_TEAM/!svn/ver/8162/CODE/Server/src/com/joymeng/game/domain/hero/PlayerHeroManager.java
+END
+HeroRefresh.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/3969/CODE/Server/src/com/joymeng/game/domain/hero/HeroRefresh.java
+END

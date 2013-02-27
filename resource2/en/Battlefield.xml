@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Battlefields>
+	<Battlefield id="1" active="Goldwar" text="Gold mine war is in the heat!" startTime="00:00:00" endTime="00:00:00" button="Enter" ui="8"/>
+	<Battlefield id="2" active="Reswar" text="Res mine war is in the heat!" startTime="00:00:00" endTime="00:00:00" button="Enter" ui="8"/>
+	<Battlefield id="3" active="Townleader battle" text="Townleaderbattle is open" startTime="22:00:00" endTime="11:00:00" button="Enter" ui="15"/>
+	<Battlefield id="4" active="Mayor battle" text="Mayor battle is open" startTime="11:00:00" endTime="19:00:00" button="Enter" ui="8"/>
+</Battlefields>

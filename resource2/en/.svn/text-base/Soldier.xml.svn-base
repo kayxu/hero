@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Soldiers count="40">
+  <Soldier id="1" name="Archer" desc="Ranged Attack, restrain Rider." aniId="gongjianshou" type="1" attackDistance="5" targetPriority="1,2,3,4" recruitPrice="5" recuritTime="15" attack="8" defence="7" hp="25" actionPriority="1" />
+  <Soldier id="2" name="Rider" desc="Strong ATK, restrain Footman." aniId="qibing" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="5" recuritTime="15" attack="10" defence="10" hp="28" actionPriority="2" />
+  <Soldier id="3" name="Footman" desc="Strong DEF, restrain Archer." aniId="bubing" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="5" recuritTime="15" attack="8" defence="11" hp="31" actionPriority="3" />
+  <Soldier id="4" name="Seraph" desc="Special fighting unit in Seraph Empire." aniId="chitianshi" type="4" attackDistance="1" targetPriority="4,3,2,1" recruitPrice="15" recuritTime="15" attack="14" defence="10" hp="28" actionPriority="4" />
+  <Soldier id="5" name="Griffin" desc="Special soldiers in Griffin Empire." aniId="shijiu" type="4" attackDistance="1" targetPriority="4,2,1,3" recruitPrice="15" recuritTime="15" attack="12" defence="11" hp="31" actionPriority="5" />
+  <Soldier id="6" name="Dark Knight" desc="Special troops in Arthur Empire." aniId="shengqishi" type="4" attackDistance="1" targetPriority="4,1,3,2" recruitPrice="15" recuritTime="15" attack="10" defence="12" hp="35" actionPriority="6" />
+  <Soldier id="7" name="Skeleton Archer" desc="Ranged Attack, restrain Rider." aniId="kulousheshou" type="1" attackDistance="5" targetPriority="1,2,3,4" recruitPrice="0" recuritTime="0" attack="8" defence="7" hp="25" actionPriority="1" />
+  <Soldier id="8" name="Skeleton Rider" desc="With both ATK and DEF, excel in fighting with Footman." aniId="kulouqishi" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="0" recuritTime="0" attack="10" defence="10" hp="28" actionPriority="2" />
+  <Soldier id="9" name="Skeleton Footman" desc="Basic fighting unit, restrain Archer." aniId="kulouzhanjiang" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="0" recuritTime="0" attack="8" defence="11" hp="31" actionPriority="3" />
+  <Soldier id="10" name="Skeleton Lord" desc="Skeleton Lord" aniId="emolinzhu" type="4" attackDistance="1" targetPriority="4,1,3,2" recruitPrice="0" recuritTime="0" attack="10" defence="12" hp="35" actionPriority="6" />
+  <Soldier id="11" name="Archer" desc="士兵11说明" aniId="gongjianshou" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="1" recuritTime="1" attack="8" defence="7" hp="25" actionPriority="0" />
+  <Soldier id="12" name="Archer" desc="士兵12说明" aniId="gongjianshou" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="1" recuritTime="1" attack="8" defence="7" hp="25" actionPriority="0" />
+  <Soldier id="13" name="Archer" desc="士兵13说明" aniId="gongjianshou" type="4" attackDistance="1" targetPriority="4,1,3,2" recruitPrice="1" recuritTime="1" attack="8" defence="7" hp="25" actionPriority="0" />
+  <Soldier id="14" name="Rider" desc="士兵14说明" aniId="qibing" type="1" attackDistance="1" targetPriority="1,2,3,4" recruitPrice="0" recuritTime="0" attack="10" defence="10" hp="28" actionPriority="1" />
+  <Soldier id="15" name="Rider" desc="士兵15说明" aniId="qibing" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="0" recuritTime="0" attack="10" defence="10" hp="28" actionPriority="0" />
+  <Soldier id="16" name="Rider" desc="士兵16说明" aniId="qibing" type="4" attackDistance="1" targetPriority="4,1,3,2" recruitPrice="0" recuritTime="0" attack="10" defence="10" hp="28" actionPriority="0" />
+  <Soldier id="17" name="Footman" desc="士兵17说明" aniId="bubing" type="1" attackDistance="1" targetPriority="1,2,3,4" recruitPrice="0" recuritTime="0" attack="8" defence="11" hp="31" actionPriority="0" />
+  <Soldier id="18" name="Footman" desc="士兵18说明" aniId="bubing" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="0" recuritTime="0" attack="8" defence="11" hp="31" actionPriority="0" />
+  <Soldier id="19" name="Footman" desc="士兵19说明" aniId="bubing" type="4" attackDistance="1" targetPriority="4,1,3,2" recruitPrice="0" recuritTime="0" attack="8" defence="11" hp="31" actionPriority="0" />
+  <Soldier id="20" name="Seraph" desc="士兵20说明" aniId="chitianshi" type="1" attackDistance="1" targetPriority="1,2,3,4" recruitPrice="0" recuritTime="0" attack="14" defence="10" hp="28" actionPriority="0" />
+  <Soldier id="21" name="Seraph" desc="士兵21说明" aniId="chitianshi" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="0" recuritTime="0" attack="14" defence="10" hp="28" actionPriority="0" />
+  <Soldier id="22" name="Seraph" desc="士兵22说明" aniId="chitianshi" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="0" recuritTime="0" attack="14" defence="10" hp="28" actionPriority="0" />
+  <Soldier id="23" name="Griffin" desc="士兵23说明" aniId="shijiu" type="1" attackDistance="1" targetPriority="1,2,3,4" recruitPrice="0" recuritTime="0" attack="12" defence="11" hp="31" actionPriority="0" />
+  <Soldier id="24" name="Griffin" desc="士兵24说明" aniId="shijiu" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="0" recuritTime="0" attack="12" defence="11" hp="31" actionPriority="0" />
+  <Soldier id="25" name="Griffin" desc="士兵25说明" aniId="shijiu" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="0" recuritTime="0" attack="12" defence="11" hp="31" actionPriority="0" />
+  <Soldier id="26" name="Dark Knight" desc="士兵26说明" aniId="shengqishi" type="1" attackDistance="1" targetPriority="1,2,3,4" recruitPrice="0" recuritTime="0" attack="10" defence="12" hp="35" actionPriority="0" />
+  <Soldier id="27" name="Dark Knight" desc="士兵27说明" aniId="shengqishi" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="0" recuritTime="0" attack="10" defence="12" hp="35" actionPriority="0" />
+  <Soldier id="28" name="Dark Knight" desc="士兵28说明" aniId="shengqishi" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="0" recuritTime="0" attack="10" defence="12" hp="35" actionPriority="0" />
+  <Soldier id="29" name="Skeleton Archer" desc="士兵29说明" aniId="kulousheshou" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="0" recuritTime="0" attack="8" defence="7" hp="25" actionPriority="0" />
+  <Soldier id="30" name="Skeleton Archer" desc="士兵30说明" aniId="kulousheshou" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="0" recuritTime="" attack="8" defence="7" hp="25" actionPriority="0" />
+  <Soldier id="31" name="Skeleton Archer" desc="士兵31说明" aniId="kulousheshou" type="4" attackDistance="1" targetPriority="4,1,3,2" recruitPrice="0" recuritTime="" attack="8" defence="7" hp="25" actionPriority="0" />
+  <Soldier id="32" name="Skeleton Rider" desc="士兵32说明" aniId="kulouqishi" type="1" attackDistance="1" targetPriority="1,2,3,4" recruitPrice="0" recuritTime="" attack="10" defence="10" hp="28" actionPriority="0" />
+  <Soldier id="33" name="Skeleton Rider" desc="士兵33说明" aniId="kulouqishi" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="0" recuritTime="" attack="10" defence="10" hp="28" actionPriority="0" />
+  <Soldier id="34" name="Skeleton Rider" desc="士兵34说明" aniId="kulouqishi" type="4" attackDistance="1" targetPriority="4,1,3,2" recruitPrice="0" recuritTime="" attack="10" defence="10" hp="28" actionPriority="0" />
+  <Soldier id="35" name="Skeleton Footman" desc="士兵35说明" aniId="kulouzhanjiang" type="1" attackDistance="1" targetPriority="1,2,3,4" recruitPrice="0" recuritTime="" attack="8" defence="11" hp="31" actionPriority="0" />
+  <Soldier id="36" name="Skeleton Footman" desc="士兵36说明" aniId="kulouzhanjiang" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="0" recuritTime="" attack="8" defence="11" hp="31" actionPriority="0" />
+  <Soldier id="37" name="Skeleton Footman" desc="士兵37说明" aniId="kulouzhanjiang" type="4" attackDistance="1" targetPriority="4,1,3,2" recruitPrice="0" recuritTime="" attack="8" defence="11" hp="31" actionPriority="0" />
+  <Soldier id="38" name="Skeleton Lord" desc="士兵38说明" aniId="emolinzhu" type="1" attackDistance="1" targetPriority="1,2,3,4" recruitPrice="0" recuritTime="" attack="10" defence="12" hp="35" actionPriority="0" />
+  <Soldier id="39" name="Skeleton Lord" desc="士兵39说明" aniId="emolinzhu" type="2" attackDistance="1" targetPriority="2,3,1,4" recruitPrice="0" recuritTime="" attack="10" defence="12" hp="35" actionPriority="0" />
+  <Soldier id="40" name="Skeleton Lord" desc="士兵40说明" aniId="emolinzhu" type="3" attackDistance="1" targetPriority="3,1,2,4" recruitPrice="0" recuritTime="" attack="10" defence="12" hp="35" actionPriority="0" />
+</Soldiers>

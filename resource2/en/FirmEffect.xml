@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FirmEffects>
+	<FirmEffect id="1" equipmentType="4" propsId="9" effectIdNum="100" type="1" explain="Increase ATK by" time="172800"/>
+	<FirmEffect id="2" equipmentType="4" propsId="9" effectIdNum="5901" type="2" explain="重伤敌将增加几率8%" time="172800"/>
+	<FirmEffect id="3" equipmentType="4" propsId="9" effectIdNum="5902" type="2" explain="所率部队Increase ATK by2%" time="172800"/>
+	<FirmEffect id="4" equipmentType="4" propsId="10" effectIdNum="150" type="1" explain="Increase ATK by" time="172800"/>
+	<FirmEffect id="5" equipmentType="4" propsId="10" effectIdNum="5903" type="2" explain="重伤敌将增加几率16%" time="172800"/>
+	<FirmEffect id="6" equipmentType="4" propsId="10" effectIdNum="5904" type="2" explain="所率部队Increase ATK by3%" time="172800"/>
+	<FirmEffect id="7" equipmentType="4" propsId="11" effectIdNum="200" type="1" explain="Increase ATK by" time="172800"/>
+	<FirmEffect id="8" equipmentType="4" propsId="11" effectIdNum="5905" type="2" explain="重伤敌将增加几率24%" time="172800"/>
+	<FirmEffect id="9" equipmentType="4" propsId="11" effectIdNum="5906" type="2" explain="所率部队Increase ATK by5%" time="172800"/>
+	<FirmEffect id="10" equipmentType="4" propsId="11" effectIdNum="5907" type="2" explain="将战时暴击类技能增加几率10%" time="172800"/>
+	<FirmEffect id="11" equipmentType="4" propsId="11" effectIdNum="5908" type="2" explain="兵战时群伤类技能增加几率5%" time="172800"/>
+	<FirmEffect id="12" equipmentType="4" propsId="12" effectIdNum="300" type="1" explain="Increase ATK by" time="172800"/>
+	<FirmEffect id="13" equipmentType="4" propsId="12" effectIdNum="5909" type="2" explain="重伤敌将增加几率35%" time="172800"/>
+	<FirmEffect id="14" equipmentType="4" propsId="12" effectIdNum="5910" type="2" explain="所率部队Increase ATK by8%" time="172800"/>
+	<FirmEffect id="15" equipmentType="4" propsId="12" effectIdNum="5911" type="2" explain="将战时暴击类技能增加几率15%" time="172800"/>
+	<FirmEffect id="16" equipmentType="4" propsId="12" effectIdNum="5912" type="2" explain="兵战时群伤类技能增加几率7%" time="172800"/>
+	<FirmEffect id="17" equipmentType="4" propsId="12" effectIdNum="5913" type="2" explain="增强雷之心几率10%" time="172800"/>
+	<FirmEffect id="18" equipmentType="4" propsId="12" effectIdNum="5914" type="2" explain="增强火之心几率10%" time="172800"/>
+	<FirmEffect id="19" equipmentType="4" propsId="13" effectIdNum="450" type="1" explain="Increase ATK by" time="172800"/>
+	<FirmEffect id="20" equipmentType="4" propsId="13" effectIdNum="5915" type="2" explain="重伤敌将增加几率50%" time="172800"/>
+	<FirmEffect id="21" equipmentType="4" propsId="13" effectIdNum="5916" type="2" explain="所率部队Increase ATK by12%" time="172800"/>
+	<FirmEffect id="22" equipmentType="4" propsId="13" effectIdNum="5917" type="2" explain="将战时暴击类技能增加几率20%" time="172800"/>
+	<FirmEffect id="23" equipmentType="4" propsId="13" effectIdNum="5918" type="2" explain="兵战时群伤类技能增加几率10%" time="172800"/>
+	<FirmEffect id="24" equipmentType="4" propsId="13" effectIdNum="5919" type="2" explain="增强雷之心几率15%" time="172800"/>
+	<FirmEffect id="25" equipmentType="4" propsId="13" effectIdNum="5920" type="2" explain="增强火之心几率15%" time="172800"/>
+	<FirmEffect id="26" equipmentType="7" propsId="9" effectIdNum="100" type="1" explain="Increase DEF by" time="172800"/>
+	<FirmEffect id="27" equipmentType="7" propsId="9" effectIdNum="5921" type="2" explain="被重伤几率减少8%" time="172800"/>
+	<FirmEffect id="28" equipmentType="7" propsId="9" effectIdNum="5922" type="2" explain="所率部队Increase DEF by2%" time="172800"/>
+	<FirmEffect id="29" equipmentType="7" propsId="10" effectIdNum="150" type="1" explain="Increase DEF by" time="172800"/>
+	<FirmEffect id="30" equipmentType="7" propsId="10" effectIdNum="5923" type="2" explain="被重伤几率减少16%" time="172800"/>
+	<FirmEffect id="31" equipmentType="7" propsId="10" effectIdNum="5924" type="2" explain="所率部队Increase DEF by3%" time="172800"/>
+	<FirmEffect id="32" equipmentType="7" propsId="11" effectIdNum="20" type="1" explain="Increase DEF by" time="172800"/>
+	<FirmEffect id="33" equipmentType="7" propsId="11" effectIdNum="5925" type="2" explain="被重伤几率减少24%" time="172800"/>
+	<FirmEffect id="34" equipmentType="7" propsId="11" effectIdNum="5926" type="2" explain="所率部队Increase DEF by5%" time="172800"/>
+	<FirmEffect id="35" equipmentType="7" propsId="11" effectIdNum="5927" type="2" explain="敌将暴击类技能减少几率10%" time="172800"/>
+	<FirmEffect id="36" equipmentType="7" propsId="11" effectIdNum="5928" type="2" explain="敌将群伤类技能减少几率5%" time="172800"/>
+	<FirmEffect id="37" equipmentType="7" propsId="12" effectIdNum="300" type="1" explain="Increase DEF by" time="172800"/>
+	<FirmEffect id="38" equipmentType="7" propsId="12" effectIdNum="5929" type="2" explain="被重伤几率减少35%" time="172800"/>
+	<FirmEffect id="39" equipmentType="7" propsId="12" effectIdNum="5930" type="2" explain="所率部队Increase DEF by8%" time="172800"/>
+	<FirmEffect id="40" equipmentType="7" propsId="12" effectIdNum="5931" type="2" explain="敌将暴击类技能减少几率15%" time="172800"/>
+	<FirmEffect id="41" equipmentType="7" propsId="12" effectIdNum="5932" type="2" explain="敌将群伤类技能减少几率7%" time="172800"/>
+	<FirmEffect id="42" equipmentType="7" propsId="12" effectIdNum="5933" type="2" explain="增强土之心几率10%" time="172800"/>
+	<FirmEffect id="43" equipmentType="7" propsId="13" effectIdNum="450" type="1" explain="Increase DEF by" time="172800"/>
+	<FirmEffect id="44" equipmentType="7" propsId="13" effectIdNum="5934" type="2" explain="被重伤几率减少50%" time="172800"/>
+	<FirmEffect id="45" equipmentType="7" propsId="13" effectIdNum="5935" type="2" explain="所率部队Increase DEF by12%" time="172800"/>
+	<FirmEffect id="46" equipmentType="7" propsId="13" effectIdNum="5936" type="2" explain="敌将暴击类技能减少几率20%" time="172800"/>
+	<FirmEffect id="47" equipmentType="7" propsId="13" effectIdNum="5937" type="2" explain="敌将群伤类技能减少几率10%" time="172800"/>
+	<FirmEffect id="48" equipmentType="7" propsId="13" effectIdNum="5938" type="2" explain="增强土之心几率15%" time="172800"/>
+	<FirmEffect id="49" equipmentType="5" propsId="9" effectIdNum="100" type="1" explain="Increase HP by" time="172800"/>
+	<FirmEffect id="50" equipmentType="5" propsId="9" effectIdNum="5939" type="2" explain="战胜后所率部队Increase DEF by5%" time="172800"/>
+	<FirmEffect id="51" equipmentType="5" propsId="9" effectIdNum="5940" type="2" explain="敌方部队攻击力减弱2%" time="172800"/>
+	<FirmEffect id="52" equipmentType="5" propsId="10" effectIdNum="150" type="1" explain="Increase HP by" time="172800"/>
+	<FirmEffect id="53" equipmentType="5" propsId="10" effectIdNum="5941" type="2" explain="战胜后所率部队Increase DEF by7%" time="172800"/>
+	<FirmEffect id="54" equipmentType="5" propsId="10" effectIdNum="5942" type="2" explain="敌方部队攻击力减弱3%" time="172800"/>
+	<FirmEffect id="55" equipmentType="5" propsId="11" effectIdNum="200" type="1" explain="Increase HP by" time="172800"/>
+	<FirmEffect id="56" equipmentType="5" propsId="11" effectIdNum="5943" type="2" explain="战胜后所率部队Increase DEF by9%" time="172800"/>
+	<FirmEffect id="57" equipmentType="5" propsId="11" effectIdNum="5944" type="2" explain="敌方部队攻击力减弱5%" time="172800"/>
+	<FirmEffect id="58" equipmentType="5" propsId="11" effectIdNum="5945" type="2" explain="将战中受到暴击类技能伤害减少20%" time="172800"/>
+	<FirmEffect id="59" equipmentType="5" propsId="11" effectIdNum="5946" type="2" explain="兵战中受到群伤类技伤害减少10%" time="172800"/>
+	<FirmEffect id="60" equipmentType="5" propsId="12" effectIdNum="300" type="1" explain="Increase HP by" time="172800"/>
+	<FirmEffect id="61" equipmentType="5" propsId="12" effectIdNum="5947" type="2" explain="战胜后所率部队Increase DEF by11%" time="172800"/>
+	<FirmEffect id="62" equipmentType="5" propsId="12" effectIdNum="5948" type="2" explain="敌方部队攻击力减弱8%" time="172800"/>
+	<FirmEffect id="63" equipmentType="5" propsId="12" effectIdNum="5949" type="2" explain="将战中受到暴击类技能伤害减少30%" time="172800"/>
+	<FirmEffect id="64" equipmentType="5" propsId="12" effectIdNum="5950" type="2" explain="兵战中受到群伤类技伤害减少20%" time="172800"/>
+	<FirmEffect id="65" equipmentType="5" propsId="12" effectIdNum="5951" type="2" explain="增强水之心几率10%" time="172800"/>
+	<FirmEffect id="66" equipmentType="5" propsId="13" effectIdNum="450" type="1" explain="Increase HP by" time="172800"/>
+	<FirmEffect id="67" equipmentType="5" propsId="13" effectIdNum="5952" type="2" explain="战胜后所率部队Increase DEF by15%" time="172800"/>
+	<FirmEffect id="68" equipmentType="5" propsId="13" effectIdNum="5953" type="2" explain="敌方部队攻击力减弱12%" time="172800"/>
+	<FirmEffect id="69" equipmentType="5" propsId="13" effectIdNum="5954" type="2" explain="将战中受到暴击类技能伤害减少50%" time="172800"/>
+	<FirmEffect id="70" equipmentType="5" propsId="13" effectIdNum="5955" type="2" explain="兵战中受到群伤类技伤害减少30%" time="172800"/>
+	<FirmEffect id="71" equipmentType="5" propsId="13" effectIdNum="5956" type="2" explain="增强水之心几率15%" time="172800"/>
+	<FirmEffect id="72" equipmentType="6" propsId="9" effectIdNum="5939" type="2" explain="带兵数增加" time="172800"/>
+	<FirmEffect id="73" equipmentType="6" propsId="9" effectIdNum="5957" type="2" explain="战胜后所率部队Increase ATK by5%" time="172800"/>
+	<FirmEffect id="74" equipmentType="6" propsId="9" effectIdNum="5958" type="2" explain="战胜后敌方部队防御力减弱2%" time="172800"/>
+	<FirmEffect id="75" equipmentType="6" propsId="10" effectIdNum="5941" type="2" explain="带兵数增加" time="172800"/>
+	<FirmEffect id="76" equipmentType="6" propsId="10" effectIdNum="5959" type="2" explain="战胜后所率部队Increase ATK by7%" time="172800"/>
+	<FirmEffect id="77" equipmentType="6" propsId="10" effectIdNum="5960" type="2" explain="战胜后敌方部队防御力减弱3%" time="172800"/>
+	<FirmEffect id="78" equipmentType="6" propsId="11" effectIdNum="5943" type="2" explain="带兵数增加" time="172800"/>
+	<FirmEffect id="79" equipmentType="6" propsId="11" effectIdNum="5961" type="2" explain="战胜后所率部队Increase ATK by9%" time="172800"/>
+	<FirmEffect id="80" equipmentType="6" propsId="11" effectIdNum="5962" type="2" explain="战胜后敌方部队防御力减弱5%" time="172800"/>
+	<FirmEffect id="81" equipmentType="6" propsId="11" effectIdNum="5963" type="2" explain="将战中技能伤害增加20%" time="172800"/>
+	<FirmEffect id="82" equipmentType="6" propsId="11" effectIdNum="5964" type="2" explain="兵战中群伤类技能伤害增加10%" time="172800"/>
+	<FirmEffect id="83" equipmentType="6" propsId="12" effectIdNum="5947" type="2" explain="带兵数增加" time="172800"/>
+	<FirmEffect id="84" equipmentType="6" propsId="12" effectIdNum="5965" type="2" explain="战胜后所率部队Increase ATK by11%" time="172800"/>
+	<FirmEffect id="85" equipmentType="6" propsId="12" effectIdNum="5966" type="2" explain="战胜后敌方部队防御力减弱8%" time="172800"/>
+	<FirmEffect id="86" equipmentType="6" propsId="12" effectIdNum="5967" type="2" explain="将战中技能伤害增加30%" time="172800"/>
+	<FirmEffect id="87" equipmentType="6" propsId="12" effectIdNum="5968" type="2" explain="兵战中群伤类技能伤害增加20%" time="172800"/>
+	<FirmEffect id="88" equipmentType="6" propsId="12" effectIdNum="5969" type="2" explain="增强风之心几率10%" time="172800"/>
+	<FirmEffect id="89" equipmentType="6" propsId="13" effectIdNum="5952" type="2" explain="带兵数增加" time="172800"/>
+	<FirmEffect id="90" equipmentType="6" propsId="13" effectIdNum="5970" type="2" explain="战胜后所率部队Increase ATK by15%" time="172800"/>
+	<FirmEffect id="91" equipmentType="6" propsId="13" effectIdNum="5971" type="2" explain="战胜后敌方部队防御力减弱12%" time="172800"/>
+	<FirmEffect id="92" equipmentType="6" propsId="13" effectIdNum="5972" type="2" explain="将战中技能伤害增加50%" time="172800"/>
+	<FirmEffect id="93" equipmentType="6" propsId="13" effectIdNum="5973" type="2" explain="兵战中群伤类技能伤害增加30%" time="172800"/>
+	<FirmEffect id="94" equipmentType="6" propsId="13" effectIdNum="5974" type="2" explain="增强风之心几率15%" time="172800"/>
+</FirmEffects>

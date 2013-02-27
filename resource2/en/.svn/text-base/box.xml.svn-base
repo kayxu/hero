@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boxs>
+<!--  |id:box  |type:宝箱类型  |money:金钱  |moneyRate:金钱几率  |prop:物品  |propRate:物品几率  |equip:装备  |equipRate:装备几率  |hero:将领  |heroRate:将领几率-->
+<box equip="0" equipRate="0" hero="0" heroRate="0" id="1" money="1000;2000;2000;3000" moneyRate="20;30;20;30" prop="0" propRate="0" type="0"/>
+</boxs>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/8F_TEAM/!svn/ver/8180/CODE/Server/WebContent/WEB-INF
+END
+decorators.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/8F_TEAM/!svn/ver/6055/CODE/Server/WebContent/WEB-INF/decorators.xml
+END
+spring-form.tld
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/8F_TEAM/!svn/ver/6055/CODE/Server/WebContent/WEB-INF/spring-form.tld
+END
+spring-mvc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/8F_TEAM/!svn/ver/6132/CODE/Server/WebContent/WEB-INF/spring-mvc.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/8F_TEAM/!svn/ver/6534/CODE/Server/WebContent/WEB-INF/web.xml
+END

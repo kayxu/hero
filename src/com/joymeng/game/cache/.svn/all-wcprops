@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache
+END
+MongoLogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/MongoLogManager.java
+END
+LogUserInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/LogUserInterface.java
+END
+BgServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/BgServer.java
+END
+MongoServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/MongoServer.java
+END
+LogServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/LogServer.java
+END
+MongoUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/MongoUtil.java
+END

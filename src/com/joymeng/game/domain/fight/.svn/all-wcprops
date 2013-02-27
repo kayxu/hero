@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight
+END
+SystemAward.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/4544/CODE/Server/src/com/joymeng/game/domain/fight/SystemAward.java
+END
+FightManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/FightManager.java
+END
+FightEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/domain/fight/FightEvent.java
+END
+FightCmd.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/7135/CODE/Server/src/com/joymeng/game/domain/fight/FightCmd.java
+END
+FightSpecial.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/FightSpecial.java
+END
+FightMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/2942/CODE/Server/src/com/joymeng/game/domain/fight/FightMessage.java
+END
+FightConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/6914/CODE/Server/src/com/joymeng/game/domain/fight/FightConst.java
+END
+FightEventManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/FightEventManager.java
+END
+FightUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/7930/CODE/Server/src/com/joymeng/game/domain/fight/FightUtil.java
+END
+Battlefield.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/4389/CODE/Server/src/com/joymeng/game/domain/fight/Battlefield.java
+END
+SimplePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/4666/CODE/Server/src/com/joymeng/game/domain/fight/SimplePage.java
+END

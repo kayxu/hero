@@ -1,0 +1,1 @@
+native2ascii   -reverse   -encoding   UTF8   fmt_resource_zh_CN.properties  chinese.txt

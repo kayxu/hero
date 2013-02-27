@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Awards>
+	<Award id="1" name="Gold lv1" level="1" type="1" value="5000" quantity="0" round="1" icon="gold_icon" desc="Gold *5000"/>
+	<Award id="2" name="Gold lv2" level="2" type="1" value="10000" quantity="0" round="1" icon="gold_icon" desc="Gold *10000"/>
+	<Award id="3" name="Gold lv3" level="3" type="1" value="20000" quantity="0" round="1" icon="gold_icon" desc="Gold *20000"/>
+	<Award id="4" name="Gold lv4" level="4" type="1" value="50000" quantity="0" round="5" icon="gold_icon" desc="Gold *50000"/>
+	<Award id="5" name="Gold lv5" level="5" type="1" value="100000" quantity="0" round="6" icon="gold_icon" desc="Gold *100000"/>
+	<Award id="6" name="Exp Pellets lv1" level="1" type="3" value="38" quantity="1" round="2" icon="exp5k" desc="Exp Pellets *10000"/>
+	<Award id="7" name="Exp Pellets lv2" level="2" type="3" value="38" quantity="2" round="2" icon="exp10k" desc="Exp Pellets *20000"/>
+	<Award id="8" name="Exp Pellets lv3" level="3" type="3" value="38" quantity="4" round="2" icon="exp20k" desc="Exp Pellets *40000"/>
+	<Award id="9" name="Exp Pellets lv4" level="4" type="3" value="39" quantity="1" round="5" icon="exp50k" desc="Exp Pellets *100000"/>
+	<Award id="10" name="Exp Pellets lv5" level="5" type="3" value="39" quantity="2" round="6" icon="exp50k" desc="Exp Pellets *200000"/>
+	<Award id="11" name="Honor Card lv1" level="1" type="2" value="50" quantity="0" round="1" icon="honor" desc="Honor *50"/>
+	<Award id="12" name="Honor Card lv2" level="2" type="2" value="100" quantity="0" round="2" icon="honor" desc="Honor *100"/>
+	<Award id="13" name="Honor Card lv3" level="3" type="2" value="200" quantity="0" round="3" icon="honor" desc="Honor *200"/>
+	<Award id="14" name="Honor Card lv4" level="4" type="2" value="500" quantity="0" round="6" icon="honor" desc="Honor *500"/>
+	<Award id="15" name="Honor Card lv5" level="5" type="2" value="1000" quantity="0" round="8" icon="honor" desc="Honor *1000"/>
+	<Award id="16" name="Skill Box lv1" level="1" type="3" value="19" quantity="1" round="1" icon="kongbaibook" desc="Common Skill Box *1"/>
+	<Award id="17" name="Skill Box lv2" level="2" type="3" value="20" quantity="1" round="1" icon="kongbaibook" desc="Uncommon Skill Box *1"/>
+	<Award id="18" name="Skill Box lv3" level="3" type="3" value="21" quantity="1" round="3" icon="kongbaibook" desc="Rare Skill Box *1"/>
+	<Award id="19" name="Skill Box lv4" level="4" type="3" value="22" quantity="1" round="6" icon="kongbaibook" desc="Epic Skill Box *1"/>
+	<Award id="20" name="Skill Box lv5" level="5" type="3" value="25" quantity="1" round="8" icon="kongbaibook" desc="Legendary Skill Box *1"/>
+	<Award id="21" name="Hero Card lv1" level="1" type="3" value="554" quantity="1" round="1" icon="herocardlv1" desc="Common Hero Card *1"/>
+	<Award id="22" name="Hero Card lv2" level="2" type="3" value="555" quantity="1" round="1" icon="herocardlv2" desc="Uncommon Hero Card *1"/>
+	<Award id="23" name="Hero Card lv3" level="3" type="3" value="556" quantity="1" round="3" icon="herocardlv3" desc="Rare Hero Card *1"/>
+	<Award id="24" name="Hero Card lv4" level="4" type="3" value="557" quantity="1" round="6" icon="herocardlv4" desc="Epic Hero Card *1"/>
+	<Award id="25" name="Hero Card lv5" level="5" type="3" value="558" quantity="1" round="11" icon="herocardlv5" desc="Legendary Hero Card *1"/>
+	<Award id="26" name="Equip Box lv1" level="1" type="3" value="559" quantity="1" round="1" icon="huangjinbox" desc="Lv.1 Equip Box *1"/>
+	<Award id="27" name="Equip Box lv2" level="2" type="3" value="560" quantity="1" round="1" icon="huangjinbox" desc="Lv.2 Equip Box *1"/>
+	<Award id="28" name="Equip Box lv3" level="3" type="3" value="561" quantity="1" round="1" icon="huangjinbox" desc="Lv.3 Equip Box *1"/>
+	<Award id="29" name="Equip Box lv4" level="4" type="3" value="562" quantity="1" round="5" icon="huangjinbox" desc="Lv.4 Equip Box *1"/>
+	<Award id="30" name="Equip Box lv5" level="5" type="3" value="563" quantity="1" round="6" icon="huangjinbox" desc="Lv.5 Equip Box *1"/>
+	<Award id="31" name="Training Card lv1" level="1" type="3" value="46" quantity="1" round="2" icon="jingjichang" desc="Training Card *1"/>
+	<Award id="32" name="Training Card lv2" level="2" type="3" value="46" quantity="2" round="3" icon="jingjichang" desc="Training Card *2"/>
+	<Award id="33" name="Training Card lv3" level="3" type="3" value="46" quantity="4" round="4" icon="jingjichang" desc="Training Card *4"/>
+	<Award id="34" name="Training Card lv4" level="4" type="3" value="46" quantity="10" round="7" icon="jingjichang" desc="Training Card *10"/>
+	<Award id="35" name="Training Card lv5" level="5" type="3" value="46" quantity="20" round="9" icon="jingjichang" desc="Training Card *20"/>
+	<Award id="36" name="Recruitment lv1" level="1" type="3" value="538" quantity="1" round="2" icon="zhaobinglv1" desc="Lv.1 Recruitment *1"/>
+	<Award id="37" name="Recruitment lv2" level="2" type="3" value="539" quantity="1" round="3" icon="zhaobinglv1" desc="Lv.2 Recruitment *1"/>
+	<Award id="38" name="Recruitment lv3" level="3" type="3" value="539" quantity="2" round="4" icon="zhaobinglv1" desc="Lv.2 Recruitment *2"/>
+	<Award id="39" name="Recruitment lv4" level="4" type="3" value="539" quantity="5" round="7" icon="zhaobinglv1" desc="Lv.2 Recruitment *5"/>
+	<Award id="40" name="Recruitment lv5" level="5" type="3" value="540" quantity="5" round="9" icon="zhaobinglv1" desc="Lv.3 Recruitment *5"/>
+	<Award id="41" name="Points lv1" level="1" type="4" value="10" quantity="0" round="1" icon="jifen" desc="Superwinner Points *10"/>
+	<Award id="42" name="Points lv2" level="2" type="4" value="20" quantity="0" round="2" icon="jifen" desc="Superwinner Points *20"/>
+	<Award id="43" name="Points lv3" level="3" type="4" value="40" quantity="0" round="3" icon="jifen" desc="Superwinner Points *40"/>
+	<Award id="44" name="Points lv4" level="4" type="4" value="100" quantity="0" round="6" icon="jifen" desc="Superwinner Points *100"/>
+	<Award id="45" name="Points lv5" level="5" type="4" value="200" quantity="0" round="8" icon="jifen" desc="Superwinner Points *200"/>
+	<Award id="46" name="Chip lv1" level="1" type="5" value="1" quantity="0" round="2" icon="chouma" desc="Chip *1"/>
+	<Award id="47" name="Chip lv2" level="2" type="5" value="2" quantity="0" round="4" icon="chouma" desc="Chip *2"/>
+	<Award id="48" name="Chip lv3" level="3" type="5" value="4" quantity="0" round="6" icon="chouma" desc="Chip *4"/>
+	<Award id="49" name="Chip lv4" level="4" type="5" value="10" quantity="0" round="9" icon="chouma" desc="Chip *10"/>
+	<Award id="50" name="Chip lv5" level="5" type="5" value="20" quantity="0" round="11" icon="chouma" desc="Chip *20"/>
+	<Award id="51" name="Gold lv6" level="6" type="1" value="200000" quantity="0" round="11" icon="gold_icon" desc="Gold *200000"/>
+	<Award id="52" name="Gold lv7" level="7" type="1" value="500000" quantity="0" round="11" icon="gold_icon" desc="Gold *500000"/>
+	<Award id="53" name="Gold lv8" level="8" type="1" value="1500000" quantity="0" round="12" icon="gold_icon" desc="Gold *1500000"/>
+	<Award id="54" name="Exp Pellets lv6" level="6" type="3" value="39" quantity="4" round="11" icon="exp50k" desc="Exp Pellets *400000"/>
+	<Award id="55" name="Exp Pellets lv7" level="7" type="3" value="40" quantity="1" round="11" icon="exp50k" desc="Exp Pellets *1000000"/>
+	<Award id="56" name="Exp Pellets lv8" level="8" type="3" value="40" quantity="3" round="12" icon="exp50k" desc="Exp Pellets *3000000"/>
+	<Award id="57" name="Gem lv6" level="6" type="6" value="40" quantity="0" round="12" icon="diamond" desc="Gem *40"/>
+	<Award id="58" name="Gem lv7" level="7" type="6" value="100" quantity="0" round="12" icon="diamond" desc="Gem *100"/>
+	<Award id="59" name="Gem lv8" level="8" type="6" value="300" quantity="0" round="12" icon="diamond" desc="Gem *300"/>
+	<Award id="60" name="Set Box lv6" level="6" type="3" value="564" quantity="1" round="11" icon="taozhuangbox" desc="Platinum Set Box "/>
+	<Award id="61" name="Set Box lv7" level="7" type="3" value="565" quantity="1" round="11" icon="taozhuangbox" desc="Crystal Set Box "/>
+	<Award id="62" name="Set Box lv8" level="8" type="3" value="566" quantity="1" round="11" icon="taozhuangbox" desc="Amethyst Set Box "/>
+</Awards>

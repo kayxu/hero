@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/8F_TEAM/!svn/ver/8157/CODE/Server/src/com/joymeng/game/domain/activity
+END
+ActivityBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/2942/CODE/Server/src/com/joymeng/game/domain/activity/ActivityBase.java
+END
+GameActivityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/8F_TEAM/!svn/ver/2942/CODE/Server/src/com/joymeng/game/domain/activity/GameActivityManager.java
+END
+ActivityFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/2942/CODE/Server/src/com/joymeng/game/domain/activity/ActivityFactory.java
+END
+ActivityWar.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8157/CODE/Server/src/com/joymeng/game/domain/activity/ActivityWar.java
+END
+ActivityConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/8F_TEAM/!svn/ver/3676/CODE/Server/src/com/joymeng/game/domain/activity/ActivityConst.java
+END
+ActivityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/4195/CODE/Server/src/com/joymeng/game/domain/activity/ActivityTest.java
+END

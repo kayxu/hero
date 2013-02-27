@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background
+END
+BaseController.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/7753/CODE/Server/src/com/joymeng/web/web/background/BaseController.java
+END
+BgUserController.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background/BgUserController.java
+END
+BgOnlineNumController.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background/BgOnlineNumController.java
+END
+QuestDataController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/8F_TEAM/!svn/ver/7753/CODE/Server/src/com/joymeng/web/web/background/QuestDataController.java
+END
+WarsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/7037/CODE/Server/src/com/joymeng/web/web/background/WarsController.java
+END
+BgQuestionController.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/web/web/background/BgQuestionController.java
+END
+BgServerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background/BgServerController.java
+END
+BgPropController.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background/BgPropController.java
+END
+BgOutputController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/6131/CODE/Server/src/com/joymeng/web/web/background/BgOutputController.java
+END
+BgOnlineTimeController.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background/BgOnlineTimeController.java
+END
+BgLoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background/BgLoginController.java
+END
+HeroDataController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/6558/CODE/Server/src/com/joymeng/web/web/background/HeroDataController.java
+END
+BgMessageController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background/BgMessageController.java
+END
+HelloWorldController.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/8F_TEAM/!svn/ver/6116/CODE/Server/src/com/joymeng/web/web/background/HelloWorldController.java
+END
+RoleDataController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/7961/CODE/Server/src/com/joymeng/web/web/background/RoleDataController.java
+END
+BgLogController.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background/BgLogController.java
+END
+SkillDataController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/8F_TEAM/!svn/ver/6558/CODE/Server/src/com/joymeng/web/web/background/SkillDataController.java
+END
+BgMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/web/web/background/BgMonitor.java
+END
+MainController.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/6131/CODE/Server/src/com/joymeng/web/web/background/MainController.java
+END
+BuildDataController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/8F_TEAM/!svn/ver/6558/CODE/Server/src/com/joymeng/web/web/background/BuildDataController.java
+END

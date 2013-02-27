@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OnlineTimes>
+  <!--turns:次数,min:时间/min,chance:增加机会,-->
+  <OnlineTime turns="1" min="1" chance="1"/>
+  <OnlineTime turns="2" min="2" chance="1"/>
+  <OnlineTime turns="3" min="3" chance="1"/>
+  <OnlineTime turns="4" min="4" chance="1"/>
+  <OnlineTime turns="5" min="5" chance="1"/>
+  <OnlineTime turns="6" min="6" chance="1"/>
+  <OnlineTime turns="7" min="7" chance="1"/>
+  <OnlineTime turns="8" min="8" chance="1"/>
+  <OnlineTime turns="9" min="9" chance="1"/>
+  <OnlineTime turns="10" min="15" chance="1"/>
+  <OnlineTime turns="11" min="30" chance="1"/>
+  <OnlineTime turns="12" min="30" chance="1"/>
+  <OnlineTime turns="13" min="60" chance="1"/>
+  <OnlineTime turns="14" min="60" chance="1"/>
+  <OnlineTime turns="15" min="60" chance="1"/>
+  <OnlineTime turns="16" min="60" chance="1"/>
+  <OnlineTime turns="17" min="60" chance="1"/>
+  <OnlineTime turns="18" min="60" chance="1"/>
+  <OnlineTime turns="19" min="60" chance="1"/>
+  <OnlineTime turns="20" min="60" chance="1"/>
+  <OnlineTime turns="21" min="60" chance="1"/>
+  <OnlineTime turns="22" min="60" chance="1"/>
+  <OnlineTime turns="23" min="60" chance="1"/>
+  <OnlineTime turns="24" min="60" chance="1"/>
+  <OnlineTime turns="25" min="60" chance="1"/>
+  <OnlineTime turns="26" min="60" chance="1"/>
+  <OnlineTime turns="27" min="60" chance="1"/>
+  <OnlineTime turns="28" min="60" chance="1"/>
+  <OnlineTime turns="29" min="60" chance="1"/>
+  <OnlineTime turns="30" min="60" chance="1"/>
+  <OnlineTime turns="31" min="60" chance="1"/>
+  <OnlineTime turns="32" min="60" chance="1"/>
+  <OnlineTime turns="33" min="60" chance="1"/>
+  <OnlineTime turns="34" min="60" chance="1"/>
+</OnlineTimes>

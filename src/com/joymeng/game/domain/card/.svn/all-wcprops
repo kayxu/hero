@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/8F_TEAM/!svn/ver/8157/CODE/Server/src/com/joymeng/game/domain/card
+END
+OnlineTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/4173/CODE/Server/src/com/joymeng/game/domain/card/OnlineTime.java
+END
+Card.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/4742/CODE/Server/src/com/joymeng/game/domain/card/Card.java
+END
+CardAwardRate.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/4134/CODE/Server/src/com/joymeng/game/domain/card/CardAwardRate.java
+END
+CardManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/8157/CODE/Server/src/com/joymeng/game/domain/card/CardManager.java
+END
+CardFace.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/4134/CODE/Server/src/com/joymeng/game/domain/card/CardFace.java
+END
+SimpleAward.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/5660/CODE/Server/src/com/joymeng/game/domain/card/SimpleAward.java
+END
+CardActivityModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/6093/CODE/Server/src/com/joymeng/game/domain/card/CardActivityModule.java
+END
+PlayerCards.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/5292/CODE/Server/src/com/joymeng/game/domain/card/PlayerCards.java
+END

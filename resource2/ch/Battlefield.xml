@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Battlefields>
+	<Battlefield id="1" active="金矿" text="金矿争夺战正在激烈进行中" startTime="00:00:00" endTime="00:00:00" button="进入" ui="8"/>
+	<Battlefield id="2" active="资源点" text="资源争夺战正在激烈进行中" startTime="00:00:00" endTime="00:00:00" button="进入" ui="8"/>
+	<Battlefield id="3" active="县长争夺战" text="县长争夺战开启中" startTime="22:00:00" endTime="11:00:00" button="进入" ui="15"/>
+	<Battlefield id="4" active="市长争夺战" text="市长争夺战开启中" startTime="11:00:00" endTime="19:00:00" button="进入" ui="8"/>
+</Battlefields>

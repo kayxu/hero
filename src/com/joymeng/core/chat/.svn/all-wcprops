@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/8F_TEAM/!svn/ver/8188/CODE/Server/src/com/joymeng/core/chat
+END
+ChatChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/4570/CODE/Server/src/com/joymeng/core/chat/ChatChannel.java
+END
+Notice.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/8F_TEAM/!svn/ver/6096/CODE/Server/src/com/joymeng/core/chat/Notice.java
+END
+Message.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/8F_TEAM/!svn/ver/1230/CODE/Server/src/com/joymeng/core/chat/Message.java
+END
+NoticeManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/8F_TEAM/!svn/ver/8188/CODE/Server/src/com/joymeng/core/chat/NoticeManager.java
+END

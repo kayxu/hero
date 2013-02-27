@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BaseTrainingBitss>
+<!--  |trainingNO:BaseTrainingBits  |condition:开启条件  |numLevel:数量  |addType:训练加成类型  |addCount:训练加成数值-->
+<BaseTrainingBits addCount="0" addType="-1" condition="0" numLevel="0" trainingNO="0"/>
+<BaseTrainingBits addCount="0" addType="-1" condition="0" numLevel="0" trainingNO="1"/>
+<BaseTrainingBits addCount="0" addType="-1" condition="0" numLevel="0" trainingNO="2"/>
+<BaseTrainingBits addCount="0" addType="0" condition="1" numLevel="1" trainingNO="3"/>
+<BaseTrainingBits addCount="0" addType="0" condition="1" numLevel="4" trainingNO="4"/>
+<BaseTrainingBits addCount="0" addType="0" condition="1" numLevel="7" trainingNO="5"/>
+<BaseTrainingBits addCount="20" addType="1" condition="2" numLevel="20" trainingNO="6"/>
+<BaseTrainingBits addCount="20" addType="1" condition="2" numLevel="60" trainingNO="7"/>
+<BaseTrainingBits addCount="20" addType="1" condition="2" numLevel="100" trainingNO="8"/>
+<BaseTrainingBits addCount="50" addType="2" condition="3" numLevel="1" trainingNO="9"/>
+<BaseTrainingBits addCount="50" addType="2" condition="3" numLevel="2" trainingNO="10"/>
+<BaseTrainingBits addCount="50" addType="2" condition="3" numLevel="3" trainingNO="11"/>
+</BaseTrainingBitss>

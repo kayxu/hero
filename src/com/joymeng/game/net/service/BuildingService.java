@@ -1,0 +1,430 @@
+package com.joymeng.game.net.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.joymeng.core.base.net.response.AndroidMessageSender;
+import com.joymeng.core.base.net.response.RespModuleSet;
+import com.joymeng.core.log.GameLog;
+import com.joymeng.core.log.LogBuffer;
+import com.joymeng.core.log.LogEvent;
+import com.joymeng.core.spring.local.I18nGreeting;
+import com.joymeng.game.ProcotolType;
+import com.joymeng.game.common.GameConfig;
+import com.joymeng.game.common.GameConst;
+import com.joymeng.game.common.GameUtils;
+import com.joymeng.game.domain.building.Building;
+import com.joymeng.game.domain.building.PlayerBuilding;
+import com.joymeng.game.domain.building.PlayerSoldier;
+import com.joymeng.game.domain.fight.FightManager;
+import com.joymeng.game.domain.hero.PlayerHero;
+import com.joymeng.game.domain.item.Cell;
+import com.joymeng.game.domain.item.equipment.Equipment;
+import com.joymeng.game.domain.item.props.Props;
+import com.joymeng.game.domain.item.props.PropsManager;
+import com.joymeng.game.domain.item.props.PropsPrototype;
+import com.joymeng.game.domain.quest.QuestUtils;
+import com.joymeng.game.domain.role.PlayerCharacter;
+import com.joymeng.game.domain.time.SysTime;
+import com.joymeng.game.domain.world.TipMessage;
+import com.joymeng.game.domain.world.TipUtil;
+import com.joymeng.game.domain.world.World;
+import com.joymeng.game.net.request.BuildingRequest;
+import com.joymeng.game.net.response.BuildingResp;
+import com.joymeng.services.core.annotation.JoyMessageHandler;
+import com.joymeng.services.core.annotation.JoyMessageService;
+import com.joymeng.services.core.context.ServicesContext;
+import com.joymeng.services.core.message.JoyProtocol;
+import com.joymeng.services.core.service.AbstractJoyService;
+
+/**
+ * 建筑
+ * 
+ * @author admin
+ * @date 2012-4-23 TODO
+ */
+@JoyMessageService
+public class BuildingService extends AbstractJoyService {
+	static Logger logger = LoggerFactory.getLogger(BuildingService.class);
+
+
+	private BuildingService() {
+	}
+
+	@JoyMessageHandler
+	public JoyProtocol handleBuild(BuildingRequest request,
+			ServicesContext context) {
+		logger.info("echo from " + request.getJoyID()+" service"+this.getClass().getName());
+		World gameWorld = World.getInstance();
+		// 获得玩家角色
+		PlayerCharacter player = gameWorld.getPlayerByUid(
+				request.getUserInfo().getUid());
+		if (player == null) {
+//			gameWorld.sendFail((byte) ErrorMessage.NO_PLAYER);
+			return null;
+		}
+		
+//		logger.info("echo from " + request.getJoyID());
+
+		byte type = request.getType();
+		logger.info(">>>>>>>>> building type="+type);
+		BuildingResp resp = new BuildingResp();
+		resp.setType(type);
+		resp.setUserInfo(request.getUserInfo());
+		
+		switch (type) {
+		case ProcotolType.BUILDING_GET_DEFAULT:// 获取用户初始建筑
+			List<PlayerBuilding> buildingdatas = player
+					.getPlayerBuilgingManager().getPlayerAll();
+//			resp.setPlayerBuildLst(buildingdatas);
+//			resp.setResult(GameConst.GAME_RESP_SUCCESS);
+//			resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+//			return resp;
+			RespModuleSet rms=new RespModuleSet(ProcotolType.BUILDING_RESP);
+			for(PlayerBuilding p : buildingdatas){
+				rms.addModule(p);
+			}
+//			rms.addModule(player.getData());
+			
+//			rms.addModule(player.getData());
+			AndroidMessageSender.sendMessage(rms,player);
+			return null;
+		case ProcotolType.BUILDING_ITEM://建筑列表
+			List<Building> buildDatas = player
+			.getPlayerBuilgingManager().getAllBuilding();
+			resp.setBuildLst(buildDatas);
+			resp.setResult(GameConst.GAME_RESP_SUCCESS);
+			resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+			return resp;
+//		case ProcotolType.BUILDING_DEL:// 拆除建筑
+//			int pId = request.getPlayerId();
+//			byte flag1 = player.getPlayerBuilgingManager()
+//					.removeBuilding(pId);
+//			
+//			resp.setTureOrFalse(flag1);
+//			resp.setResult(GameConst.GAME_RESP_SUCCESS);
+//			resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+//			return resp;
+//		case ProcotolType.BUILDING_ADD:// 添加建筑
+//			int buildId = request.getBuildingId();//建筑ID
+//			int cId = request.getCoordinateId();//坐标ID
+//			PlayerBuilding p = player.getPlayerBuilgingManager().addBuilding(buildId, cId);
+//			List<PlayerBuilding> lst = new ArrayList<PlayerBuilding>();
+//			if(p != null)
+//				lst.add(p);
+//			resp.setPlayerBuildLst(lst);
+//			resp.setResult(GameConst.GAME_RESP_SUCCESS);
+//			resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+//			return resp;
+		case ProcotolType.BUILDING_CHANGE_STATUS://修改建筑建设状态
+			int pId1 = request.getPlayerId(); 
+			byte status1 = request.getStatus();
+			TipUtil tip  = player.getPlayerBuilgingManager().changeBuildingType(pId1, status1);
+			GameUtils.sendTip(tip.getTip(), player.getUserInfo(),GameUtils.FLUTTER);
+			return null;
+		case ProcotolType.BUILDING_DISARM:// 撤防
+			int pid11 =  request.getBuildingId();//将领id
+			byte types = request.getStatus();
+			PlayerHero ph = player.getPlayerHeroManager().getHero(pid11);
+			if(ph!=null){
+				//对竞技场的特殊处理
+				if(ph.getStatus()==GameConst.HEROSTATUS_ARENA){
+					FightManager.addFight(request);
+				}else{
+					TipUtil tips = player.getPlayerBuilgingManager().disarm(ph, "");
+					GameUtils.sendTip(tips.getTip(), player.getUserInfo(),GameUtils.FLUTTER);
+				}
+			
+			}else{
+				logger.info("将领撤防错误，heroid="+pid11);
+			}
+	
+//			if(pp2 == null){
+//				GameUtils.sendTip(new TipMessage("撤防失败！", ProcotolType.BUILDING_RESP, GameConst.GAME_RESP_FAIL), player.getUserInfo());
+//				RespModuleSet rms12=new RespModuleSet(ProcotolType.BUILDING_RESP);
+//				AndroidMessageSender.sendMessage(rms12,player);
+//			}
+//			if(pp2 != null && pp2.getTip().getResult() == 1){
+//				GameUtils.sendTip(pp2.getTip(), player.getUserInfo());
+//			}else if(pp2 != null && pp2.getTip().getResult() == 0){
+//				GameUtils.sendTip(pp2.getTip(), player.getUserInfo());
+//			}
+			
+			return null;
+		case ProcotolType.BUILDING_GUARD:// 驻防
+//			int pids =  request.getBuildingId();request.getPlayerId();
+			int heroId = request.getPlayerId();
+			String soMsg = request.getSoMsg();
+//			PlayerBuilding pp = player.getPlayerBuilgingManager().guard(heroId, soMsg, (int)player.getData().getUserid(), "",null,null);
+//			RespModuleSet rms11=new RespModuleSet(ProcotolType.BUILDING_RESP);
+//			if(pp != null){
+//				rms11.addModule(pp);
+//			}
+//			AndroidMessageSender.sendMessage(rms11,player);
+			return null;
+		case ProcotolType.BUILDING_LEVELUP://建筑升级 
+			int pId2 = request.getPlayerId();
+			int[] flag4 = player.getPlayerBuilgingManager().levelUp(pId2);
+			resp.setTureOrFalse((byte)flag4[0]);
+			resp.setPlayerBuildId(flag4[1]);//用户建筑id
+			resp.setChargeOut(flag4[2]);
+			resp.setResult(GameConst.GAME_RESP_SUCCESS);
+			resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+			return resp;
+		case ProcotolType.BUILDING_RECOVER:// 收复
+			break;
+		case ProcotolType.BUILDING_CHARGEOUT://收取
+			int pId3 = request.getPlayerId();
+			int[] chargeOut = player.getPlayerBuilgingManager().chargeOut(pId3);
+			if(chargeOut[0] == -1 || chargeOut[0] == 0){
+				resp.setTureOrFalse((byte)chargeOut[0]);//设置收取类型
+				resp.setChargeOut(chargeOut[1]);
+				String msg = I18nGreeting.getInstance().getMessage("building.chargeout", new Object[]{"gold",chargeOut[1]});
+				//GameUtils.sendTip(new TipMessage(msg, ProcotolType.BUILDING_CHARGEOUT, GameConst.GAME_RESP_SUCCESS), player.getUserInfo());
+				resp.setResult(GameConst.GAME_RESP_SUCCESS);
+				resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+				return resp;
+			}else{
+				RespModuleSet rms9=new RespModuleSet(ProcotolType.BUILDING_RESP);
+				Cell cell = null;
+				 String name = "";
+				 int num = 0;
+				switch ((byte) chargeOut[0]) {
+				case 1://木材
+					 PropsPrototype p = PropsManager.getInstance().getProps(GameConfig.GAME_TIMBER_ID);//player.getProps(ClientModule.GAME_TIMBER_ID);
+					if(p != null){
+						cell = new Cell();
+						cell.setItem(new Props(p));
+						cell.setItemCount(chargeOut[1]);
+						name = "TIMBER";
+						num = chargeOut[1];
+					}
+					break;
+				case 2://铁矿
+					PropsPrototype p1 = PropsManager.getInstance().getProps(GameConfig.GAME_IRONORE_ID);//player.getProps(ClientModule.GAME_TIMBER_ID);
+					if(p1 != null){
+						cell = new Cell();
+						cell.setItem(new Props(p1));
+						cell.setItemCount(chargeOut[1]);
+						name = "IRONORE";
+						num = chargeOut[1];
+					}
+					break;
+				case 3://马匹
+					PropsPrototype p2 = PropsManager.getInstance().getProps(GameConfig.GAME_HORSES_ID);//player.getProps(ClientModule.GAME_TIMBER_ID);
+					if(p2 != null){
+						cell = new Cell();
+						cell.setItem(new Props(p2));
+						cell.setItemCount(chargeOut[1]);
+						name = "HORSES";
+						num = chargeOut[1];
+					}
+					break;
+				}
+				String msg = I18nGreeting.getInstance().getMessage("building.chargeout", new Object[]{name,num});
+				if(cell != null){
+					rms9.addModule(cell);
+					//GameUtils.sendTip(new TipMessage(msg, ProcotolType.BUILDING_CHARGEOUT, GameConst.GAME_RESP_SUCCESS), player.getUserInfo());
+				}
+				AndroidMessageSender.sendMessage(rms9,player);
+				
+				resp.setTureOrFalse((byte)chargeOut[0]);//设置收取类型
+				resp.setChargeOut(chargeOut[1]);
+				resp.setResult(GameConst.GAME_RESP_SUCCESS);
+				resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+				return resp;
+			}
+		case ProcotolType.BUILDING_STEAL://偷到
+			int pId4 = request.getPlayerId();
+			int userId = request.getUserId();
+			int chargeOut2[] = player.getPlayerBuilgingManager().chargeOutByOccupy(pId4,userId);
+			QuestUtils.checkFinish(player, QuestUtils.TYPE34, true,chargeOut2[0]);
+			if((byte)chargeOut2[0] == -1 || (byte)chargeOut2[0] == 0){
+				resp.setTureOrFalse((byte)chargeOut2[0]);
+				resp.setChargeOut(chargeOut2[1]);
+				String msg = I18nGreeting.getInstance().getMessage("building.chargeout", new Object[]{"gold",chargeOut2[1]});
+				//GameUtils.sendTip(new TipMessage(msg, ProcotolType.BUILDING_CHARGEOUT, GameConst.GAME_RESP_SUCCESS), player.getUserInfo());
+				resp.setResult(GameConst.GAME_RESP_SUCCESS);
+				resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+				return resp;
+			}else{
+				RespModuleSet rms99=new RespModuleSet(ProcotolType.BUILDING_RESP);
+				Cell cell = null;
+				 String name = "";
+				 int num = 0;
+				switch ((byte) chargeOut2[0]) {
+				case 1://木材
+					 PropsPrototype p = PropsManager.getInstance().getProps(GameConfig.GAME_TIMBER_ID);//player.getProps(ClientModule.GAME_TIMBER_ID);
+					if(p != null){
+						cell = new Cell();
+						cell.setItem(new Props(p));
+						cell.setItemCount(chargeOut2[1]);
+						name = "TIMBER";
+						num = chargeOut2[1];
+					}
+					break;
+				case 2://铁矿
+					PropsPrototype p1 = PropsManager.getInstance().getProps(GameConfig.GAME_IRONORE_ID);//player.getProps(ClientModule.GAME_TIMBER_ID);
+					if(p1 != null){
+						cell = new Cell();
+						cell.setItem(new Props(p1));
+						cell.setItemCount(chargeOut2[1]);
+						name = "IRONORE";
+						num = chargeOut2[1];
+					}
+					break;
+				case 3://马匹
+					PropsPrototype p2 = PropsManager.getInstance().getProps(GameConfig.GAME_HORSES_ID);//player.getProps(ClientModule.GAME_TIMBER_ID);
+					if(p2 != null){
+						cell = new Cell();
+						cell.setItem(new Props(p2));
+						cell.setItemCount(chargeOut2[1]);
+						name = "HORSES";
+						num = chargeOut2[1];
+					}
+					break;
+				}
+				//String msg = I18nGreeting.getInstance().getMessage("building.chargeout", new Object[]{name,num});
+				if(cell != null){
+//					player.getPlayerStorageAgent().addProps(cell.getItem().getId(), cell.getItemCount());
+					rms99.addModule(cell);
+					//GameUtils.sendTip(new TipMessage(msg, ProcotolType.BUILDING_CHARGEOUT, GameConst.GAME_RESP_SUCCESS), player.getUserInfo());
+				}
+				AndroidMessageSender.sendMessage(rms99,player);
+				
+				resp.setTureOrFalse((byte)chargeOut2[0]);
+				resp.setChargeOut(chargeOut2[1]);
+				resp.setResult(GameConst.GAME_RESP_SUCCESS);
+				resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+				return resp;
+			}
+		case ProcotolType.BUILDING_SOLDIER://训练士兵
+//			int pId7 = request.getPlayerId();
+			byte soldierType = request.getSoldierType();
+			int soldierId = request.getSoldierId();
+			int num = request.getNum();
+			Map<Integer, PlayerSoldier> map = player.getPlayerBuilgingManager().trainingSoldier(soldierId,num,soldierType);
+			RespModuleSet rms6=new RespModuleSet(ProcotolType.BUILDING_RESP);
+			if(map != null && map.size() > 0){
+				System.out.println(map.size());
+				for(PlayerSoldier p : map.values()){
+					rms6.addModule(p);
+				}
+				rms6.addModule(player.getData());
+				//写入日志  玩家 在日期xx训练士兵id,type,num
+				GameLog.logPlayerEvent(player, LogEvent.SOLDIER, new LogBuffer().add(soldierType).add(soldierId).add(num));
+			}
+			
+			AndroidMessageSender.sendMessage(rms6,player);
+//			resp.setTureOrFalse((byte)0);
+//			if(trueOrFalse){
+//				resp.setTureOrFalse((byte)1);
+//			}
+//			resp.setResult(GameConst.GAME_RESP_SUCCESS);
+//			resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+			break;
+		case ProcotolType.BUILDING_REFUSE_SMITHY://刷新铁匠铺数据
+			byte soldierType2 = request.getSoldierType();
+			ArrayList<Equipment> lst = player.getPlayerBuilgingManager().refreshEqument(soldierType2);
+			resp.seteLst(lst);
+			if(player.getPlayerBuilgingManager().getPlayerBlackSmithy()!=null && player.getPlayerBuilgingManager().getPlayerBlackSmithy().getBlackSmithy() != null){
+				resp.setChargeOut((int)(player.getPlayerBuilgingManager().getPlayerBlackSmithy().getBlackSmithy().getUpdateTime().getTime()/1000));
+			}else{
+				resp.setChargeOut(-1);
+			}
+			QuestUtils.checkFinish(player, QuestUtils.TYPE49, true);
+			//写入日志  玩家 在日期xx训练士兵id,type,num
+			GameLog.logPlayerEvent(player, LogEvent.WEAPON_FRESH, new LogBuffer());
+
+			resp.setResult(GameConst.GAME_RESP_SUCCESS);
+			resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+//			resp.setChargeOut(chargeOut);
+//			RespModuleSet rms3=new RespModuleSet(ProcotolType.BUILDING_RESP);
+//			if(lst !=null){
+//				for (Equipment t : lst){	
+//					rms3.addModule(t);
+//				}
+//			}
+//			AndroidMessageSender.sendMessage(rms3,player);
+			return resp;
+		case ProcotolType.BUILDING_REFUSE_SOLDIER://查看产兵状态
+			//logger.info("aaaaaaaa" + request.getJoyID());
+			byte soldierType3 = request.getSoldierType();
+			List<PlayerSoldier> viewSoldier = player.getPlayerBuilgingManager().viewSoldier(soldierType3);
+			RespModuleSet rms4=new RespModuleSet(ProcotolType.BUILDING_RESP);
+			if(viewSoldier !=null){
+				System.out.println("数量："+viewSoldier.size());
+				for (PlayerSoldier t : viewSoldier){
+//					System.out.println("士兵："+t.print());
+					rms4.addModule(t);
+				}
+				rms4.addModule(player.getData());
+			}
+			AndroidMessageSender.sendMessage(rms4,player);
+			return null;
+		case ProcotolType.BUILDING_TRAININGOVER://结束训练
+			Map<Integer, PlayerSoldier> maps = player.getPlayerBuilgingManager().trainingOver();
+			RespModuleSet rms7=new RespModuleSet(ProcotolType.BUILDING_RESP);
+			if(maps != null && maps.size() > 0){
+				for(PlayerSoldier p : maps.values()){
+					rms7.addModule(p);
+				}
+			}
+			AndroidMessageSender.sendMessage(rms7,player);
+			QuestUtils.checkFinish(player, QuestUtils.TYPE33, true);
+			return null;
+		case ProcotolType.BUILDING_TRAINING_ADDTIME://修改训练时间
+			int soldierId2 = request.getSoldierId();
+			int  itemId = request.getPlayerId();
+//			TipUtil tipss = player.getPlayerBuilgingManager().changeTrainingTime(soldierId2,itemId);
+//			GameUtils.sendTip(tipss.getTip(), request.getUserInfo());
+//			RespModuleSet rms8=new RespModuleSet(ProcotolType.BUILDING_RESP);
+//			if( p!= null){
+//				rms8.addModule(p);
+//			}
+//			AndroidMessageSender.sendMessage(rms8,player);
+			return null;
+		case ProcotolType.BUILDING_TRAINING_VIP://VIP训练位
+			int number = request.getSoldierId();
+			TipUtil vipPt = player.getPlayerBuilgingManager().openVip(number);
+			GameUtils.sendTip(vipPt.getTip(),request.getUserInfo(),GameUtils.FLUTTER);
+			return null;
+		case ProcotolType.BUILDING_REFUSE_SOLDIEREQU://兵装
+			int soldierIds = request.getSoldierId();
+			int equNum = request.getNum();
+			TipUtil tipp = player.getPlayerBuilgingManager().soliderEqu(soldierIds, equNum);
+			GameUtils.sendTip(tipp.getTip(),request.getUserInfo(),GameUtils.FLUTTER);
+			return null;
+		case ProcotolType.CHARGE_DETAIL:
+			int pId5 = request.getPlayerId();
+			int[] ss = player.getPlayerBuilgingManager().getdetailCharge(pId5);
+			resp.setChargeMsg(ss);
+			resp.setResult(GameConst.GAME_RESP_SUCCESS);
+			resp.setErrorCode(GameConst.GAME_RESP_SUCCESS);
+			return resp;
+		case ProcotolType.SOLDIER_UPGRADE:
+			//升级士兵
+			byte soliderType = request.getStatus();
+			if(null == player.getPlayerBuilgingManager().getPlayerBarrack()){
+				GameUtils.sendTip(new TipMessage(I18nGreeting.getInstance().getMessage("solider.upGrade.false", null), ProcotolType.BUILDING_CHARGEOUT, GameConst.GAME_RESP_SUCCESS), player.getUserInfo(), GameUtils.FLUTTER);
+			}else{
+				player.getPlayerBuilgingManager().getPlayerBarrack().soliderUpgrade(soliderType);
+			}
+			return null;
+		case ProcotolType.SOLDIER_UN_LOCK:
+			//解锁士兵
+			byte soliderType1 = request.getStatus();
+			if(null == player.getPlayerBuilgingManager().getPlayerBarrack()){
+				GameUtils.sendTip(new TipMessage(I18nGreeting.getInstance().getMessage("solider.lock.fail", null), ProcotolType.BUILDING_CHARGEOUT, GameConst.GAME_RESP_SUCCESS), player.getUserInfo(), GameUtils.FLUTTER);
+			}else{
+				player.getPlayerBuilgingManager().getPlayerBarrack().unLock(soliderType1);
+			}
+			return null;
+		}
+		return null;
+	}
+}

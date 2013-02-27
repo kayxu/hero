@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TrainSkills>
+<!--  |level:TrainSkill  |skill1:1级技能  |skill2:2级技能  |skill3:3级技能  |skill4:4级技能  |skill5:5级技能  |skill6:6级技能  |skill7:7级技能  |skill8:8级技能  |skill9:9级技能  |skill10:10级技能-->
+<TrainSkill level="1" skill1="95" skill10="0" skill2="5" skill3="0" skill4="0" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="2" skill1="94" skill10="0" skill2="6" skill3="0" skill4="0" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="3" skill1="93" skill10="0" skill2="7" skill3="0" skill4="0" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="4" skill1="92" skill10="0" skill2="8" skill3="0" skill4="0" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="5" skill1="86" skill10="0" skill2="9" skill3="5" skill4="0" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="6" skill1="84" skill10="0" skill2="10" skill3="6" skill4="0" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="7" skill1="82" skill10="0" skill2="11" skill3="7" skill4="0" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="8" skill1="80" skill10="0" skill2="12" skill3="8" skill4="0" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="9" skill1="78" skill10="0" skill2="13" skill3="9" skill4="0" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="10" skill1="71" skill10="0" skill2="14" skill3="10" skill4="5" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="11" skill1="68" skill10="0" skill2="15" skill3="11" skill4="6" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="12" skill1="65" skill10="0" skill2="16" skill3="12" skill4="7" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="13" skill1="62" skill10="0" skill2="17" skill3="13" skill4="8" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="14" skill1="59" skill10="0" skill2="18" skill3="14" skill4="9" skill5="0" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="15" skill1="51" skill10="0" skill2="19" skill3="15" skill4="10" skill5="5" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="16" skill1="47" skill10="0" skill2="20" skill3="16" skill4="11" skill5="6" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="17" skill1="43" skill10="0" skill2="21" skill3="17" skill4="12" skill5="7" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="18" skill1="39" skill10="0" skill2="22" skill3="18" skill4="13" skill5="8" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="19" skill1="35" skill10="0" skill2="23" skill3="19" skill4="14" skill5="9" skill6="0" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="20" skill1="26" skill10="0" skill2="24" skill3="20" skill4="15" skill5="10" skill6="5" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="21" skill1="21" skill10="0" skill2="25" skill3="21" skill4="16" skill5="11" skill6="6" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="22" skill1="16" skill10="0" skill2="26" skill3="22" skill4="17" skill5="12" skill6="7" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="23" skill1="11" skill10="0" skill2="27" skill3="23" skill4="18" skill5="13" skill6="8" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="24" skill1="5" skill10="0" skill2="28" skill3="24" skill4="19" skill5="14" skill6="9" skill7="0" skill8="0" skill9="0"/>
+<TrainSkill level="25" skill1="0" skill10="0" skill2="25" skill3="25" skill4="20" skill5="15" skill6="10" skill7="5" skill8="0" skill9="0"/>
+<TrainSkill level="26" skill1="0" skill10="0" skill2="20" skill3="26" skill4="21" skill5="16" skill6="11" skill7="6" skill8="0" skill9="0"/>
+<TrainSkill level="27" skill1="0" skill10="0" skill2="15" skill3="27" skill4="22" skill5="17" skill6="12" skill7="7" skill8="0" skill9="0"/>
+<TrainSkill level="28" skill1="0" skill10="0" skill2="10" skill3="28" skill4="23" skill5="18" skill6="13" skill7="8" skill8="0" skill9="0"/>
+<TrainSkill level="29" skill1="0" skill10="0" skill2="5" skill3="29" skill4="24" skill5="19" skill6="14" skill7="9" skill8="0" skill9="0"/>
+<TrainSkill level="30" skill1="0" skill10="0" skill2="0" skill3="25" skill4="25" skill5="20" skill6="15" skill7="10" skill8="5" skill9="0"/>
+</TrainSkills>

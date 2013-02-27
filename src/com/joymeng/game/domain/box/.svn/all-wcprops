@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/box
+END
+PropsRate.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/2747/CODE/Server/src/com/joymeng/game/domain/box/PropsRate.java
+END
+ExtremeBoxManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/box/ExtremeBoxManager.java
+END
+Award.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/4625/CODE/Server/src/com/joymeng/game/domain/box/Award.java
+END
+Box.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/8F_TEAM/!svn/ver/1186/CODE/Server/src/com/joymeng/game/domain/box/Box.java
+END
+RefreshRate.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/2169/CODE/Server/src/com/joymeng/game/domain/box/RefreshRate.java
+END
+PropsBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/8F_TEAM/!svn/ver/2746/CODE/Server/src/com/joymeng/game/domain/box/PropsBox.java
+END
+BoxConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/8F_TEAM/!svn/ver/3897/CODE/Server/src/com/joymeng/game/domain/box/BoxConst.java
+END
+Package.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/8F_TEAM/!svn/ver/2751/CODE/Server/src/com/joymeng/game/domain/box/Package.java
+END
+BoxManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/5247/CODE/Server/src/com/joymeng/game/domain/box/BoxManager.java
+END
+PrizeRate.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/2170/CODE/Server/src/com/joymeng/game/domain/box/PrizeRate.java
+END
+PropsBoxManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/8188/CODE/Server/src/com/joymeng/game/domain/box/PropsBoxManager.java
+END

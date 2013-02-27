@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/8F_TEAM/!svn/ver/8163/CODE/Server/src/com/joymeng/game/domain/item
+END
+ItemConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/5406/CODE/Server/src/com/joymeng/game/domain/item/ItemConst.java
+END
+PlayerStorageAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/8163/CODE/Server/src/com/joymeng/game/domain/item/PlayerStorageAgent.java
+END
+PlayerItemEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/8163/CODE/Server/src/com/joymeng/game/domain/item/PlayerItemEffect.java
+END
+PlayerItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/4623/CODE/Server/src/com/joymeng/game/domain/item/PlayerItem.java
+END
+PropsDelay.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/2898/CODE/Server/src/com/joymeng/game/domain/item/PropsDelay.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/1448/CODE/Server/src/com/joymeng/game/domain/item/Item.java
+END
+Cell.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/5571/CODE/Server/src/com/joymeng/game/domain/item/Cell.java
+END

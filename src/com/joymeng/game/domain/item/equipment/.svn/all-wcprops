@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/8163/CODE/Server/src/com/joymeng/game/domain/item/equipment
+END
+EquipmentDismantling.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/item/equipment/EquipmentDismantling.java
+END
+Equip.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/4329/CODE/Server/src/com/joymeng/game/domain/item/equipment/Equip.java
+END
+EquipmentStrength.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/8F_TEAM/!svn/ver/545/CODE/Server/src/com/joymeng/game/domain/item/equipment/EquipmentStrength.java
+END
+FirmEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/item/equipment/FirmEffect.java
+END
+EquiEffectResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/8F_TEAM/!svn/ver/2331/CODE/Server/src/com/joymeng/game/domain/item/equipment/EquiEffectResult.java
+END
+Equipment.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/8163/CODE/Server/src/com/joymeng/game/domain/item/equipment/Equipment.java
+END
+Strength.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/8F_TEAM/!svn/ver/784/CODE/Server/src/com/joymeng/game/domain/item/equipment/Strength.java
+END
+qualityStrength.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/item/equipment/qualityStrength.java
+END
+EquipmentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/8F_TEAM/!svn/ver/8163/CODE/Server/src/com/joymeng/game/domain/item/equipment/EquipmentManager.java
+END
+Quality.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/783/CODE/Server/src/com/joymeng/game/domain/item/equipment/Quality.java
+END
+LuckyStone.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/item/equipment/LuckyStone.java
+END
+EquipmentDismant.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/item/equipment/EquipmentDismant.java
+END
+EquipmentData.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/item/equipment/EquipmentData.java
+END
+EquipPrototype.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/item/equipment/EquipPrototype.java
+END
+BasePrototype.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/8F_TEAM/!svn/ver/4739/CODE/Server/src/com/joymeng/game/domain/item/equipment/BasePrototype.java
+END

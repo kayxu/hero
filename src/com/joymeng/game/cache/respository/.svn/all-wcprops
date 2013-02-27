@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/respository
+END
+LogInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/respository/LogInterface.java
+END
+LogImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/respository/LogImpl.java
+END
+PlayerCacheDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/6269/CODE/Server/src/com/joymeng/game/cache/respository/PlayerCacheDAO.java
+END
+PlayerCacheDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/respository/PlayerCacheDAOImpl.java
+END

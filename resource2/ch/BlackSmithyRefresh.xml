@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BlackSmithyRefreshs>
+<!--  |refreshTimes:BlackSmithyRefresh  |type:类型  |no1:1位装备ID  |no2:2位装备ID  |no3:3位装备ID  |no4:4位装备ID  |no5:5位装备ID  |no6:6位装备ID  |no7:7位装备ID  |no8:8位装备ID  |no9:9位装备ID  |no10:10位装备ID-->
+<BlackSmithyRefresh no1="10300" no10="2740100" no2="10100" no3="920100" no4="1830100" no5="2740100" no6="10100" no7="920100" no8="1830100" no9="2740200" refreshTimes="0" type="0"/>
+<BlackSmithyRefresh no1="10400" no10="2740100" no2="10100" no3="920100" no4="1830100" no5="2740100" no6="10100" no7="920100" no8="1830200" no9="1830100" refreshTimes="1" type="1"/>
+</BlackSmithyRefreshs>

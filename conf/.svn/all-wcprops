@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/8F_TEAM/!svn/ver/8201/CODE/Server/conf
+END
+application.functional.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/8F_TEAM/!svn/ver/6053/CODE/Server/conf/application.functional.properties
+END
+applicationContext-showcases.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/8F_TEAM/!svn/ver/7034/CODE/Server/conf/applicationContext-showcases.xml
+END
+mongo-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/8F_TEAM/!svn/ver/8200/CODE/Server/conf/mongo-config.xml
+END
+fmt_resource_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/8F_TEAM/!svn/ver/8194/CODE/Server/conf/fmt_resource_zh_CN.properties
+END
+application.development.properties
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/8F_TEAM/!svn/ver/6053/CODE/Server/conf/application.development.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/8F_TEAM/!svn/ver/6053/CODE/Server/conf/log4j.properties
+END
+fmt_resource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/8F_TEAM/!svn/ver/4738/CODE/Server/conf/fmt_resource.xml
+END
+applicationContext-game.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/8F_TEAM/!svn/ver/7758/CODE/Server/conf/applicationContext-game.xml
+END
+SpringOxmSample.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/8F_TEAM/!svn/ver/4423/CODE/Server/conf/SpringOxmSample.xml
+END
+schedule.properties
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/8F_TEAM/!svn/ver/6053/CODE/Server/conf/schedule.properties
+END
+fmt_resource_en_US.properties
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/8F_TEAM/!svn/ver/8193/CODE/Server/conf/fmt_resource_en_US.properties
+END
+applicationContext-shiro.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/8F_TEAM/!svn/ver/6053/CODE/Server/conf/applicationContext-shiro.xml
+END
+game.properties
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/8F_TEAM/!svn/ver/7498/CODE/Server/conf/game.properties
+END
+applicationContext-web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/8F_TEAM/!svn/ver/6053/CODE/Server/conf/applicationContext-web.xml
+END
+chinese.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/8F_TEAM/!svn/ver/8189/CODE/Server/conf/chinese.txt
+END
+application-oxm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/8F_TEAM/!svn/ver/6053/CODE/Server/conf/application-oxm.xml
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/8F_TEAM/!svn/ver/8201/CODE/Server/conf/application.properties
+END
+application.test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/8F_TEAM/!svn/ver/6053/CODE/Server/conf/application.test.properties
+END
+LocalServices.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/8F_TEAM/!svn/ver/7888/CODE/Server/conf/LocalServices.xml
+END
+applicationContext-spring-scheduler.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/8F_TEAM/!svn/ver/7034/CODE/Server/conf/applicationContext-spring-scheduler.xml
+END
+client.properties
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/8F_TEAM/!svn/ver/150/CODE/Server/conf/client.properties
+END
+mapping.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/8F_TEAM/!svn/ver/4423/CODE/Server/conf/mapping.xml
+END
+spring-shell-plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/8F_TEAM/!svn/ver/4784/CODE/Server/conf/spring-shell-plugin.xml
+END
+转换fmt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/8F_TEAM/!svn/ver/6053/CODE/Server/conf/%E8%BD%AC%E6%8D%A2fmt.txt
+END
+application-mail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/8F_TEAM/!svn/ver/4423/CODE/Server/conf/application-mail.xml
+END

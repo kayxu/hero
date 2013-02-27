@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<HeroRefreshs>
+<!--  |refreshTimes:HeroRefresh  |num1:1位置将领品质  |num2:2位置将领品质  |num3:3位置将领品质-->
+<HeroRefresh num1="1" num2="14" num3="2" refreshTimes="0" type = "0"/>
+<HeroRefresh num1="3" num2="16" num3="4" refreshTimes="1" type = "1"/>
+<HeroRefresh num1="5" num2="22" num3="6" refreshTimes="2" type = "1"/>
+<HeroRefresh num1="7" num2="31" num3="8" refreshTimes="3" type = "1"/>
+</HeroRefreshs>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/mod
+END
+Campaign.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/8019/CODE/Server/src/com/joymeng/game/domain/fight/mod/Campaign.java
+END
+LadderInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8159/CODE/Server/src/com/joymeng/game/domain/fight/mod/LadderInfo.java
+END
+CampInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/8159/CODE/Server/src/com/joymeng/game/domain/fight/mod/CampInfo.java
+END
+FightInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/7930/CODE/Server/src/com/joymeng/game/domain/fight/mod/FightInfo.java
+END
+CampaignManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/8159/CODE/Server/src/com/joymeng/game/domain/fight/mod/CampaignManager.java
+END
+LadderManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/mod/LadderManager.java
+END
+Arena.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/mod/Arena.java
+END
+ArenaManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/mod/ArenaManager.java
+END
+Ladder.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/mod/Ladder.java
+END

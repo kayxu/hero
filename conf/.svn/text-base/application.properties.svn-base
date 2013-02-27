@@ -1,0 +1,42 @@
+#h2 database settings
+#jdbc.driver=org.h2.Driver
+#jdbc.url=jdbc:h2:file:~/.h2/quickstart;AUTO_SERVER=TRUE
+#jdbc.username=sa
+#jdbc.password=
+
+#log4jdbc driver
+#jdbc.driver=net.sf.log4jdbc.DriverSpy
+#jdbc.url=jdbc:log4jdbc:h2:file:~/.h2/quickstart;AUTO_SERVER=TRUE
+
+#oracle database settings
+#jdbc.driver=oracle.jdbc.driver.OracleDriver
+#jdbc.url=jdbc:oracle:thin:@127.0.0.1:1521:XE
+#jdbc.username=quickstart
+#jdbc.password=quickstart
+
+#backgroud database setting
+jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://10.80.1.254/quickstart?useUnicode=true&characterEncoding=utf-8
+jdbc.username=root
+jdbc.password=card
+
+#dbcp settings
+dbcp.maxIdle=5
+dbcp.maxActive=40
+dbcp.minIdle=1
+
+#game database setting
+game.url=jdbc:mysql://10.80.1.254/game_120?useUnicode=true&characterEncoding=utf8
+#game.url=jdbc:mysql://10.80.1.254/game_server1?useUnicode=true&characterEncoding=utf8
+
+#download database setting
+game.url1=jdbc:mysql://10.80.1.254/stat?useUnicode=true&characterEncoding=utf8
+#game.url1=jdbc:mysql://120.209.133.139/stat?useUnicode=true&characterEncoding=utf-8
+jdbc.username1=root
+jdbc.password1=djmysql@789
+initialSize=1
+
+#language settings
+#LanguageTips = US
+LanguageTips = CH
+#mongodb-config.xml

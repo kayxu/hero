@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Achievementss>
+<!--  |id:Achievements  |description:官位  |standard:标准政绩  |consumption:每日政绩消耗-->
+<Achievements consumption="200" description="国王" id="4" standard="4000"/>
+<Achievements consumption="150" description="州长" id="3" standard="3000"/>
+<Achievements consumption="100" description="市长" id="2" standard="2000"/>
+<Achievements consumption="50" description="县长" id="1" standard="1000"/>
+<Achievements consumption="0" description="平民" id="0" standard="200"/>
+</Achievementss>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/core/event
+END
+GameEventDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/269/CODE/Server/src/com/joymeng/core/event/GameEventDispatcher.java
+END
+DemoSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/4422/CODE/Server/src/com/joymeng/core/event/DemoSource.java
+END
+Listener2.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/8F_TEAM/!svn/ver/4422/CODE/Server/src/com/joymeng/core/event/Listener2.java
+END
+Listener1.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/8F_TEAM/!svn/ver/4422/CODE/Server/src/com/joymeng/core/event/Listener1.java
+END
+GameEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/150/CODE/Server/src/com/joymeng/core/event/GameEventListener.java
+END
+GameEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/core/event/GameEvent.java
+END
+DemoEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/8F_TEAM/!svn/ver/4422/CODE/Server/src/com/joymeng/core/event/DemoEvent.java
+END
+DemoListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/8F_TEAM/!svn/ver/4422/CODE/Server/src/com/joymeng/core/event/DemoListener.java
+END
+TestDemo.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/8F_TEAM/!svn/ver/4422/CODE/Server/src/com/joymeng/core/event/TestDemo.java
+END

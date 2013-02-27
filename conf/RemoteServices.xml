@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="gb2312"?>
+<RemoteServices moduleID="0xFF00" instanceID="0xFFBB" heartInterval="12">
+	<RemoteService ip="10.80.1.254" port="30000"/>
+</RemoteServices>

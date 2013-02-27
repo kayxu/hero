@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GoldCharges>
+<!--  |id:GoldCharge  |level:金矿等级  |type:类型  |chageOut:产量-->
+<GoldCharge chageOut="6" id="10" level="8" type="0"/>
+<GoldCharge chageOut="8" id="20" level="7" type="0"/>
+<GoldCharge chageOut="10" id="30" level="6" type="0"/>
+<GoldCharge chageOut="12" id="40" level="5" type="0"/>
+<GoldCharge chageOut="14" id="50" level="4" type="0"/>
+<GoldCharge chageOut="16" id="60" level="3" type="0"/>
+<GoldCharge chageOut="18" id="70" level="2" type="0"/>
+<GoldCharge chageOut="20" id="80" level="1" type="0"/>
+<GoldCharge chageOut="1" id="11" level="8" type="1"/>
+<GoldCharge chageOut="2" id="21" level="7" type="1"/>
+<GoldCharge chageOut="3" id="31" level="6" type="1"/>
+<GoldCharge chageOut="4" id="41" level="5" type="1"/>
+<GoldCharge chageOut="5" id="51" level="4" type="1"/>
+<GoldCharge chageOut="6" id="61" level="3" type="1"/>
+<GoldCharge chageOut="7" id="71" level="2" type="1"/>
+<GoldCharge chageOut="8" id="81" level="1" type="1"/>
+</GoldCharges>

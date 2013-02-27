@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/8F_TEAM/!svn/ver/8080/CODE/Server/src/com/joymeng/game/net/request
+END
+BattleFieldRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/5474/CODE/Server/src/com/joymeng/game/net/request/BattleFieldRequest.java
+END
+RechargeRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/5222/CODE/Server/src/com/joymeng/game/net/request/RechargeRequest.java
+END
+EnterGameRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/8080/CODE/Server/src/com/joymeng/game/net/request/EnterGameRequest.java
+END
+RankRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/6182/CODE/Server/src/com/joymeng/game/net/request/RankRequest.java
+END
+FlagRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/5680/CODE/Server/src/com/joymeng/game/net/request/FlagRequest.java
+END
+SystemRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/1456/CODE/Server/src/com/joymeng/game/net/request/SystemRequest.java
+END
+ExitGameRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/4688/CODE/Server/src/com/joymeng/game/net/request/ExitGameRequest.java
+END
+EquipRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/2942/CODE/Server/src/com/joymeng/game/net/request/EquipRequest.java
+END
+GameListRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/5717/CODE/Server/src/com/joymeng/game/net/request/GameListRequest.java
+END
+BuildingRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/7970/CODE/Server/src/com/joymeng/game/net/request/BuildingRequest.java
+END
+ShopRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/2048/CODE/Server/src/com/joymeng/game/net/request/ShopRequest.java
+END
+HeroRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/4749/CODE/Server/src/com/joymeng/game/net/request/HeroRequest.java
+END
+PropsBoxRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/6477/CODE/Server/src/com/joymeng/game/net/request/PropsBoxRequest.java
+END
+HeartbeatRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/1481/CODE/Server/src/com/joymeng/game/net/request/HeartbeatRequest.java
+END
+SignRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/7878/CODE/Server/src/com/joymeng/game/net/request/SignRequest.java
+END
+ActiveRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/2942/CODE/Server/src/com/joymeng/game/net/request/ActiveRequest.java
+END
+ArenaRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/2889/CODE/Server/src/com/joymeng/game/net/request/ArenaRequest.java
+END
+NationRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/7926/CODE/Server/src/com/joymeng/game/net/request/NationRequest.java
+END
+MessageRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/1230/CODE/Server/src/com/joymeng/game/net/request/MessageRequest.java
+END
+BoxRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/3897/CODE/Server/src/com/joymeng/game/net/request/BoxRequest.java
+END
+UserRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/7494/CODE/Server/src/com/joymeng/game/net/request/UserRequest.java
+END
+RegionBattleRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/5322/CODE/Server/src/com/joymeng/game/net/request/RegionBattleRequest.java
+END
+MissionRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/3250/CODE/Server/src/com/joymeng/game/net/request/MissionRequest.java
+END
+FightRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/7930/CODE/Server/src/com/joymeng/game/net/request/FightRequest.java
+END
+CardRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/5112/CODE/Server/src/com/joymeng/game/net/request/CardRequest.java
+END
+SkillRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/1456/CODE/Server/src/com/joymeng/game/net/request/SkillRequest.java
+END
+UserQuestionRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/6600/CODE/Server/src/com/joymeng/game/net/request/UserQuestionRequest.java
+END
+BaseRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/7930/CODE/Server/src/com/joymeng/game/net/request/BaseRequest.java
+END
+ItemRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/2898/CODE/Server/src/com/joymeng/game/net/request/ItemRequest.java
+END
+ServerInnerRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/5717/CODE/Server/src/com/joymeng/game/net/request/ServerInnerRequest.java
+END
+ChatRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/1512/CODE/Server/src/com/joymeng/game/net/request/ChatRequest.java
+END
+FriendRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/5657/CODE/Server/src/com/joymeng/game/net/request/FriendRequest.java
+END

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<OriginalBuildings>
+<!--  |id:OriginalBuilding  |x:位置x  |y:位置y  |buildId:建筑物ID  |requireLevel:需求等级  |requireKingdom:需求国家  |initLevel:初始化等级-->
+<OriginalBuilding buildId="1000" id="1" initLevel="1" requireKingdom="0" requireLevel="0" x="67" y="19"/>
+<OriginalBuilding buildId="1010" id="2" initLevel="0" requireKingdom="0" requireLevel="0" x="52" y="10"/>
+<OriginalBuilding buildId="1011" id="3" initLevel="0" requireKingdom="0" requireLevel="0" x="30" y="21"/>
+<OriginalBuilding buildId="1012" id="4" initLevel="0" requireKingdom="0" requireLevel="0" x="42" y="15"/>
+<OriginalBuilding buildId="1007" id="5" initLevel="1" requireKingdom="0" requireLevel="0" x="51" y="31"/>
+<OriginalBuilding buildId="1009" id="6" initLevel="1" requireKingdom="0" requireLevel="2" x="71" y="41"/>
+<OriginalBuilding buildId="1008" id="7" initLevel="1" requireKingdom="0" requireLevel="3" x="61" y="36"/>
+<OriginalBuilding buildId="1014" id="8" initLevel="1" requireKingdom="0" requireLevel="4" x="77" y="33"/>
+<OriginalBuilding buildId="1059" id="24" initLevel="1" requireKingdom="0" requireLevel="8" x="41" y="26"/>
+<OriginalBuilding buildId="1023" id="9" initLevel="1" requireKingdom="0" requireLevel="2" x="14" y="32"/>
+<OriginalBuilding buildId="1023" id="10" initLevel="1" requireKingdom="0" requireLevel="3" x="23" y="36"/>
+<OriginalBuilding buildId="1023" id="11" initLevel="1" requireKingdom="0" requireLevel="3" x="32" y="40"/>
+<OriginalBuilding buildId="1023" id="12" initLevel="1" requireKingdom="0" requireLevel="5" x="41" y="44"/>
+<OriginalBuilding buildId="1023" id="13" initLevel="1" requireKingdom="0" requireLevel="6" x="50" y="48"/>
+<OriginalBuilding buildId="1023" id="14" initLevel="1" requireKingdom="0" requireLevel="8" x="5" y="42"/>
+<OriginalBuilding buildId="1023" id="15" initLevel="1" requireKingdom="0" requireLevel="10" x="14" y="46"/>
+<OriginalBuilding buildId="1023" id="16" initLevel="1" requireKingdom="0" requireLevel="11" x="23" y="50"/>
+<OriginalBuilding buildId="1023" id="17" initLevel="1" requireKingdom="0" requireLevel="12" x="32" y="53"/>
+<OriginalBuilding buildId="1023" id="18" initLevel="1" requireKingdom="0" requireLevel="13" x="41" y="56"/>
+<OriginalBuilding buildId="1019" id="22" initLevel="1" requireKingdom="0" requireLevel="5" x="4" y="15"/>
+<OriginalBuilding buildId="1013" id="23" initLevel="1" requireKingdom="0" requireLevel="3" x="91" y="29"/>
+</OriginalBuildings>

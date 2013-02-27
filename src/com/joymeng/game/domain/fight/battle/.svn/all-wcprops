@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/battle
+END
+FBRegion.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/8158/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBRegion.java
+END
+FBLadder.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/8158/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBLadder.java
+END
+FBTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/2771/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBTest.java
+END
+FBCamp.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/8158/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBCamp.java
+END
+FBGold.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBGold.java
+END
+FBArena.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBArena.java
+END
+FightBattleBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/8F_TEAM/!svn/ver/8158/CODE/Server/src/com/joymeng/game/domain/fight/battle/FightBattleBase.java
+END
+FBGuard.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBGuard.java
+END
+FBFlag.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/8158/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBFlag.java
+END
+FBNationCamp.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/8158/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBNationCamp.java
+END
+FBVeins.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBVeins.java
+END
+FightBattleFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/8F_TEAM/!svn/ver/7365/CODE/Server/src/com/joymeng/game/domain/fight/battle/FightBattleFactory.java
+END
+FBStrongHold.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/8158/CODE/Server/src/com/joymeng/game/domain/fight/battle/FBStrongHold.java
+END

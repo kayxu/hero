@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/8F_TEAM/!svn/ver/7930/CODE/Server/src/com/joymeng/core/base/net/response
+END
+AndroidMessageSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/8F_TEAM/!svn/ver/7930/CODE/Server/src/com/joymeng/core/base/net/response/AndroidMessageSender.java
+END
+ClientModuleBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/8F_TEAM/!svn/ver/6496/CODE/Server/src/com/joymeng/core/base/net/response/ClientModuleBase.java
+END
+RespModuleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/6219/CODE/Server/src/com/joymeng/core/base/net/response/RespModuleSet.java
+END
+EchoResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/826/CODE/Server/src/com/joymeng/core/base/net/response/EchoResp.java
+END

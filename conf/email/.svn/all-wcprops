@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/8F_TEAM/!svn/ver/7034/CODE/Server/conf/email
+END
+mailTemplate.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/8F_TEAM/!svn/ver/7034/CODE/Server/conf/email/mailTemplate.ftl
+END
+applicationContext-email.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/8F_TEAM/!svn/ver/7034/CODE/Server/conf/email/applicationContext-email.xml
+END
+mailAttachment.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/8F_TEAM/!svn/ver/7034/CODE/Server/conf/email/mailAttachment.txt
+END

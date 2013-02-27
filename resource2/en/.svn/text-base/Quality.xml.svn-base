@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Qualitys>
+<!--  |id:Quality  |qualityValue:系数  |qualityName:名称  |qualityColor:颜色-->
+<Quality id="1" qualityColor="白色" qualityName="白装" qualityValue="1"/>
+<Quality id="2" qualityColor="绿色" qualityName="绿装" qualityValue="2"/>
+<Quality id="3" qualityColor="蓝色" qualityName="蓝装" qualityValue="3"/>
+<Quality id="4" qualityColor="紫色" qualityName="紫装" qualityValue="4"/>
+<Quality id="5" qualityColor="橙色" qualityName="橙装" qualityValue="5"/>
+</Qualitys>

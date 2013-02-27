@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HeroDatas>
+  <!--id:HeroData,nameType:姓名
+1：随机男
+2：随机女
+3：名将,sex:性别
+0：男
+1：女,icon:头像,levelId:品级,memo:说明,money:招募价格,bornSkill:天生技能,minLevel:酒馆等级下限,maxLevel:酒馆等级上限,groupId:酒馆武将组,:,:,:,-->
+  <HeroData id="1" nameType="1" sex="0" icon="male1.png" levelId="1" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="7" groupId="1"/>
+  <HeroData id="2" nameType="1" sex="0" icon="male2.png" levelId="2" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="14" groupId="1"/>
+  <HeroData id="3" nameType="1" sex="0" icon="male3.png" levelId="3" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="20" groupId="1"/>
+  <HeroData id="4" nameType="1" sex="0" icon="male4.png" levelId="4" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="5" nameType="1" sex="0" icon="male5.png" levelId="5" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="6" nameType="1" sex="0" icon="male3.png" levelId="6" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="7" nameType="2" sex="1" icon="female1.png" levelId="7" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="8" nameType="1" sex="0" icon="male1.png" levelId="8" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="9" nameType="1" sex="0" icon="male2.png" levelId="9" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="10" nameType="1" sex="0" icon="male3.png" levelId="10" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="7" groupId="2"/>
+  <HeroData id="11" nameType="1" sex="0" icon="male4.png" levelId="11" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="14" groupId="2"/>
+  <HeroData id="12" nameType="1" sex="0" icon="male5.png" levelId="12" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="20" groupId="2"/>
+  <HeroData id="13" nameType="2" sex="1" icon="female2.png" levelId="13" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="14" nameType="1" sex="0" icon="male1.png" levelId="14" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="15" nameType="1" sex="0" icon="male2.png" levelId="15" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="16" nameType="1" sex="0" icon="male3.png" levelId="16" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="17" nameType="2" sex="1" icon="female3.png" levelId="17" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="18" nameType="1" sex="0" icon="male1.png" levelId="18" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="19" nameType="1" sex="0" icon="male2.png" levelId="19" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="12" groupId="3"/>
+  <HeroData id="20" nameType="1" sex="0" icon="male3.png" levelId="20" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="19" groupId="3"/>
+  <HeroData id="21" nameType="1" sex="0" icon="male4.png" levelId="21" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="24" groupId="3"/>
+  <HeroData id="22" nameType="1" sex="0" icon="male5.png" levelId="22" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="23" nameType="1" sex="0" icon="male2.png" levelId="23" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="24" nameType="1" sex="0" icon="male3.png" levelId="24" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="25" nameType="2" sex="1" icon="female1.png" levelId="25" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="26" nameType="2" sex="1" icon="female2.png" levelId="26" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="27" nameType="1" sex="0" icon="male1.png" levelId="27" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="28" nameType="1" sex="0" icon="male2.png" levelId="28" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="8" groupId="4"/>
+  <HeroData id="29" nameType="1" sex="0" icon="male3.png" levelId="29" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="20" groupId="4"/>
+  <HeroData id="30" nameType="1" sex="0" icon="male4.png" levelId="30" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="24" groupId="4"/>
+  <HeroData id="31" nameType="1" sex="0" icon="male5.png" levelId="31" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="32" nameType="2" sex="1" icon="female3.png" levelId="32" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="33" nameType="1" sex="0" icon="male1.png" levelId="33" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="34" nameType="1" sex="0" icon="male2.png" levelId="34" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="35" nameType="1" sex="0" icon="male3.png" levelId="35" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="36" nameType="1" sex="0" icon="male4.png" levelId="36" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="37" nameType="2" sex="1" icon="female1.png" levelId="37" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="12" groupId="5"/>
+  <HeroData id="38" nameType="1" sex="0" icon="male1.png" levelId="38" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="14" groupId="5"/>
+  <HeroData id="39" nameType="1" sex="0" icon="male2.png" levelId="39" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="16" groupId="5"/>
+  <HeroData id="40" nameType="1" sex="0" icon="male3.png" levelId="40" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="18" groupId="5"/>
+  <HeroData id="41" nameType="2" sex="1" icon="female2.png" levelId="41" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="18" groupId="5"/>
+  <HeroData id="42" nameType="1" sex="0" icon="male4.png" levelId="42" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="18" groupId="5"/>
+  <HeroData id="43" nameType="1" sex="0" icon="male5.png" levelId="43" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="20" groupId="5"/>
+  <HeroData id="44" nameType="1" sex="0" icon="male1.png" levelId="44" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="20" groupId="5"/>
+  <HeroData id="45" nameType="2" sex="1" icon="female3.png" levelId="45" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="20" groupId="5"/>
+  <HeroData id="46" nameType="1" sex="0" icon="male2.png" levelId="46" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="22" groupId="5"/>
+  <HeroData id="47" nameType="1" sex="0" icon="male3.png" levelId="47" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="24" groupId="5"/>
+  <HeroData id="48" nameType="1" sex="0" icon="male4.png" levelId="48" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="26" groupId="5"/>
+  <HeroData id="49" nameType="1" sex="0" icon="male5.png" levelId="49" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="28" groupId="5"/>
+  <HeroData id="50" nameType="2" sex="1" icon="female1.png" levelId="50" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="28" groupId="5"/>
+  <HeroData id="51" nameType="1" sex="0" icon="male1.png" levelId="51" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="28" groupId="5"/>
+  <HeroData id="52" nameType="1" sex="0" icon="male2.png" levelId="52" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="53" nameType="1" sex="0" icon="male3.png" levelId="53" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="54" nameType="2" sex="1" icon="female2.png" levelId="54" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="55" nameType="1" sex="0" icon="male4.png" levelId="55" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="56" nameType="1" sex="0" icon="male5.png" levelId="56" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="57" nameType="2" sex="1" icon="female3.png" levelId="57" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="58" nameType="201" sex="0" icon="Arthur.png" levelId="57" memo="Arthur is wise and kindhearted, and he seems to be more popular than his brother, the King of GRIFFIN Empire. What's more, he had drawn Excalibur!" money="32000" bornSkill="1912" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="59" nameType="202" sex="0" icon="thor.png" levelId="56" memo="Merlin has the most powerful magic gift in Continent Myrasith. There was someone having seen that he killed the giant ape very easily with thunder magic." money="32000" bornSkill="1012" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="60" nameType="203" sex="1" icon="Sylva.png" levelId="55" memo="People said that if you hear Sylva you must have been stabbed to death by her." money="32000" bornSkill="2011" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="61" nameType="204" sex="0" icon="Jack.png" levelId="49" memo="Kunka seems to be more interested in the secret of the Great Sea than looking for his missing parents. And now he keeps in close contact with Naga." money="32000" bornSkill="1512" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="62" nameType="205" sex="0" icon="Leo.png" levelId="49" memo="Leo holds the best air forces of GRIFFIN Empire. And just as he said, there is no enemy that can beat GRIFFIN Empire in the sky." money="32000" bornSkill="1212" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="63" nameType="206" sex="1" icon="Galadriel.png" levelId="46" memo="Galadriel was born to be close with plants. She was skilled in using brambles and vines as weapons." money="32000" bornSkill="1412" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="64" nameType="207" sex="0" icon="Lancelot.png" levelId="53" memo="The title -- “The Protector of Empire” is the best compliment of Lancelot's loyalty and talent. He is the leader of the Royal Guards and close to Arthur just like brothers." money="32000" bornSkill="2111" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="65" nameType="208" sex="0" icon="Lamorak.png" levelId="51" memo="Lamorak is not as loyal as his elder brother, Lancelot. He is ambitious, even malicious and insidious. Someone tells that he is getting in touch with the Undead." money="32000" bornSkill="2411" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="66" nameType="209" sex="0" icon="Draugluin.png" levelId="51" memo="Draugluin was unable to keep calm. The darkness is burning inside him and he is just wanting to kill. Rumour has come true!" money="32000" bornSkill="2211" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="67" nameType="210" sex="0" icon="Galahad.png" levelId="49" memo="Galahad is well informed, brave to fight, and very pious. He is a knight and lives with honour." money="32000" bornSkill="2311" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="68" nameType="211" sex="0" icon="Marth.png" levelId="42" memo="Marth is an oracle and knows everything about Continent Myrasith. He says the saddest thing in life is knowing you will lose something, but it has not happened yet." money="32000" bornSkill="1411" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="69" nameType="212" sex="1" icon="Daenerys.png" levelId="39" memo="Daenerys is the most beautiful girl in the world. She is just like Helen in Battle for Troy. Everyone wants her no matter what it will cost." money="32000" bornSkill="1112" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="70" nameType="213" sex="0" icon="Stark.png" levelId="51" memo="Stark is the leader of Riders in GRIFFIN Empire. He had said, “I will kill all the enemies.” Now he makes it come true." money="32000" bornSkill="1511" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="71" nameType="214" sex="1" icon="Medusa.png" levelId="49" memo="Medusa is the princess of Waves in the Great Sea. She has the most attractive eyes in the world. But, all of the people who had seen her eyes have become stones." money="32000" bornSkill="4611" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="72" nameType="215" sex="0" icon="Veigas.png" levelId="50" memo="Veigas had seen his parents were killed by the Dark Knights with his own eyes when he was a child. So he swore to kill all of them!" money="32000" bornSkill="1811" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="73" nameType="216" sex="0" icon="Zanka.png" levelId="48" memo="Zanka was killed by the monster he himself summoned out. But now he is revived by Lord Draculas and becomes a very important one of the Undead Knights." money="32000" bornSkill="4511" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="74" nameType="217" sex="0" icon="Akilles.png" levelId="52" memo="Akilles has strong power and tough body. He loves wrestling and lives with it." money="32000" bornSkill="1011" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="75" nameType="218" sex="0" icon="Draculas.png" levelId="57" memo="Vampires like Draculas haven't been on Continent Myrasith for a long time. But Vgrash revives, so the world is changing now." money="32000" bornSkill="1612" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="76" nameType="219" sex="0" icon="Karl.png" levelId="54" memo="Karl is one of the six guardian angels of SERAPH Empire. He has the strongest body. Now he is worried about the civil strife in GRIFFIN Empire." money="32000" bornSkill="1911" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="77" nameType="220" sex="0" icon="Erwin.png" levelId="38" memo="Erwin is only interested in buildings. He dreamt of moving buildings. So he devoted himself to the study of merging magic into building." money="32000" bornSkill="1712" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="78" nameType="221" sex="0" icon="Nasus.png" levelId="54" memo="Nasus is powerful. He can bury anything even the sun just with his sandstorms!" money="32000" bornSkill="1711" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="79" nameType="222" sex="0" icon="Zhaoyu.png" levelId="52" memo="He is a warrior coming from the east. You may not feel his strength at the very beginning, but you will know how powerful he is at last." money="32000" bornSkill="1311" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="80" nameType="223" sex="1" icon="Rayne.png" levelId="50" memo="All men lusted Rayne. But they have just got nothing at last. Because Rayne is too confident and arrogant. No one can get her." money="32000" bornSkill="4811" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="81" nameType="224" sex="0" icon="Caesar.png" levelId="47" memo="Caesar tried to instigate Francis Ⅲ to fight against Arthur Empire. But his conspiracy was brought to light. And became a follower of Draculas." money="32000" bornSkill="1111" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="82" nameType="225" sex="0" icon="Saladin.png" levelId="53" memo="Saladin enchanted “Sword of Justice” with his persistence, so that this sword can split everything even the hardest diamond." money="32000" bornSkill="4710" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="83" nameType="226" sex="0" icon="Rolan.png" levelId="51" memo="Rolan is a member of the Undead Knights now. The earth was shaking when Draculas revived him." money="32000" bornSkill="4911" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="84" nameType="227" sex="0" icon="Prometheus.png" levelId="49" memo="Prometheus has a natural gift of fire magic. Someone thinks that he is a descendant of Fire God." money="32000" bornSkill="1611" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="85" nameType="228" sex="0" icon="Apo.png" levelId="46" memo="People say that Apo is from an antiquated and mysterious country on the east side of the Great Sea, which is covered by mist for thousands years." money="32000" bornSkill="2010" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="86" nameType="229" sex="0" icon="Piero.png" levelId="51" memo="Piero has been indefatigably looking for the stories about the war between Alreth and Vgrash on Continent Myrasith." money="32000" bornSkill="1110" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="87" nameType="230" sex="0" icon="Alex.png" levelId="49" memo="Alex is cruel to the Dark Knights not only because they are invaders but also because he had seen his parents were killed by the Dark Knights." money="32000" bornSkill="4810" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="88" nameType="231" sex="0" icon="Hinds.png" levelId="47" memo="Hinds avenged the death of his father by killing his love's father. He just lost his love and father at the same time." money="32000" bornSkill="2410" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="89" nameType="232" sex="0" icon="Yurys.png" levelId="46" memo="The most important thing in Yurys' life is the finding of Tarell Ruins, which is said to be the weapon against monsters given by God Alreth." money="32000" bornSkill="1010" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="90" nameType="233" sex="1" icon="Jeanned.png" levelId="53" memo="Jeanned didn't know how to take advantage of her gift of water magic. But now she can easily handle water under guidance of Merlin." money="32000" bornSkill="4711" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="91" nameType="234" sex="0" icon="Moses.png" levelId="51" memo="Mose dreamt Alreth said to him that he had to help humans to restore the order because that's his duty and honor." money="32000" bornSkill="1310" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="92" nameType="235" sex="0" icon="meilin.png" levelId="51" memo="God was happy that Noah requested to go to Human World, so God gave Noah the staff of God, which means that Noah is the envoy of God in Human World." money="32000" bornSkill="1510" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="93" nameType="236" sex="1" icon="Morgana.png" levelId="49" memo="Different from the people in SERAPH Empire, Morgana is more addicted to dark magic. She gets forbidden power from dark magic." money="32000" bornSkill="1910" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="94" nameType="237" sex="0" icon="Don.png" levelId="53" memo="Now, Don is a centaur. He declared war against the evil!" money="32000" bornSkill="4910" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="95" nameType="238" sex="0" icon="Barbarian.png" levelId="49" memo="Barbarian is prideful. He has bright and powerful soul. And he could be a trustworthy companion and guardian." money="32000" bornSkill="2110" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="96" nameType="239" sex="0" icon="Spartacus.png" levelId="50" memo="Spartacus doesn't want to be slave any more. Now he is leading the people who pursues freedom to fight against the Undead Knights." money="32000" bornSkill="1610" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="97" nameType="240" sex="0" icon="Arugal.png" levelId="48" memo="He is a werewolf. Werewolves can only see blood and killing." money="32000" bornSkill="1410" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="98" nameType="241" sex="0" icon="Sauron.png" levelId="50" memo="Sauron is the strongest undead knight under Draculas' control. He doesn't have his body. He is just clouds of poison gas." money="32000" bornSkill="1211" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="99" nameType="242" sex="0" icon="Thrall.png" levelId="50" memo="Thrall reforged the Divine Rapier--Nasir. And he was honoured with the title of the chief weapon adviser of GRIFFIN Empire." money="32000" bornSkill="1710" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="100" nameType="243" sex="0" icon="Richard.png" levelId="55" memo="Everyone knows that Richard have torn out the heart of that lion, you can see he wears a necklace of lionteeth." money="32000" bornSkill="4610" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="101" nameType="244" sex="0" icon="poseidon.png" levelId="55" memo="Poseidon has a natural gift of water magic. But it is said that he sold himself out to Lord of the Undead Knights." money="32000" bornSkill="1210" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="102" nameType="245" sex="0" icon="Edward.png" levelId="45" memo="You will know why people call Edward the Dark Prince when you become his slave." money="32000" bornSkill="2310" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="103" nameType="246" sex="1" icon="Ariya.png" levelId="44" memo="Ariya, the guardian of justice and light of Continent Myrasith, hates all dark and evil. She says she will skill all evils here." money="32000" bornSkill="1812" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="104" nameType="247" sex="0" icon="Rikimaru.png" levelId="51" memo="Rikimaru gets the legendary sword-Wind from his teacher. The sword make him move so fast just like wind." money="32000" bornSkill="2210" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="105" nameType="248" sex="0" icon="Yilong.png" levelId="45" memo="He came Continent Myrasith to find the peace of his heart." money="32000" bornSkill="1312" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="106" nameType="249" sex="1" icon="Medea.png" levelId="49" memo="Medea was betrayed by her husband. So she likes tormenting those who betrayed their wives." money="32000" bornSkill="4510" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="107" nameType="250" sex="1" icon="Mary.png" levelId="56" memo="Mary has very beautiful black hair; her bright eyes just like two shinning diamonds. She likes wearing firey red dress; she is so hot! Just like a fire!" money="32000" bornSkill="1810" minLevel="15" maxLevel="30" groupId="6"/>
+</HeroDatas>

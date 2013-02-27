@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CardAwardRates>
+	<CardAwardRate showCardsNum="1" lowerLimit="1" highLimit="10" goldNum="100" rate1="20" honor="5" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="38" goodsB="47" rate5="1" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="2" lowerLimit="1" highLimit="10" goldNum="100" rate1="20" honor="5" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="36" goodsB="47" rate5="3" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="3" lowerLimit="1" highLimit="10" goldNum="100" rate1="20" honor="5" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="34" goodsB="47" rate5="5" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="4" lowerLimit="1" highLimit="10" goldNum="100" rate1="20" honor="5" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="32" goodsB="47" rate5="7" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="5" lowerLimit="1" highLimit="10" goldNum="100" rate1="20" honor="5" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="30" goodsB="47" rate5="9" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="6" lowerLimit="1" highLimit="10" goldNum="100" rate1="20" honor="5" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="28" goodsB="47" rate5="11" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="7" lowerLimit="1" highLimit="10" goldNum="100" rate1="20" honor="5" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="26" goodsB="47" rate5="13" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="8" lowerLimit="1" highLimit="10" goldNum="100" rate1="20" honor="5" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="19" goodsB="47" rate5="15" goodsA="48" rate6="6"/>
+	<CardAwardRate showCardsNum="9" lowerLimit="1" highLimit="10" goldNum="100" rate1="20" honor="5" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="11" goodsB="47" rate5="17" goodsA="48" rate6="12"/>
+	<CardAwardRate showCardsNum="1" lowerLimit="11" highLimit="20" goldNum="500" rate1="20" honor="10" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="38" goodsB="47" rate5="1" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="2" lowerLimit="11" highLimit="20" goldNum="500" rate1="20" honor="10" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="36" goodsB="47" rate5="3" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="3" lowerLimit="11" highLimit="20" goldNum="500" rate1="20" honor="10" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="34" goodsB="47" rate5="5" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="4" lowerLimit="11" highLimit="20" goldNum="500" rate1="20" honor="10" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="32" goodsB="47" rate5="7" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="5" lowerLimit="11" highLimit="20" goldNum="500" rate1="20" honor="10" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="30" goodsB="47" rate5="9" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="6" lowerLimit="11" highLimit="20" goldNum="500" rate1="20" honor="10" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="28" goodsB="47" rate5="11" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="7" lowerLimit="11" highLimit="20" goldNum="500" rate1="20" honor="10" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="26" goodsB="47" rate5="13" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="8" lowerLimit="11" highLimit="20" goldNum="500" rate1="20" honor="10" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="19" goodsB="47" rate5="15" goodsA="48" rate6="6"/>
+	<CardAwardRate showCardsNum="9" lowerLimit="11" highLimit="20" goldNum="500" rate1="20" honor="10" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="11" goodsB="47" rate5="17" goodsA="48" rate6="12"/>
+	<CardAwardRate showCardsNum="1" lowerLimit="21" highLimit="30" goldNum="1000" rate1="20" honor="20" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="38" goodsB="47" rate5="1" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="2" lowerLimit="21" highLimit="30" goldNum="1000" rate1="20" honor="20" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="36" goodsB="47" rate5="3" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="3" lowerLimit="21" highLimit="30" goldNum="1000" rate1="20" honor="20" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="34" goodsB="47" rate5="5" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="4" lowerLimit="21" highLimit="30" goldNum="1000" rate1="20" honor="20" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="32" goodsB="47" rate5="7" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="5" lowerLimit="21" highLimit="30" goldNum="1000" rate1="20" honor="20" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="30" goodsB="47" rate5="9" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="6" lowerLimit="21" highLimit="30" goldNum="1000" rate1="20" honor="20" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="28" goodsB="47" rate5="11" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="7" lowerLimit="21" highLimit="30" goldNum="1000" rate1="20" honor="20" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="26" goodsB="47" rate5="13" goodsA="48" rate6="1"/>
+	<CardAwardRate showCardsNum="8" lowerLimit="21" highLimit="30" goldNum="1000" rate1="20" honor="20" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="19" goodsB="47" rate5="15" goodsA="48" rate6="6"/>
+	<CardAwardRate showCardsNum="9" lowerLimit="21" highLimit="30" goldNum="1000" rate1="20" honor="20" rate2="20" turnTimes="1" rate3="20" goodsC="46" rate4="11" goodsB="47" rate5="17" goodsA="48" rate6="12"/>
+</CardAwardRates>

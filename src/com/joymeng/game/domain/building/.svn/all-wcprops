@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/building
+END
+BuildingUpGrade.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/1908/CODE/Server/src/com/joymeng/game/domain/building/BuildingUpGrade.java
+END
+PlayerMainCityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/8F_TEAM/!svn/ver/8155/CODE/Server/src/com/joymeng/game/domain/building/PlayerMainCityManager.java
+END
+TrainingSoldier.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/2942/CODE/Server/src/com/joymeng/game/domain/building/TrainingSoldier.java
+END
+BlackSmithyRefresh.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/8F_TEAM/!svn/ver/3963/CODE/Server/src/com/joymeng/game/domain/building/BlackSmithyRefresh.java
+END
+OriginalBuilding.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/building/OriginalBuilding.java
+END
+PlayerBarrackManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/8F_TEAM/!svn/ver/8155/CODE/Server/src/com/joymeng/game/domain/building/PlayerBarrackManager.java
+END
+HeroRefresh.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/3963/CODE/Server/src/com/joymeng/game/domain/building/HeroRefresh.java
+END
+PlayerSoldier.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/8F_TEAM/!svn/ver/2466/CODE/Server/src/com/joymeng/game/domain/building/PlayerSoldier.java
+END
+TrainingBits.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/building/TrainingBits.java
+END
+PlayerBlackSmithyManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/building/PlayerBlackSmithyManager.java
+END
+BuildingManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/7041/CODE/Server/src/com/joymeng/game/domain/building/BuildingManager.java
+END
+PlayerBuildingManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/building/PlayerBuildingManager.java
+END
+RefreshsBuildManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/8F_TEAM/!svn/ver/7049/CODE/Server/src/com/joymeng/game/domain/building/RefreshsBuildManager.java
+END
+Smithy.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/1143/CODE/Server/src/com/joymeng/game/domain/building/Smithy.java
+END
+PlayerAffiliatedManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/8F_TEAM/!svn/ver/8155/CODE/Server/src/com/joymeng/game/domain/building/PlayerAffiliatedManager.java
+END
+PlayerBuilding.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/building/PlayerBuilding.java
+END
+PlayerTavernManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/8F_TEAM/!svn/ver/8155/CODE/Server/src/com/joymeng/game/domain/building/PlayerTavernManager.java
+END
+Building.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/8155/CODE/Server/src/com/joymeng/game/domain/building/Building.java
+END
+PlayerTrainingManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/8F_TEAM/!svn/ver/7961/CODE/Server/src/com/joymeng/game/domain/building/PlayerTrainingManager.java
+END
+BaseTrainingBits.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/8F_TEAM/!svn/ver/1057/CODE/Server/src/com/joymeng/game/domain/building/BaseTrainingBits.java
+END

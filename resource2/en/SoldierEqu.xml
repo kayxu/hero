@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SoldierEqus>
+<!--  |id:SoldierEqu  |name:名称  |attack:攻击  |defense:防御  |soldier:作用对象  |icon:图标  |wood:需求木材  |iron:需求铁块  |fur:需求毛皮  |desc:描述-->
+<SoldierEqu attack="20" defense="0" desc="增加弓兵攻击力20%" fur="0" icon="gongjian_bingzhuang.png" id="1" iron="0" name="硬弓" soldier="1" wood="3"/>
+<SoldierEqu attack="0" defense="20" desc="增加步兵防御力20%" fur="0" icon="footman_bingzhuang.png" id="2" iron="3" name="重盾" soldier="3" wood="0"/>
+<SoldierEqu attack="10" defense="10" desc="增加骑兵攻击力和防御力10%" fur="3" icon="knight_bingzhuang.png" id="3" iron="0" name="铁骑" soldier="2" wood="0"/>
+<SoldierEqu attack="10" defense="10" desc="增加特种兵攻击力和防御力10%" fur="2" icon="tezhong_bingzhuang.png" id="4" iron="2" name="特种头盔" soldier="4" wood="2"/>
+<SoldierEqu attack="10" defense="10" desc="增加特种兵攻击力和防御力10%" fur="2" icon="tezhong_bingzhuang.png" id="5" iron="2" name="特种头盔" soldier="5" wood="2"/>
+<SoldierEqu attack="10" defense="10" desc="增加特种兵攻击力和防御力10%" fur="2" icon="tezhong_bingzhuang.png" id="6" iron="2" name="特种头盔" soldier="6" wood="2"/>
+</SoldierEqus>

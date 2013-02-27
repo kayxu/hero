@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/nation/war
+END
+MilitaryCamp.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/nation/war/MilitaryCamp.java
+END
+UserWarData.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/8F_TEAM/!svn/ver/8164/CODE/Server/src/com/joymeng/game/domain/nation/war/UserWarData.java
+END
+StrongHold.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/8164/CODE/Server/src/com/joymeng/game/domain/nation/war/StrongHold.java
+END
+StopWar.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/6613/CODE/Server/src/com/joymeng/game/domain/nation/war/StopWar.java
+END
+WarManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/nation/war/WarManager.java
+END
+ComparatorWar.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/8F_TEAM/!svn/ver/4000/CODE/Server/src/com/joymeng/game/domain/nation/war/ComparatorWar.java
+END
+WarThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8164/CODE/Server/src/com/joymeng/game/domain/nation/war/WarThread.java
+END

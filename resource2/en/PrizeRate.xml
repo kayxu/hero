@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<PrizeRates>
+<!--  |round:PrizeRate  |playerType:用户类型  |lv1Rate:lv1奖品  |lv2Rate:lv2奖品  |lv3Rate:lv3奖品  |lv4Rate:lv4奖品  |lv5Rate:lv5奖品  |lv6Rate:lv6奖品  |lv7Rate:lv7奖品  |lv8Rate:lv8奖品  |lv9Rate:lv9奖品  |lv10Rate:lv10奖品-->
+<PrizeRate lv10Rate="0" lv1Rate="80" lv2Rate="15" lv3Rate="5" lv4Rate="0" lv5Rate="0" lv6Rate="0" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="0"/>
+<PrizeRate lv10Rate="0" lv1Rate="60" lv2Rate="30" lv3Rate="10" lv4Rate="0" lv5Rate="0" lv6Rate="0" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="1"/>
+<PrizeRate lv10Rate="0" lv1Rate="40" lv2Rate="45" lv3Rate="15" lv4Rate="0" lv5Rate="0" lv6Rate="0" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="2"/>
+<PrizeRate lv10Rate="0" lv1Rate="20" lv2Rate="60" lv3Rate="20" lv4Rate="0" lv5Rate="0" lv6Rate="0" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="3"/>
+<PrizeRate lv10Rate="0" lv1Rate="1" lv2Rate="75" lv3Rate="24" lv4Rate="0" lv5Rate="0" lv6Rate="0" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="4"/>
+<PrizeRate lv10Rate="0" lv1Rate="1" lv2Rate="1" lv3Rate="80" lv4Rate="18" lv5Rate="0" lv6Rate="0" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="5"/>
+<PrizeRate lv10Rate="0" lv1Rate="1" lv2Rate="1" lv3Rate="70" lv4Rate="20" lv5Rate="8" lv6Rate="0" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="6"/>
+<PrizeRate lv10Rate="0" lv1Rate="1" lv2Rate="1" lv3Rate="60" lv4Rate="25" lv5Rate="13" lv6Rate="0" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="7"/>
+<PrizeRate lv10Rate="0" lv1Rate="1" lv2Rate="1" lv3Rate="30" lv4Rate="47" lv5Rate="18" lv6Rate="3" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="8"/>
+<PrizeRate lv10Rate="0" lv1Rate="1" lv2Rate="1" lv3Rate="10" lv4Rate="55" lv5Rate="28" lv6Rate="5" lv7Rate="0" lv8Rate="0" lv9Rate="0" playerType="6" round="9"/>
+<PrizeRate lv10Rate="0" lv1Rate="1" lv2Rate="1" lv3Rate="1" lv4Rate="35" lv5Rate="50" lv6Rate="9" lv7Rate="3" lv8Rate="0" lv9Rate="0" playerType="6" round="10"/>
+<PrizeRate lv10Rate="0" lv1Rate="1" lv2Rate="1" lv3Rate="1" lv4Rate="27" lv5Rate="50" lv6Rate="12" lv7Rate="6" lv8Rate="2" lv9Rate="0" playerType="6" round="11"/>
+</PrizeRates>

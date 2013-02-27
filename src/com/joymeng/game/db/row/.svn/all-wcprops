@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/8F_TEAM/!svn/ver/8157/CODE/Server/src/com/joymeng/game/db/row
+END
+PlayerHeroRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/8157/CODE/Server/src/com/joymeng/game/db/row/PlayerHeroRowMapper.java
+END
+RoleDataRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/8157/CODE/Server/src/com/joymeng/game/db/row/RoleDataRowMapper.java
+END
+AutoNameMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/AutoNameMapper.java
+END
+UserQuestionRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/UserQuestionRowMapper.java
+END
+PlayerCardsRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/PlayerCardsRowMapper.java
+END
+ServerRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/ServerRowMapper.java
+END
+PlayerBuildingRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/PlayerBuildingRowMapper.java
+END
+ArenaAwardRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/ArenaAwardRowMapper.java
+END
+RankHeroRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/RankHeroRowMapper.java
+END
+ArenaRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/ArenaRowMapper.java
+END
+UserAccountMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/UserAccountMapper.java
+END
+UsernameStatusRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/UsernameStatusRowMapper.java
+END
+PlayerRechargeRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/db/row/PlayerRechargeRowMapper.java
+END
+FightEventRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/db/row/FightEventRowMapper.java
+END

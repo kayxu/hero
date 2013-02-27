@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/job
+END
+ActivityCountyWar.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/8172/CODE/Server/src/com/joymeng/game/job/ActivityCountyWar.java
+END
+ActivityCityWar.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/8F_TEAM/!svn/ver/8202/CODE/Server/src/com/joymeng/game/job/ActivityCityWar.java
+END
+DoWhenEndOfDayJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/job/DoWhenEndOfDayJob.java
+END
+MilitaryGold.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/7630/CODE/Server/src/com/joymeng/game/job/MilitaryGold.java
+END
+RemovalGold.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/8F_TEAM/!svn/ver/7748/CODE/Server/src/com/joymeng/game/job/RemovalGold.java
+END
+SystemMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/8F_TEAM/!svn/ver/4422/CODE/Server/src/com/joymeng/game/job/SystemMonitor.java
+END
+ServerInnerJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/8F_TEAM/!svn/ver/8172/CODE/Server/src/com/joymeng/game/job/ServerInnerJob.java
+END
+ArenaRewardJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/job/ArenaRewardJob.java
+END
+ActivityStateWar.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/8203/CODE/Server/src/com/joymeng/game/job/ActivityStateWar.java
+END
+ClearFightEventJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/job/ClearFightEventJob.java
+END
+ShoutJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/8F_TEAM/!svn/ver/8172/CODE/Server/src/com/joymeng/game/job/ShoutJob.java
+END
+LoadRankDataJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/8F_TEAM/!svn/ver/2508/CODE/Server/src/com/joymeng/game/job/LoadRankDataJob.java
+END
+GoodsUpdateJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/job/GoodsUpdateJob.java
+END
+ActivityTestJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/8F_TEAM/!svn/ver/2942/CODE/Server/src/com/joymeng/game/job/ActivityTestJob.java
+END
+CountOnlinePlayerNumJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/job/CountOnlinePlayerNumJob.java
+END
+DoPerWeekJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/8172/CODE/Server/src/com/joymeng/game/job/DoPerWeekJob.java
+END
+ActivityNationWar.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/8203/CODE/Server/src/com/joymeng/game/job/ActivityNationWar.java
+END
+ClearCardInfoJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/5673/CODE/Server/src/com/joymeng/game/job/ClearCardInfoJob.java
+END

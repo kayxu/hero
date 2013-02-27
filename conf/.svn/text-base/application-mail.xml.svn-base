@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+    <!-- 注意:这里的参数(如用户名、密码)都是针对邮件发送者的 -->
+    <bean id="mailSender"
+  class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host">
+            <value>10.80.1.23</value>
+        </property>
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.timeout">25000</prop>
+            </props>
+        </property>
+        <property name="username">
+            <value>hero</value>
+        </property>
+        <property name="password">
+            <value>abc,123</value>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RefreshRates>
+<!--  |round:RefreshRate  |lv1Rate:lv1几率  |lv2Rate:lv2几率  |lv3Rate:lv3几率  |lv4Rate:lv4几率  |lv5Rate:lv5几率  |lv6Rate:lv6几率  |lv7Rate:lv7几率  |lv8Rate:lv8几率  |lv9Rate:lv9几率  |lv10Rate:lv10几率-->
+<RefreshRate lv10Rate="0" lv1Rate="2000" lv2Rate="2500" lv3Rate="2500" lv4Rate="1740" lv5Rate="1018" lv6Rate="180" lv7Rate="60" lv8Rate="2" lv9Rate="0" round="1"/>
+<RefreshRate lv10Rate="0" lv1Rate="1000" lv2Rate="2000" lv3Rate="2200" lv4Rate="3040" lv5Rate="1516" lv6Rate="180" lv7Rate="60" lv8Rate="4" lv9Rate="0" round="2"/>
+<RefreshRate lv10Rate="0" lv1Rate="0" lv2Rate="1500" lv3Rate="1900" lv4Rate="4340" lv5Rate="2014" lv6Rate="180" lv7Rate="60" lv8Rate="6" lv9Rate="0" round="3"/>
+<RefreshRate lv10Rate="0" lv1Rate="0" lv2Rate="1000" lv3Rate="1600" lv4Rate="4640" lv5Rate="2512" lv6Rate="180" lv7Rate="60" lv8Rate="8" lv9Rate="0" round="4"/>
+<RefreshRate lv10Rate="0" lv1Rate="0" lv2Rate="500" lv3Rate="1300" lv4Rate="4940" lv5Rate="3010" lv6Rate="180" lv7Rate="60" lv8Rate="10" lv9Rate="0" round="5"/>
+<RefreshRate lv10Rate="0" lv1Rate="0" lv2Rate="0" lv3Rate="1000" lv4Rate="5240" lv5Rate="3508" lv6Rate="180" lv7Rate="60" lv8Rate="12" lv9Rate="0" round="6"/>
+<RefreshRate lv10Rate="0" lv1Rate="0" lv2Rate="0" lv3Rate="700" lv4Rate="5040" lv5Rate="4006" lv6Rate="180" lv7Rate="60" lv8Rate="14" lv9Rate="0" round="7"/>
+<RefreshRate lv10Rate="0" lv1Rate="0" lv2Rate="0" lv3Rate="400" lv4Rate="4580" lv5Rate="4524" lv6Rate="360" lv7Rate="120" lv8Rate="16" lv9Rate="0" round="8"/>
+<RefreshRate lv10Rate="0" lv1Rate="0" lv2Rate="0" lv3Rate="100" lv4Rate="4120" lv5Rate="5560" lv6Rate="540" lv7Rate="180" lv8Rate="18" lv9Rate="0" round="9"/>
+<RefreshRate lv10Rate="0" lv1Rate="0" lv2Rate="0" lv3Rate="0" lv4Rate="3460" lv5Rate="5560" lv6Rate="720" lv7Rate="240" lv8Rate="20" lv9Rate="0" round="10"/>
+<RefreshRate lv10Rate="0" lv1Rate="0" lv2Rate="0" lv3Rate="0" lv4Rate="2700" lv5Rate="6078" lv6Rate="900" lv7Rate="300" lv8Rate="22" lv9Rate="0" round="11"/>
+</RefreshRates>

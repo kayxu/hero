@@ -1,0 +1,291 @@
+package com.joymeng.game.domain.building;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.joymeng.game.common.GameConst;
+import com.joymeng.game.domain.train.TrainExpManager;
+import com.joymeng.game.domain.train.TrainSkillManager;
+import com.joymeng.game.domain.world.GameDataManager;
+
+
+
+/**
+ * 建筑基类
+ * @author xufangliang
+ *
+ */
+public class BuildingManager {
+	static final Logger logger = LoggerFactory.getLogger(BuildingManager.class);
+
+	private static BuildingManager instance;
+	
+	private BuildingManager(){}
+	
+	public static BuildingManager getInstance(){
+		if(instance == null ){
+			instance =  new BuildingManager();
+		}
+		return instance;
+	}
+	
+	// -->>>>>>>>>>>>>>>>系统建筑相关系数<<<<<<<<<<<<<<<--
+	public HashMap<Integer,Building> buildDatas = new HashMap<Integer,Building>();
+	// -->>>>>>>>>>>>>>>>>系统建筑收益/操作条件表 <<<<<<<<<<<<<<<<<--
+	public HashMap<Integer,BuildingUpGrade> buildOpeDatas= new HashMap<Integer,BuildingUpGrade>();
+	// -->>>>>>>>>>>>>>>>>建筑地图固化数据 <<<<<<<<<<<<<<<<<--
+	public HashMap<Integer,OriginalBuilding> buildMapDatas= new HashMap<Integer,OriginalBuilding>();
+	//士兵训练
+	public HashMap<Integer,TrainingSoldier> soldierDatas= new HashMap<Integer,TrainingSoldier>();
+	
+	public HashMap<Integer,BaseTrainingBits> baseTrainDatas= new HashMap<Integer,BaseTrainingBits>();
+	public HashMap<Integer,TrainingBits> trainDatas= new HashMap<Integer,TrainingBits>();
+	
+	public HashMap<Integer,Smithy> smithyDatas= new HashMap<Integer,Smithy>();
+	public HashMap<Integer,SoldierUpGrade> soldierUpGradeDatas= new HashMap<Integer,SoldierUpGrade>();
+	public void load(String path) throws Exception{
+		logger.info("-->>>>>>>>>>>>>>>>>>>加载建筑固化数据<<<<<<<<<<<<<<<<<<<<<<");
+		loadBuilding(path);
+		loadBuildingLevel(path);
+		loadMap(path);
+		loadTrain(path);
+		loadSoldierTrain(path);
+		totrainingBits();
+		loadSmithy(path);
+		loadSoldierUpGrade(path);
+		logger.info("-->>>>>>>>>>>>>>>>>>>加载建筑固化数据成功<<<<<<<<<<<<<<<<<<<<<<");
+	}
+	
+	
+	/**
+	 * 建筑固化数据 LIST
+	 * @return
+	 */
+	public List<Building> getBuildItem(){
+		if(buildDatas == null || buildDatas.size() == 0){
+			return null;
+		}
+		List<Building> lst = new ArrayList<Building>();
+		for(int i : buildDatas.keySet()){
+			lst.add(buildDatas.get(i));
+		}
+		return lst;
+	}
+	
+	/**
+	 * 铁匠铺刷出几率
+	 * @param path
+	 * @throws Exception
+	 */
+	public void loadSmithy(String path) throws Exception{
+		List<Object> list = GameDataManager.loadData(path, Smithy.class);
+		for (Object o : list){
+			Smithy b = (Smithy) o;
+			smithyDatas.put(b.getSmithyLevel(), b);
+		}
+	} 
+	
+	/**
+	 * 升级士兵等级
+	 * @param path
+	 * @throws Exception
+	 */
+	public void loadSoldierUpGrade(String path) throws Exception{
+		List<Object> list = GameDataManager.loadData(path, SoldierUpGrade.class);
+		for (Object o : list){
+			SoldierUpGrade b = (SoldierUpGrade) o;
+			soldierUpGradeDatas.put(b.getId(), b);
+		}
+		System.out.println(">>>>>>>>>>升级士兵等级="+soldierUpGradeDatas.size());
+	} 
+	
+	public void loadTrain(String path) throws Exception{
+		List<Object> list = GameDataManager.loadData(path, BaseTrainingBits.class);
+		for (Object o : list){
+			BaseTrainingBits b = (BaseTrainingBits) o;
+			baseTrainDatas.put(b.getTrainingNO(), b);
+		}
+	} 
+	
+	public void loadSoldierTrain(String path) throws Exception{
+		List<Object> list = GameDataManager.loadData(path, TrainingSoldier.class);
+		for (Object o : list){
+			TrainingSoldier b = (TrainingSoldier) o;
+			soldierDatas.put(b.getId(), b);
+		}
+	} 
+	
+	public void loadBuilding(String path) throws Exception{
+		List<Object> list = GameDataManager.loadData(path, Building.class);
+		for (Object o : list){
+			Building b = (Building) o;
+			buildDatas.put(b.getId(), b);
+		}
+	} 
+	
+	public void loadBuildingLevel(String path) throws Exception{
+		List<Object> list = GameDataManager.loadData(path, BuildingUpGrade.class);
+		for (Object o : list){
+			BuildingUpGrade b = (BuildingUpGrade) o;
+			buildOpeDatas.put(b.getId(), b);
+		}
+	} 
+	
+	public void loadMap(String path) throws Exception{
+		List<Object> list = GameDataManager.loadData(path, OriginalBuilding.class);
+		for (Object o : list){
+			OriginalBuilding b = (OriginalBuilding) o;
+			buildMapDatas.put(b.getId(), b);
+		}
+	} 
+	
+	/**
+	 * 根据id获取训练类型
+	 * @param no
+	 * @return
+	 */
+	public TrainingSoldier getSoldierTrain(short bulidLevel,short type){
+		if(type == 2)
+			return soldierDatas.get(1);//特种兵
+		else{
+			for(TrainingSoldier ts : soldierDatas.values()){
+				if(ts.getSoldierType() == type && bulidLevel >= ts.getMinLevel() && bulidLevel <= ts.getMaxLevel()){
+					return ts;
+				}
+			}
+		}
+		return null;
+	}
+	
+	/**
+	 * 根据id获取训练位
+	 * @param no
+	 * @return
+	 */
+	public TrainingBits getTrain(int no){
+		return trainDatas == null || trainDatas.size()== 0 ? null : trainDatas.get(no);
+	}
+	/**
+	 * 根据ID获取building
+	 * @param id
+	 * @return
+	 */
+	public Building getBuilding(int buildingId){
+		return buildDatas == null || buildDatas.size()== 0 ? null : buildDatas.get(buildingId);
+	}
+	
+	
+	/**
+	 * 根据ID获取building
+	 * @param id
+	 * @return
+	 */
+	public OriginalBuilding getOriginalBuilding(int obId){
+		return buildMapDatas == null || buildMapDatas.size()== 0 ? null : buildMapDatas.get(obId);
+	}
+
+	
+	/**
+	 * 获取建筑价格
+	 * @param buildingId
+	 * @param type 价格类型
+	 * @return
+	 */
+	public int getPrice(int buildingId,String type){
+		if(buildDatas == null || buildDatas.size()==0)
+			return 0;
+		if(type.equalsIgnoreCase("honerPrice")){
+			return getBuilding(buildingId).getPrice();
+		}else{
+			return getBuilding(buildingId).getHonerPrice();
+		}
+		
+	}
+	/**
+	 * 获取建筑升级固化表
+	 * @param id
+	 * @param level
+	 * @return
+	 */
+	public BuildingUpGrade getBuindingLevel(int buildId ,short level){
+		if(buildOpeDatas == null || buildOpeDatas.size() == 0){
+			return null;
+		}
+		int id = buildId * 100 + level;
+		return buildOpeDatas.get(id);
+//		for(Integer i : buildOpeDatas.keySet()){
+//			if(buildOpeDatas.get(i).getBuildId() == buildId && buildOpeDatas.get(i).getLevel()== level){
+//				return buildOpeDatas.get(i);
+//			}
+//		}
+	}
+	
+	/**
+	 * 返回 等级 空地 坐标ID 集合
+	 * @param level
+	 * @return
+	 */
+	public boolean isOpen(Short level,int bId){
+		if(buildMapDatas == null || buildMapDatas.size() == 0){
+			return false;
+		}
+		for(OriginalBuilding map : buildMapDatas.values()){
+			if(map.getRequireLevel() == level && map.getBuildId() == bId)
+				return true;
+		}
+		return false;
+	}
+	/**
+	 * 生成训练台相关数据
+	 */
+	public void totrainingBits(){
+		logger.info(">>>>>>>>>>>>>>>生成训练台相关数据 ...开始<<<<<<<<<<<<");
+		HashMap<Integer,int[]> trainExpMap = TrainExpManager.getInstance().getTrainExp();//训练经验map
+		HashMap<Integer,int[]> trainSkillMap = TrainSkillManager.getInstance().getTrainSkill();//技能map
+		HashMap<Integer,int[]> newMap = trainExpMap;
+		for(BaseTrainingBits tbs : baseTrainDatas.values()){
+			HashMap<Integer,int[]> maps = new HashMap<Integer, int[]>();
+			for(int i : newMap.keySet()){
+				int[] p = newMap.get(i);
+				int[] copy = new int[p.length];
+				for(int t = 0 ;t < p.length;t++){
+					copy[t] = p[t];
+				}
+				maps.put(i, copy);
+			}
+			TrainingBits tb = new TrainingBits();
+			tb.setCondition(tbs.getCondition());
+			tb.setNumLevel(tbs.getNumLevel());
+			tb.setAddType(tbs.getAddType());
+			tb.setAddCount(tbs.getAddCount());
+			tb.setTrainingNO(tbs.getTrainingNO());
+			tb.setTrainSkill(trainSkillMap);
+			tb.setExpTime(GameConst.TRAINTIME_EXP);
+			tb.setSkillTime(GameConst.TRAINTIME_SKILL);
+			tb.setTrainExp(newMap);
+			if(tb.getAddType() == 1){//经验加成
+				double per =  (1+tb.getAddCount()/100.0);
+				if(trainExpMap != null && trainExpMap.size() != 0){
+					for(Integer i : trainExpMap.keySet()){
+						int[] in = maps.get(i);
+						for (int j = 0 ; j < in.length ;j++){
+							in[j] = (int)(in[j]*per);
+						}
+					}
+				}					
+			}else if(tb.getAddType()==2){//时间加成
+				double per =  (tb.getAddCount()/100.0);
+				tb.setExpTime((int)(GameConst.TRAINTIME_EXP*per));
+				tb.setSkillTime((int)(GameConst.TRAINTIME_SKILL*per));
+			}
+			tb.setTrainExp(maps);
+			trainDatas.put(tbs.getTrainingNO(),tb);
+//			System.out.println(tbs.getTrainingNO()+":"+tb.getTrainExp().get(1)[0]);
+		}
+		logger.info(">>>>>>>>>>>>>>>生成训练台相关数据 ...结束<<<<<<<<<<<<");
+	}
+}

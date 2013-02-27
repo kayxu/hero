@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/8156/CODE/Server/src/com/joymeng/core/db/cache/mongo/Repository
+END
+ShopCacheImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/8F_TEAM/!svn/ver/5599/CODE/Server/src/com/joymeng/core/db/cache/mongo/Repository/ShopCacheImpl.java
+END
+GoodsCacheImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/8F_TEAM/!svn/ver/8156/CODE/Server/src/com/joymeng/core/db/cache/mongo/Repository/GoodsCacheImpl.java
+END
+Repository.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/8F_TEAM/!svn/ver/4259/CODE/Server/src/com/joymeng/core/db/cache/mongo/Repository/Repository.java
+END
+ShopInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/8F_TEAM/!svn/ver/5081/CODE/Server/src/com/joymeng/core/db/cache/mongo/Repository/ShopInterface.java
+END
+GoodsInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/8F_TEAM/!svn/ver/5081/CODE/Server/src/com/joymeng/core/db/cache/mongo/Repository/GoodsInterface.java
+END
+NatureRepositoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/8F_TEAM/!svn/ver/4259/CODE/Server/src/com/joymeng/core/db/cache/mongo/Repository/NatureRepositoryImpl.java
+END

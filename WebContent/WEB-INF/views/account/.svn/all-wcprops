@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/8F_TEAM/!svn/ver/6055/CODE/Server/WebContent/WEB-INF/views/account
+END
+adminUserList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/6055/CODE/Server/WebContent/WEB-INF/views/account/adminUserList.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/6055/CODE/Server/WebContent/WEB-INF/views/account/login.jsp
+END
+profile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/8F_TEAM/!svn/ver/6055/CODE/Server/WebContent/WEB-INF/views/account/profile.jsp
+END
+adminUserForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/6055/CODE/Server/WebContent/WEB-INF/views/account/adminUserForm.jsp
+END
+register.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/8F_TEAM/!svn/ver/6055/CODE/Server/WebContent/WEB-INF/views/account/register.jsp
+END

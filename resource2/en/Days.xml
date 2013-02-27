@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Days>
+	<Day id="1" timesId="1" propsId1="0" value1="2" icon1="chouma" name1="Chip" propsId2="0" value2="0" icon2="chouma" name2="Chip" propsId3="0" value3="0" icon3="chouma" name3="Chip"/>
+	<Day id="2" timesId="2" propsId1="0" value1="4" icon1="chouma" name1="Chip" propsId2="0" value2="0" icon2="chouma" name2="Chip" propsId3="0" value3="0" icon3="chouma" name3="Chip"/>
+	<Day id="3" timesId="3" propsId1="0" value1="6" icon1="chouma" name1="Chip" propsId2="0" value2="0" icon2="chouma" name2="Chip" propsId3="0" value3="0" icon3="chouma" name3="Chip"/>
+	<Day id="4" timesId="4" propsId1="0" value1="8" icon1="chouma" name1="Chip" propsId2="0" value2="0" icon2="chouma" name2="Chip" propsId3="0" value3="0" icon3="chouma" name3="Chip"/>
+	<Day id="5" timesId="5" propsId1="0" value1="10" icon1="chouma" name1="Chip" propsId2="0" value2="0" icon2="chouma" name2="Chip" propsId3="0" value3="0" icon3="chouma" name3="Chip"/>
+	<Day id="6" timesId="6" propsId1="0" value1="12" icon1="chouma" name1="Chip" propsId2="0" value2="0" icon2="chouma" name2="Chip" propsId3="0" value3="0" icon3="chouma" name3="Chip"/>
+	<Day id="7" timesId="7" propsId1="0" value1="14" icon1="chouma" name1="Chip" propsId2="0" value2="0" icon2="chouma" name2="Chip" propsId3="0" value3="0" icon3="chouma" name3="Chip"/>
+	<Day id="8" timesId="8" propsId1="-1" value1="200000" icon1="gold_icon" name1="Golds" propsId2="-2" value2="2000" icon2="honor" name2="2000" propsId3="13" value3="4" icon3="jiazhilv5" name3="Enchant Sigil LV5"/>
+</Days>

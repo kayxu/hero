@@ -1,0 +1,15 @@
+delete from arenaaward;
+delete from fightevent;
+delete from friend;
+delete from playerbuilding;
+delete from playercards;
+delete from playerhero;
+delete from propsdelay;
+delete from roledata;
+delete from userwardata;
+update arena set userId=0,heroId=0,userName="",heroInfo="",soldier="";
+UPDATE goldmine SET userID = 0,heroId = 0,heroinfo = "";
+UPDATE nation SET occupyUser = 0,heroId = 0,heroInfo ="";
+update usernamestatus set status=1;
+UPDATE veins SET userID = 0,heroId = 0,heroInfo = "",baseSoMsg = "1:500,0;2:500,0;3:500,0",userSoMsg="",userName="",userStateId = stateId;
+UPDATE militarycamp SET nativeId = 0,userID=0,heroId = 0,soliderInfo ="",isThis = 0;

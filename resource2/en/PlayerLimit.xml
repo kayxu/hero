@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PlayerLimits>
+<!--  |level:PlayerLimit  |heroNum:武将数目上限  |awardLevel:功勋等级上限  |cityNum:附属城数量  |levelExp:升级经验-->
+	<PlayerLimit awardLevel="1" cityNum="1" heroNum="3" level="1" levelExp="72"/>
+	<PlayerLimit awardLevel="1" cityNum="2" heroNum="4" level="2" levelExp="128"/>
+	<PlayerLimit awardLevel="1" cityNum="3" heroNum="5" level="3" levelExp="200"/>
+	<PlayerLimit awardLevel="1" cityNum="3" heroNum="6" level="4" levelExp="288"/>
+	<PlayerLimit awardLevel="2" cityNum="4" heroNum="7" level="5" levelExp="392"/>
+	<PlayerLimit awardLevel="2" cityNum="4" heroNum="8" level="6" levelExp="512"/>
+	<PlayerLimit awardLevel="2" cityNum="5" heroNum="9" level="7" levelExp="648"/>
+	<PlayerLimit awardLevel="2" cityNum="5" heroNum="10" level="8" levelExp="800"/>
+	<PlayerLimit awardLevel="2" cityNum="6" heroNum="11" level="9" levelExp="968"/>
+	<PlayerLimit awardLevel="3" cityNum="6" heroNum="12" level="10" levelExp="1152"/>
+	<PlayerLimit awardLevel="3" cityNum="7" heroNum="13" level="11" levelExp="1352"/>
+	<PlayerLimit awardLevel="3" cityNum="7" heroNum="14" level="12" levelExp="1568"/>
+	<PlayerLimit awardLevel="3" cityNum="8" heroNum="15" level="13" levelExp="1800"/>
+	<PlayerLimit awardLevel="3" cityNum="8" heroNum="16" level="14" levelExp="2048"/>
+	<PlayerLimit awardLevel="4" cityNum="9" heroNum="17" level="15" levelExp="2312"/>
+	<PlayerLimit awardLevel="4" cityNum="9" heroNum="18" level="16" levelExp="2592"/>
+	<PlayerLimit awardLevel="4" cityNum="10" heroNum="18" level="17" levelExp="2888"/>
+	<PlayerLimit awardLevel="4" cityNum="10" heroNum="18" level="18" levelExp="3200"/>
+	<PlayerLimit awardLevel="4" cityNum="11" heroNum="18" level="19" levelExp="3528"/>
+	<PlayerLimit awardLevel="5" cityNum="11" heroNum="18" level="20" levelExp="3872"/>
+	<PlayerLimit awardLevel="5" cityNum="12" heroNum="18" level="21" levelExp="4232"/>
+	<PlayerLimit awardLevel="5" cityNum="12" heroNum="18" level="22" levelExp="4608"/>
+	<PlayerLimit awardLevel="6" cityNum="12" heroNum="18" level="23" levelExp="5000"/>
+	<PlayerLimit awardLevel="6" cityNum="12" heroNum="18" level="24" levelExp="5408"/>
+	<PlayerLimit awardLevel="6" cityNum="12" heroNum="18" level="25" levelExp="5832"/>
+	<PlayerLimit awardLevel="7" cityNum="12" heroNum="18" level="26" levelExp="6272"/>
+	<PlayerLimit awardLevel="7" cityNum="12" heroNum="18" level="27" levelExp="6728"/>
+	<PlayerLimit awardLevel="8" cityNum="12" heroNum="18" level="28" levelExp="7200"/>
+	<PlayerLimit awardLevel="8" cityNum="12" heroNum="18" level="29" levelExp="7688"/>
+	<PlayerLimit awardLevel="8" cityNum="12" heroNum="18" level="30" levelExp="8192"/>
+</PlayerLimits>

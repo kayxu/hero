@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<PlayerNobilitys>
+<!--  |id:PlayerNobility  |name:爵位名称  |lordLevel:晋升条件1  |cost:晋升消耗1  |townMaxLevel:主城等级上限-->
+<PlayerNobility cost="0" id="0" lordLevel="0" name="平民" townMaxLevel="5"/>
+<PlayerNobility cost="500" id="1" lordLevel="5" name="骑士" townMaxLevel="10"/>
+<PlayerNobility cost="2000" id="2" lordLevel="10" name="准男爵" townMaxLevel="15"/>
+<PlayerNobility cost="5000" id="3" lordLevel="15" name="男爵" townMaxLevel="20"/>
+<PlayerNobility cost="10000" id="4" lordLevel="20" name="子爵" townMaxLevel="25"/>
+<PlayerNobility cost="20000" id="5" lordLevel="23" name="伯爵" townMaxLevel="30"/>
+<PlayerNobility cost="25000" id="6" lordLevel="26" name="侯爵" townMaxLevel="30"/>
+<PlayerNobility cost="30000" id="7" lordLevel="28" name="公爵" townMaxLevel="30"/>
+</PlayerNobilitys>

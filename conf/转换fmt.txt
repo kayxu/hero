@@ -1,0 +1,2 @@
+native2ascii   -reverse   -encoding   UTF8   fmt_resource_zh_CN.properties  chinese.txt
+native2ascii   -reverse   -encoding   UTF8 E:\workspace\hero\conf\fmt_resource_zh_CN.properties E:\workspace\hero\conf\chinese.txt

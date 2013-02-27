@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/domain
+END
+LoyalUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/domain/LoyalUser.java
+END
+NewUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/domain/NewUser.java
+END
+PropSale.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/cache/domain/PropSale.java
+END
+Login.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/domain/Login.java
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/6051/CODE/Server/src/com/joymeng/game/cache/domain/Log.java
+END
+LogQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/6051/CODE/Server/src/com/joymeng/game/cache/domain/LogQuery.java
+END
+PropUse.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/6320/CODE/Server/src/com/joymeng/game/cache/domain/PropUse.java
+END
+PlayerCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/domain/PlayerCache.java
+END
+GameOnlineNum.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/6385/CODE/Server/src/com/joymeng/game/cache/domain/GameOnlineNum.java
+END
+TimeTemp.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/cache/domain/TimeTemp.java
+END
+LoggerName.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/6051/CODE/Server/src/com/joymeng/game/cache/domain/LoggerName.java
+END
+LoyalUserLevel.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/6320/CODE/Server/src/com/joymeng/game/cache/domain/LoyalUserLevel.java
+END
+QuestTemp.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/7844/CODE/Server/src/com/joymeng/game/cache/domain/QuestTemp.java
+END
+LostActiveUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/7777/CODE/Server/src/com/joymeng/game/cache/domain/LostActiveUser.java
+END
+PlayerTemp.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/cache/domain/PlayerTemp.java
+END
+DiamondPlayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/cache/domain/DiamondPlayer.java
+END
+ActiveUserLevel.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/6320/CODE/Server/src/com/joymeng/game/cache/domain/ActiveUserLevel.java
+END
+DiamondUse.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/6320/CODE/Server/src/com/joymeng/game/cache/domain/DiamondUse.java
+END
+GameOnlineTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/6320/CODE/Server/src/com/joymeng/game/cache/domain/GameOnlineTime.java
+END
+ActiveUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/cache/domain/ActiveUser.java
+END

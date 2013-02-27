@@ -1,0 +1,303 @@
+/**
+ * Copyright com.joymeng.game.domain.item.equipment-Equipment.java
+ * @author xufangliang
+ * @time 2012-5-8
+ */
+package com.joymeng.game.domain.item.equipment;
+
+import com.joymeng.core.utils.TimeUtils;
+import com.joymeng.game.domain.item.Item;
+import com.joymeng.game.domain.role.PlayerCharacter;
+import com.joymeng.game.domain.skill.Skill;
+import com.joymeng.game.domain.skill.SkillManager;
+import com.joymeng.game.domain.world.TipMessage;
+import com.joymeng.game.domain.world.TipModule;
+import com.joymeng.game.net.client.ClientModule;
+import com.joymeng.services.core.buffer.JoyBuffer;
+import com.joymeng.services.core.message.JoyProtocol;
+
+/**
+ * @author xufangliang
+ *  1.1
+ */
+public class Equipment extends Item  implements TipModule,ClientModule{
+	
+	public static final byte SWORD = 4;//剑，武器
+	public static final byte HELMET = 5;//头盔
+	public static final byte ARMOR = 7;//铠甲
+	public static final byte MOUNTS = 6;//坐骑
+	
+	public int effectId = 0;//效果id
+	public long effectTime;//结束时间
+	public int heroId = 0;//
+	public int original = 0;//原来穿的人
+	
+	public byte isAdd = 0; //0 ：增加  1： 减少    2：不变
+
+	public TipMessage tip;
+	/**
+	 * @return GET the isAdd
+	 */
+	public byte getIsAdd() {
+		return isAdd;
+	}
+
+	/**
+	 * @param SET isAdd the isAdd to set
+	 */
+	public void setIsAdd(byte isAdd) {
+		this.isAdd = isAdd;
+	}
+
+	/**
+	 * @return GET the effectId
+	 */
+	public int getEffectId() {
+		return effectId;
+	}
+
+	/**
+	 * @param SET effectId the effectId to set
+	 */
+	public void setEffectId(int effectId) {
+		this.effectId = effectId;
+	}
+
+	/**
+	 * @return GET the effectTime
+	 */
+	public long getEffectTime() {
+		return effectTime;
+	}
+	
+	public int getOriginal() {
+		return original;
+	}
+
+	public void setOriginal(int original) {
+		this.original = original;
+	}
+
+	/**
+	 * @param SET effectTime the effectTime to set
+	 */
+	public void setEffectTime(long effectTime) {
+		this.effectTime = effectTime;
+	}
+
+	
+	/**
+	 * 获取 heroId
+	 * @return the heroId
+	 */
+	public int getHeroId() {
+		return heroId;
+	}
+
+	/**
+	 * 设置 heroId
+	 * @param heroId the heroId to set
+	 */
+	public void setHeroId(int heroId) {
+		this.heroId = heroId;
+	}
+
+	public Equipment(EquipPrototype ep){
+		prototype = ep;
+	}
+	
+	public Equipment(){}
+	
+	EquipPrototype prototype;
+	
+	/**
+	 * 获取 prototype
+	 * @return the prototype
+	 */
+	public EquipPrototype getPrototype() {
+		return prototype;
+	}
+	
+	/**
+	 * 设置 prototype
+	 * @param prototype the prototype to set
+	 */
+	public void setPrototype(EquipPrototype prototype) {
+		this.prototype = prototype;
+	}
+	
+	//TODO 装备下发说明
+	@Override  
+	public String getDownDesc(PlayerCharacter role) {
+		return "";
+	}
+
+	@Override
+	public byte getType() {
+		return prototype.getEquipmentType();
+		
+	}
+
+	@Override
+	public boolean isProp() {
+		return false;
+		
+	}
+
+	@Override
+	public int getMaxStackCount() {
+		return getPrototype().getMaxStackCount();
+	}
+
+	@Override
+	public String getIconIdx() {
+		return getPrototype().getEquipmentIcon();
+		
+	}
+
+	@Override
+	public String getName() {
+		return getPrototype().getEquipmentName();
+	}
+
+	@Override
+	public int getId() {
+		return getPrototype().getId();
+	}
+
+	public byte getLevel() {
+		return getPrototype().getEquipmentLevel();
+	}
+
+	@Override
+	public void deserialize(JoyBuffer in) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public byte getModuleType() {
+		return NTC_EQUIPMENT;
+		
+	}
+
+	@Override
+	public void serialize(JoyBuffer out) {
+		int index=out.position();
+		out.skip(JoyProtocol.BYTE_LENGTH);	//4个字节长度
+		out.put(getModuleType());
+		if(getHeroId() == 0)
+			out.put((byte) 0);
+		else{
+			out.put((byte) 1);
+		}
+		out.putInt(original);
+		out.putInt(heroId);
+		out.putInt(getId());
+		out.putInt(getPrototype().getEquipmentId());
+		out.put(getPrototype().getEquipmentLevel());
+		if(getPrototype().getEquipmentType() == SWORD){
+//			System.out.println(">>>"+(int)getPrototype().getAttackPiont() + toAddPoint());
+			out.putInt((int)getPrototype().getAttackPiont() + toAddPoint());
+		}else if(getPrototype().getEquipmentType() == HELMET){
+//			System.out.println(">>>"+(int)getPrototype().getLiftPiont() + toAddPoint());
+			out.putInt((int)getPrototype().getLiftPiont() + toAddPoint());
+		}else if(getPrototype().getEquipmentType() == ARMOR){
+//			System.out.println(">>>"+(int)getPrototype().getDefensePiont() + toAddPoint());
+			out.putInt((int)getPrototype().getDefensePiont() + toAddPoint());
+		}else if(getPrototype().getEquipmentType() == MOUNTS){
+//			System.out.println(">>>"+(int)getPrototype().getSoldierCount() + toAddPoint());
+			out.putInt((int)getPrototype().getSoldierCount() + toAddPoint());
+		}
+		out.put(getPrototype().getQualityColor());
+		out.put(getPrototype().getStrengthenLevel());
+		out.putPrefixedString(toEffectStr(),(byte)2);
+		out.put(getIsAdd());
+		out.putInt(getPrototype().buyPrice);
+		out.putInt(index, out.position() - index-JoyProtocol.BYTE_LENGTH);
+	}
+	
+	public void _serialize(JoyBuffer out) {
+		if(getHeroId() == 0)
+			out.put((byte) 0);
+		else{
+			out.put((byte) 1);
+		}
+		out.putInt(original);
+		out.putInt(heroId);
+		out.putInt(getId());
+		out.putInt(getPrototype().getEquipmentId());
+		out.put(getPrototype().getEquipmentLevel());
+		if(getPrototype().getEquipmentType() == SWORD){
+//			System.out.println(">>>"+(int)getPrototype().getAttackPiont() + toAddPoint());
+			out.putInt((int)getPrototype().getAttackPiont() + toAddPoint());
+		}else if(getPrototype().getEquipmentType() == HELMET){
+//			System.out.println(">>>"+(int)getPrototype().getLiftPiont() + toAddPoint());
+			out.putInt((int)getPrototype().getLiftPiont() + toAddPoint());
+		}else if(getPrototype().getEquipmentType() == ARMOR){
+//			System.out.println(">>>"+(int)getPrototype().getDefensePiont() + toAddPoint());
+			out.putInt((int)getPrototype().getDefensePiont() + toAddPoint());
+		}else if(getPrototype().getEquipmentType() == MOUNTS){
+//			System.out.println(">>>"+(int)getPrototype().getSoldierCount() + toAddPoint());
+			out.putInt((int)getPrototype().getSoldierCount() + toAddPoint());
+		}
+		out.put(getPrototype().getQualityColor());
+		out.put(getPrototype().getStrengthenLevel());
+		out.putPrefixedString(toEffectStr(),(byte)2);
+		out.put(getIsAdd());
+		out.putInt(getPrototype().buyPrice);
+	}
+	/**
+	 * 下发加制说明
+	 * @return
+	 */
+	public int toAddPoint(){
+		if(getEffectId() != 0){
+			if(TimeUtils.nowLong() - getEffectTime() > 0){//时间过了
+				return 0;
+			}
+			FirmEffect fe = EquipmentManager.getInstance().firmDatas.get(getEffectId());
+			if(fe== null)
+				return 0;
+			if(fe.getType() == 1){
+				 System.out.println("*****"+EquipmentManager.getInstance().getEquimentPoint(EquipmentManager.getInstance().getEquimentWhiteId(getId())) * (fe.getEffectIdNum()/100.0));
+				 return (int)(EquipmentManager.getInstance().getEquimentPoint(EquipmentManager.getInstance().getEquimentWhiteId(getId())) * (fe.getEffectIdNum()/100.0));
+			 }
+		}
+		return 0;
+	}
+	/**
+	 * 下发加制说明
+	 * @return
+	 */
+	public String toEffectStr(){
+		if(getEffectId() != 0){
+			if(TimeUtils.nowLong() - getEffectTime() > 0){//时间过了
+				return "";
+			}
+			FirmEffect fe = EquipmentManager.getInstance().firmDatas.get(getEffectId());
+			if(fe== null)
+				return "";
+			if(fe.getType() == 1){
+				 return fe.getExplain()+":"+(int)( EquipmentManager.getInstance().getEquimentPoint(EquipmentManager.getInstance().getEquimentWhiteId(getId())) * (fe.getEffectIdNum()/100.0));
+			 }else if (fe.getType() == 2){
+				 Skill skill = SkillManager.getInstance().getSKill(fe.getEffectIdNum());
+//				 System.out.println(fe.getEffectIdNum());
+//				 System.out.println("skill="+skill);
+				 if(skill != null)
+					 return skill.getMemo();
+			 }
+		}
+		return "";
+	}
+
+	@Override
+	public TipMessage getTip() {
+		return this.tip;
+	}
+
+	@Override
+	public void setTip(TipMessage tip) {
+		this.tip = tip;
+	}
+}

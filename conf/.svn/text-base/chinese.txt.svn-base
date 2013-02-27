@@ -1,0 +1,139 @@
+greeting.morning = 早上好！{0}，现在是{1,time,short}
+greeting.afternoon = 下午好！{0}，现在是{1,date,long}
+cityWarStart = 今日第{0}轮市长争夺激战正酣，去世界地图争夺权利吧
+cityWarStart16 = 今日最后一轮市长争夺开启，抓住最后的机会吧！
+cityWarEnd = 今日第{0}轮市长争夺战已经结束，10分钟后开启第{1}轮！
+cityWarEnd15 = 今日第15轮市长争夺战已经结束，10分钟后开启最后一轮！
+cityWarEnd16 = 今日市长争夺已经全部结束，敬请期待明日再战！
+beCityMayor1 = 第{0}轮中{1}一马当先，夺取了{2}国{3}州{4}市的市长
+beCityMayor2= 第{0}轮中{1}当仁不让，夺取了{2}国{3}州{4}市的市长
+beCityMayor3= 第{0}轮中{1}舍我其谁，夺取了{2}国{3}州{4}市的市长
+beCityMayor4=第{0}轮中{1}奋勇争先，夺取了{2}国{3}州{4}市的市长
+
+stateStart = 今日州长争夺战鼓重燃，无上荣耀，州长宝座在世界地图等待英雄！
+stateEnd = 本日州长争夺战已经结束，敬请期待下次开启！
+bestateMayor = {0}力压群雄，夺取了{1}，{2}的新州长
+
+countryStart = 万众瞩目的国王争夺烽烟再起，为了王位，为了荣耀，战斗吧！
+countryEnd = 本次国王争夺尘埃落定，敬请期待下次开启！
+beKing = 让我们为{0}国的新国王{1}欢呼吧！吾皇万岁！
+	
+strengthen.10 ={0}技艺精湛，锻造出LV10的完美装备
+veinsGold.other = {0}的{1}势如破竹，攻占了{2}的金矿神祠
+veinsRes.other = {0}的{1}势如破竹，攻占了{2}的资源神祠
+veinsGold.my = {0}的{1}不负众望，收复了金矿神祠
+veinsRes.my = {0}的{1}不负众望，收复了资源神祠
+
+ladder.lv10={0}通关地下城第10层，斩获“一级深渊宝箱”
+ladder.lv20={0}通关地下城第20层，斩获“二级深渊宝箱”
+ladder.lv30={0}通关地下城第30层，斩获“三级深渊宝箱”
+ladder.lv40={0}通关地下城第40层，斩获“四级深渊宝箱”
+ladder.lv50={0}通关地下城第50层，斩获“五级深渊宝箱”
+ladder.lv60={0}通关地下城第60层，斩获“六级深渊宝箱”
+ladder.lv70={0}通关地下城第70层，斩获“七级深渊宝箱”
+ladder.lv80={0}通关地下城第80层，斩获“八级深渊宝箱”
+ladder.lv90={0}通关地下城第90层，斩获“九级深渊宝箱”
+ladder.lv100={0}通关地下城第100层，斩获“十级深渊宝箱”
+
+building.chargeout = 获得{0}:{1}
+barrack.view= 县长以上官员才能使用
+
+building.levelup = 未使用建设锤，只能同时升级一个建筑
+propsbox.diamond = 获得{0}个钻石
+propsbox.chip = 获得{0}个筹码
+propsbox.money = 获得{0}个金币
+propsbox.feat = 获取{0}个功勋
+propsbox.goodequip = 获得{0}{1}个
+card.reward = 请先领取奖品
+box.buychip = 兑换筹码成功
+box.reward.nothave = 没有可领取的奖品
+box.space.notenough = 背包空间不足
+dimond.not.enough = 钻石不足
+bulidlevel.lack = 爵位等级不足，无法升级
+reward.success = 领取成功
+soldier.train = 县长以下无法招募特种兵
+buy.success = 购买成功
+equipment.change = 换装成功
+quit.fail = 休整中，5分钟内无法撤防
+quit.success = 撤防成功
+aff.quit.fail = 附属城撤防成功
+skill.get = 恭喜，您获得了{0}技能书
+skill.get.fail = 遗忘成功，很不幸没有获得技能书
+skill.expand.success = 扩展技能格成功
+skill.remove.success = 删除成功，未获得技能书
+feat.lack = 功勋不足
+title.max = 爵位已经达到最高级
+reward.success = 领奖成功
+friend.add.success = 添加好友成功
+friend.del.success = 删除好友成功
+friend.del.fail = 删除好友失败
+arena.challenge.success = 挑战胜利，您当前排名为{0}
+arena.challenge.fail = 您在竞技场中被挑战失败，您当前排名为{0}
+name.alter.fail = 君主名已被占用，请重试
+name.alter.success = 修改君主名成功
+nation.name.alter.success = 修改成功
+soldier.add.success = 增兵成功，获得军功{0}
+veins.occupy.success = 占领成功，获得驻守{0}加成
+gold.occupy.success = 消耗{0}军功，占领成功
+
+captureFlag.success = 你的军旗被抢了！击败夺旗部队可抢回军旗！
+captureFlag.prompt = 夺旗成功，把军旗带回本方基地吧！
+
+flag.fight.att.win = 你的武将{0}击败了{1}的武将{2}，占领了棋点
+flag.fight.att.fail = 你的武将{0}进攻{1}的武将{2}失败了
+flag.fight.def.fail = 你的武将{0}被{1}的武将{2}击败了，失去了棋点
+flag.fight.def.win = 你的武将{0}抵御了{1}的武将{2}进攻，守卫了棋点
+
+fire.hero.title = 武将解雇
+fire.hero.Content = 根据武将总经验，获得返还的武将经验丹，请查收！
+flag.fight.end.title=战斗结束奖励
+flag.fight.end.Content = PVP战场已结束，恭喜您获得武将经验丹大礼包一份！
+
+hero.expand = 已达道具使用上限
+
+exchange.star.succ = 兑换成功！
+exchange.star.fail = 名将残魂不足！
+
+level.isfull = 金币不足，无法升级
+
+goldMine.protection = 对方正处于2小时保护期内
+propsbox.newbag.level=4级可领取价值1888钻新手至尊礼包！
+goldMine.protection = 对方正处于2小时保护期内
+spyOn.no = 无人驻防，无需侦查
+goldMine.no = 你不能占领非本洲的金矿
+
+war.occ = {0}攻占了你
+war.top = {0}奋起直追，夺下积分榜第一名
+war.stop.tip = 本场{0}争夺战结束，{1}成为{2}新{3}！敬请期待下一场
+chat.speak.not.allowed = 您已被禁止发言
+login.not.allowed = 您已被禁止登录
+
+
+building19.message={0}闯入了地下城，巨额经验、神秘奖励尽在其中！
+building13.message={0}开启竞技场，巨额金币、巨额功勋马上拿！
+
+recruit.hero={0}天下归心，在酒馆暗阁中招募到名将{1}
+
+card.award = {0}鸿运当头，从在线翻牌中获得了{1}*{2}
+
+Knighthood.message.1={0}完成骑士的考验，获得骑士称号
+Knighthood.message.2={0}前途无量，被授予准男爵爵位
+Knighthood.message.3={0}贡献突出，晋升为男爵爵位
+Knighthood.message.4={0}战功彪炳，被授予子爵爵位
+Knighthood.message.5={0}功勋卓著，被授予伯爵爵位
+Knighthood.message.6={0}贵不可言，被授予侯爵爵位
+Knighthood.message.7={0}天生贵族，被授予公爵爵位
+
+PVP.mate={0}Lv{1}正在PVP准备，尔等敢应战否！
+PVP.message={0}技高一筹，在PVP战场战胜了{1}
+affiliated.message={0}占满了附属城，获得了金币产量加成和额外训练位
+
+campaign.message = {0}实力超群，通关了{1}战场
+
+box.refresh={0}运气不错，刚刚在幸运大赢家中刷出了{1}
+box.get={0}吉星高照，刚刚在幸运大赢家中抽中了{1}
+duwang={0}气运惊人，在幸运大赢家中成为赌王
+dusehng={0}赌术超凡入圣，在幸运大赢家中晋升为至尊赌圣
+sign.final=签到七次终极奖励{0}个{1}
+sign.award=签到获奖：恭喜您获得{0}个{1}
+

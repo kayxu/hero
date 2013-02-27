@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Recharges>
+	<Recharge rechargeVal="10" packageId="49" keyAward="天使羽翼" awardVal="1888"/>
+	<Recharge rechargeVal="200" packageId="50" keyAward="牛逼奖励1" awardVal="1000"/>
+	<Recharge rechargeVal="500" packageId="51" keyAward="牛逼奖励2" awardVal="1000"/>
+	<Recharge rechargeVal="1000" packageId="52" keyAward="牛逼奖励3" awardVal="1000"/>
+	<Recharge rechargeVal="2000" packageId="53" keyAward="牛逼奖励4" awardVal="1000"/>
+	<Recharge rechargeVal="5000" packageId="54" keyAward="牛逼奖励5" awardVal="1000"/>
+	<Recharge rechargeVal="10000" packageId="55" keyAward="牛逼奖励6" awardVal="1000"/>
+	<Recharge rechargeVal="20000" packageId="56" keyAward="牛逼奖励7" awardVal="1000"/>
+	<Recharge rechargeVal="50000" packageId="57" keyAward="牛逼奖励8" awardVal="1000"/>
+</Recharges>

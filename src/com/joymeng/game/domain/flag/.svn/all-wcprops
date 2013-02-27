@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/8F_TEAM/!svn/ver/8160/CODE/Server/src/com/joymeng/game/domain/flag
+END
+Road.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/5890/CODE/Server/src/com/joymeng/game/domain/flag/Road.java
+END
+GameStart.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/6782/CODE/Server/src/com/joymeng/game/domain/flag/GameStart.java
+END
+Room.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/8F_TEAM/!svn/ver/8160/CODE/Server/src/com/joymeng/game/domain/flag/Room.java
+END
+FlagLattice.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/6024/CODE/Server/src/com/joymeng/game/domain/flag/FlagLattice.java
+END
+HeroPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/5990/CODE/Server/src/com/joymeng/game/domain/flag/HeroPoint.java
+END
+FlagManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/8160/CODE/Server/src/com/joymeng/game/domain/flag/FlagManager.java
+END
+GameHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/8160/CODE/Server/src/com/joymeng/game/domain/flag/GameHome.java
+END

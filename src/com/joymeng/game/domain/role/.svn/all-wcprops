@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/role
+END
+PlayerUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/role/PlayerUser.java
+END
+PlayerNobility.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/3029/CODE/Server/src/com/joymeng/game/domain/role/PlayerNobility.java
+END
+UsernameStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/7721/CODE/Server/src/com/joymeng/game/domain/role/UsernameStatus.java
+END
+PlayerCharacter.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/role/PlayerCharacter.java
+END
+Power.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/role/Power.java
+END
+PlayerAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/domain/role/PlayerAgent.java
+END
+UserAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/7752/CODE/Server/src/com/joymeng/game/domain/role/UserAccount.java
+END
+PowerCalculate.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/8126/CODE/Server/src/com/joymeng/game/domain/role/PowerCalculate.java
+END
+PlayerAche.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/4627/CODE/Server/src/com/joymeng/game/domain/role/PlayerAche.java
+END
+RoleData.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/8167/CODE/Server/src/com/joymeng/game/domain/role/RoleData.java
+END
+PlayerExp.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/8F_TEAM/!svn/ver/1051/CODE/Server/src/com/joymeng/game/domain/role/PlayerExp.java
+END
+PlayerLimit.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/8F_TEAM/!svn/ver/1258/CODE/Server/src/com/joymeng/game/domain/role/PlayerLimit.java
+END
+UsernameManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8167/CODE/Server/src/com/joymeng/game/domain/role/UsernameManager.java
+END
+Username.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/7730/CODE/Server/src/com/joymeng/game/domain/role/Username.java
+END
+PlayerLimitManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/3029/CODE/Server/src/com/joymeng/game/domain/role/PlayerLimitManager.java
+END
+PlayerExpManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/2942/CODE/Server/src/com/joymeng/game/domain/role/PlayerExpManager.java
+END

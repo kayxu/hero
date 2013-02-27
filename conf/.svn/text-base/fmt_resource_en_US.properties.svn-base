@@ -1,0 +1,144 @@
+greeting.morning = Morning!{0}, is {1,time,short}
+greeting.afternoon = Afternoon!{0}, is {1,date,long}
+cityWarStart = The {0} round of Mayor Battle is in the heat. Go strive for rights in World Map!
+cityWarStart16 = The last round of Mayor Battle is in the heat. Grasp this precious chance!
+cityWarEnd = The {0} round of Mayor Battle is over, and the {1} round will be unlocked in 10 mins!
+cityWarEnd15 = The 15th round of Mayor Battle is over, and the last round will be unlocked in 10 mins!
+cityWarEnd16 = Mayor Battle is all over, Please stay tuned for tomorrow!
+beCityMayor1= <msgs><msg str="[sys]: During the {0} round, " color="16749530"/><msg str="{1}" color="16774656"/><msg str=" captured the " color="16749530"/><msg str="Mayor" color="16777215"/><msg str=" title of " color="16749530"/><msg str="{4}, {3}, {2}" color="65412"/></msgs>
+beCityMayor2= <msgs><msg str="[sys]: During the {0} round, " color="16749530"/><msg str="{1}" color="16774656"/><msg str=" captured the " color="16749530"/><msg str="Mayor" color="16777215"/><msg str=" title of " color="16749530"/><msg str="{4}, {3}, {2}" color="65412"/></msgs>
+beCityMayor3= <msgs><msg str="[sys]: During the {0} round, " color="16749530"/><msg str="{1}" color="16774656"/><msg str=" captured the " color="16749530"/><msg str="Mayor" color="16777215"/><msg str=" title of " color="16749530"/><msg str="{4}, {3}, {2}" color="65412"/></msgs>
+beCityMayor4= <msgs><msg str="[sys]: During the {0} round, " color="16749530"/><msg str="{1}" color="16774656"/><msg str=" captured the " color="16749530"/><msg str="Mayor" color="16777215"/><msg str=" title of " color="16749530"/><msg str="{4}, {3}, {2}" color="65412"/></msgs>
+stateStart = The Governor Battle will resume today and the glorious throne is waiting in World Map!
+stateEnd = Governor Battle is over, Please stay tuned for tomorrow!
+bestateMayor = <msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" captured the " color="16749530"/><msg str="Governor" color="16777215"/><msg str=" title of " color="16749530"/><msg str="{1}, {2}" color="65412"/></msgs>
+
+countryStart = The eye-catching King Battle will start again! Fight for the throne and the glory! 
+countryEnd = The King Battle has come to close, please stay tuned!
+beKing = <msgs><msg str="[sys]: For the great King! Let us cheer for the new King " color="16749530"/><msg str="{1} of {0} !" color="16774656"/></msgs>
+	
+strengthen.10 =<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" has intensified a " color="16749530"/><msg str="Lv.10" color="16658432"/><msg str=" perfect equip." color="16749530"/></msgs>
+veinsGold.other =<msgs><msg str="[sys]: " color="16749530"/><msg str="{1}" color="16774656"/><msg str=" of " color="16749530"/><msg str="{0}" color="65412"/><msg str=" has occupied the Gold Shrine of " color="16749530"/><msg str="{2}" color="65412"/></msgs>
+veinsRes.other =<msgs><msg str="[sys]: " color="16749530"/><msg str="{1}" color="16774656"/><msg str=" of " color="16749530"/><msg str="{0}" color="65412"/><msg str=" has occupied the Res Shrine of " color="16749530"/><msg str="{2}" color="65412"/></msgs>
+veinsGold.my =<msgs><msg str="[sys]: " color="16749530"/><msg str="{1}" color="16774656"/><msg str=" of " color="16749530"/><msg str="{0}" color="65412"/><msg str=" has recovered the Gold Shrine" color="16749530"/></msgs>
+veinsRes.my =<msgs><msg str="[sys]: " color="16749530"/><msg str="{1}" color="16774656"/><msg str=" of " color="16749530"/><msg str="{0}" color="65412"/><msg str=" has recovered the Res Shrine" color="16749530"/></msgs>
+
+ladder.lv10=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F10" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv1." color="65412"/></msgs>
+ladder.lv20=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F20" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv2." color="65412"/></msgs>
+ladder.lv30=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F30" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv3." color="65412"/></msgs>
+ladder.lv40=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F40" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv4." color="65412"/></msgs>
+ladder.lv50=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F50" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv5." color="65412"/></msgs>
+ladder.lv60=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F60" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv6." color="65412"/></msgs>
+ladder.lv70=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F70" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv7." color="65412"/></msgs>
+ladder.lv80=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F80" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv8." color="65412"/></msgs>
+ladder.lv90=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F90" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv9." color="65412"/></msgs>
+ladder.lv100=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared" color="16749530"/><msg str=" the Dungeon-F100" color="16777215"/><msg str=" and gained " color="16749530"/><msg str="TreasureLv10." color="65412"/></msgs>
+
+building.chargeout = obtained {0}:{1}
+barrack.view= Only officials above Governor can use
+
+building.levelup = You didn't use BuildHammer.
+propsbox.diamond = Obtained {0} gems
+propsbox.chip = Obtained {0} chips
+propsbox.money = Obtained {0} golds
+propsbox.feat = Obtained {0} honors
+propsbox.goodequip = Obtained {1} {0} 
+card.reward = Please get rewards first
+box.buychip = Chip exchanged
+box.reward.nothave = No getable reward
+box.space.notenough = Insufficient space in bag 
+dimond.not.enough = No enough gems
+bulidlevel.lack = Deficient title level, upgrade can't be finished
+reward.success = Receive successfully
+soldier.train = Officials below townleader can't recruit special troops.
+buy.success = Purchased successfully
+equipment.change = Equip successfully
+quit.fail = It is rest period and you can't withdraw in 5 mins
+quit.success = withdraw successfully
+aff.quit.fail = Aff-city withdrawed successfully
+skill.get = Congratulations! you obtained the skillbook -- {0} 
+skill.get.fail = Retrained. Unfortunately you didn't get a skillbook
+skill.expand.success = Skill slot expanded successfully
+skill.remove.success = Retrained. Unfortunately you didn't get a skillbook
+feat.lack = No enough honors
+title.max = Title has reached the highest
+reward.success = Receive successfully
+friend.add.success = Add friend successfully
+friend.del.success = Deleted friend successfully
+friend.del.fail = Delete friend failed
+arena.challenge.success = You win! The current ranking is {0}
+arena.challenge.fail = You are defeated in Arena and current ranking is {0}
+name.alter.fail = The name has been used, please try others
+name.alter.success = Change name successfully
+nation.name.alter.success = Change successfully
+soldier.add.success = Added Soldiers  successfully. You obtained {0} Valor points
+veins.occupy.success = Occupied. You obtained {0} garrison bonus
+gold.occupy.success = Occupy successfully. You lost {0} Valor points
+
+captureFlag.success = Your flag got looted! Seize it back!
+captureFlag.prompt = Reseize flag successfully! Take it back to your base!
+
+flag.fight.att.win = Your hero {0} defeated the hero {2} of {1}, and occupied the stronghold
+flag.fight.att.fail = Your hero {0} failed to attack the hero {2} of {1}
+flag.fight.def.fail = Your hero {0} got defeated by the hero {2} of {1}, and lost the stronghold
+flag.fight.def.win = Your hero {0} successfully resisted the attack from the hero {2} of {1}
+
+fire.hero.title = Hero dismissed 
+fire.hero.Content = You obtained returned exp pellets, please check!
+flag.fight.end.title= Battleend rewards
+flag.fight.end.Content = PVP is over. Congratulations! you obtained a pellet pack!
+
+hero.expand = Prop use has reached the max
+
+exchange.star.succ =  Exchange successfully !
+exchange.star.fail =  No enough Elite Hero Fragments!
+
+level.isfull = No enough golds, upgrade can't be finished!
+
+goldMine.protection = Target is right in the 2-hr protection period
+propsbox.newbag.level= You will receive a Deluxe Rookie Gift at lv.4! 
+goldMine.protection = Target is right in the 2-hr protection period
+spyOn.no = No garrison, and no need for scout
+goldMine.no = You can't occupy the goldmine out of your state
+
+war.occ = {0} attacked you
+war.top = {0} leapt ahead and became the winner of the scoreboard
+war.stop.tip = This {0} battle is over, and {1} has become the new {3} of {2}!
+chat.speak.not.allowed = You have been banned to make statement
+login.not.allowed =You have been banned to login
+
+
+building19.message=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" unlocked " color="16749530"/><msg str="the Dungeon " color="16777215"/><msg str=". Mysterious rewards are awaiting !" color="16749530"/></msgs>
+building13.message=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" unlocked " color="16749530"/><msg str="the Arena " color="16777215"/><msg str=". Fight for golds and honors !" color="16749530"/></msgs> 
+
+recruit.hero=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" recruited an elite hero " color="16749530"/><msg str="{1}" color="16658432"/><msg str=" from the tavern " color="16749530"/><msg str="FAME." color="16777215"/></msgs>
+
+card.award =<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" obtained a " color="16749530"/><msg str="{1}" color="65412"/><msg str=" from " color="16749530"/><msg str="Online flip." color="16777215"/></msgs>
+
+Knighthood.message.1=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" finished the trial and won " color="16749530"/><msg str="the Knight title." color="65412"/></msgs>
+Knighthood.message.2=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" with boundless future, was honored with " color="16749530"/><msg str="Baronet." color="65412"/></msgs>
+Knighthood.message.3=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" with outstanding contribution, was promoted to " color="16749530"/><msg str="Baron." color="65412"/></msgs>
+Knighthood.message.4=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" fulfilling meritorious military service, was honor with " color="16749530"/><msg str="Viscount." color="65412"/></msgs>
+Knighthood.message.5=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" with distinguished exploit, was honored with " color="16749530"/><msg str="Earl." color="65412"/></msgs>
+Knighthood.message.6=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" with natural aristocratic temperament, was honored with " color="16749530"/><msg str="Marquis." color="65412"/></msgs>
+Knighthood.message.7=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" a born nobleman, was honored with " color="16749530"/><msg str="Duke." color="65412"/></msgs>
+
+PVP.mate=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0} Lv{1}" color="16774656"/><msg str=" is on the fire of " color="16749530"/><msg str="PVP" color="16777215"/><msg str=", dare you accept challenge?" color="16749530"/></msgs>
+PVP.message=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" with more powerful skills, defeated " color="16749530"/><msg str="{1}" color="65412"/><msg str=" in " color="16749530"/><msg str="PVP." color="16777215"/></msgs>
+affiliated.message=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" occupied " color="16749530"/> <msg str="the aff-city " color="16777215"/><msg str="and obtained gold output bonus and extra academy." color="16749530"/></msgs>
+
+campaign.message =<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" cleared all the stages of " color="16749530"/><msg str="{1}" color="65412"/></msgs>
+
+box.refresh=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" refreshed out a " color="16749530"/><msg str="{1}" color="65412"/><msg str=" in" color="16749530"/><msg str=" Superwinner" color="16777215"/></msgs>
+box.get=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" born under a lucky star, won a " color="16749530"/><msg str="{1}" color="65412"/><msg str=" in" color="16749530"/><msg str=" Superwinner" color="16777215"/></msgs>
+
+duwang=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" with amazing good luck, became " color="16749530"/><msg str=" Gamble King" color="65412"/><msg str=" in" color="16749530"/><msg str=" Superwinner" color="16777215"/></msgs>			
+dusehng=<msgs><msg str="[sys]: Extraordinarily talented " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" was promoted to " color="16749530"/><msg str="GODLIKE" color="65412"/></msgs>
+			
+sign.final=The final rewards for seven times: {0} {1}
+sign.award=Signed in! Get rewards: {0} {1}
+prob.box.get=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" opened " color="16749530"/><msg str="{1}" color="65412"/><msg str=" get {2} {3}." color="16749530"/></msgs>
+prob.box.get.prop=<msgs><msg str="[sys]: " color="16749530"/><msg str="{0}" color="16774656"/><msg str=" opened " color="16749530"/><msg str=" get one " color="16749530"/><msg str="{2}" color="65412"/></msgs>
+
+arena.title=Arena Rewards
+arena.message=The current Arena Ranking {0} you got {0} rewards.

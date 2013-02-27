@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/nation
+END
+SimpleResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/8F_TEAM/!svn/ver/7857/CODE/Server/src/com/joymeng/game/domain/nation/SimpleResource.java
+END
+Veins.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/nation/Veins.java
+END
+GoldHero.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/2175/CODE/Server/src/com/joymeng/game/domain/nation/GoldHero.java
+END
+RefreshResources.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/6424/CODE/Server/src/com/joymeng/game/domain/nation/RefreshResources.java
+END
+ResourcesManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/8F_TEAM/!svn/ver/1614/CODE/Server/src/com/joymeng/game/domain/nation/ResourcesManager.java
+END
+ResourConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/8F_TEAM/!svn/ver/1808/CODE/Server/src/com/joymeng/game/domain/nation/ResourConst.java
+END
+Nation.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/8F_TEAM/!svn/ver/8198/CODE/Server/src/com/joymeng/game/domain/nation/Nation.java
+END
+NationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/8F_TEAM/!svn/ver/8164/CODE/Server/src/com/joymeng/game/domain/nation/NationManager.java
+END
+PlayerNationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/8F_TEAM/!svn/ver/8148/CODE/Server/src/com/joymeng/game/domain/nation/PlayerNationManager.java
+END
+GoldCharge.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/8F_TEAM/!svn/ver/2264/CODE/Server/src/com/joymeng/game/domain/nation/GoldCharge.java
+END
+Achievements.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/8F_TEAM/!svn/ver/4783/CODE/Server/src/com/joymeng/game/domain/nation/Achievements.java
+END
+GoldMine.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/8F_TEAM/!svn/ver/8164/CODE/Server/src/com/joymeng/game/domain/nation/GoldMine.java
+END

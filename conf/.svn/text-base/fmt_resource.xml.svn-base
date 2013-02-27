@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+    <property name="basenames">
+       <list>
+         <value>conf/fmt_resource</value>
+       </list>
+    </property> 
+    <!-- 重载时间 单位为秒，-1表示永不刷新 -->
+    <property name="cacheSeconds" value="3600"/>
+  </bean> 
+  <!--
+     <bean id="messageSource"
+    class="org.springframework.context.support.ResourceBundleMessageSource">
+       <property name="basename">
+           <value>fmt_resource</value>-->
+           <!-- 前面的是包名，messages是配置文件的前缀 -->
+     <!--  </property>
+    </bean>-->
+</beans>

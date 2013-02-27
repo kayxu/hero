@@ -1,0 +1,1435 @@
+package com.joymeng.game.domain.hero;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.joymeng.core.base.net.response.ClientModuleBase;
+import com.joymeng.core.log.GameLog;
+import com.joymeng.core.log.LogBuffer;
+import com.joymeng.core.log.LogEvent;
+import com.joymeng.core.spring.local.I18nGreeting;
+import com.joymeng.core.utils.MathUtils;
+import com.joymeng.core.utils.StringUtils;
+import com.joymeng.core.utils.TimeUtils;
+import com.joymeng.game.common.GameConfig;
+import com.joymeng.game.common.GameConst;
+import com.joymeng.game.domain.building.TrainingBits;
+import com.joymeng.game.domain.item.ItemConst;
+import com.joymeng.game.domain.item.PropsDelay;
+import com.joymeng.game.domain.item.equipment.Equipment;
+import com.joymeng.game.domain.quest.QuestUtils;
+import com.joymeng.game.domain.role.PlayerCharacter;
+import com.joymeng.game.domain.skill.Skill;
+import com.joymeng.game.domain.skill.SkillConst;
+import com.joymeng.game.domain.skill.SkillManager;
+import com.joymeng.game.domain.world.GameDataManager;
+import com.joymeng.game.domain.world.TipMessage;
+import com.joymeng.game.domain.world.TipModule;
+import com.joymeng.services.core.buffer.JoyBuffer;
+
+public class PlayerHero extends ClientModuleBase implements TipModule {
+
+	private int id;
+	private int userId;
+	// 名称
+	private String name;
+	// 头像
+	private String icon;
+	// 等级
+	private int level;
+	// 经验
+	private int exp;
+	// 性别
+	private byte sex = 0;// 角色性别（0:男 1:女）
+	// 攻击
+	public int attack;
+	// 防御
+	public int defence;
+	// 生命
+	public int hp;
+	public int maxHp;
+	private String memo;
+	// 攻击成长
+	private int attackAdd;
+	// 防御成长
+	private int defenceAdd;
+	// 生命成长
+	private int hpAdd;
+	// 颜色
+	private byte color;
+	// 带兵数
+	public int soldierNum;
+	// 武器
+	private int weapon;
+	// 铠甲
+	private int armour;
+	// 头盔
+	private int helmet;
+	// 马
+	private int horse;
+	// 技能格(4-6)
+	private byte skillNum;
+	private String skill;// 分割符号,
+	// 驻守城池id
+	private int buildId;
+	// 训练状态
+	private byte status;// 空闲 0 ，驻防1，训练2，
+	private long trainEndTime;// 训练结束时间
+	private byte trainType;// 0经验 1技能
+	private byte trainIndex;// 训练位0-11
+	private String soldier;// 只有在驻防的时候才有数据
+	// 初始数据
+	private int initHp;
+	private int initAttack;
+	private int initDefence;
+	// 增加的经验数值
+	private int addExp;
+	private long effectTime;
+
+	private TipMessage tip;
+	// 缺少一个当前带兵数，在驻防的时候显示
+	PlayerCharacter player;
+	// 技能和装备影响的武将的属性数值=攻击力0，防御力1，生命上限2，带兵数3，经验数值4(负值)，训练时间5(负值)
+	// 脱穿装备和学习遗忘技能会对将领的属性产生影响,将领初始化后也需要调用update方法
+	private int[] tmp_add = new int[6];
+	private int[] tmp_skillAdd = new int[6];
+	private int[] tmp_equipAdd = new int[6];
+	
+	private int attackTotal = 0;//总攻击
+	private int defenceTotal = 0;//总防御
+	private int hpTotal = 0;//总血量
+	static Logger logger = LoggerFactory.getLogger(PlayerHero.class);
+
+	// private int temp[]=new int[4];//切换装备的时候的属性变化,攻击防御生命上限带兵数
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getIcon() {
+		return icon;
+	}
+
+	public void setIcon(String icon) {
+		this.icon = icon;
+	}
+
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+
+	public byte getSex() {
+		return sex;
+	}
+
+	public void setSex(byte sex) {
+		this.sex = sex;
+	}
+
+	public int getAttack() {
+		return attack + tmp_add[0];
+	}
+
+	public void setAttack(int attack) {
+		this.attack = attack;
+	}
+
+	public int getDefence() {
+		return defence + tmp_add[1];
+	}
+
+	public void setDefence(int defence) {
+		this.defence = defence;
+	}
+
+	public int getHp() {
+		return hp + tmp_add[2];
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	public int getMaxHp() {
+		return maxHp + tmp_add[2];
+	}
+
+	public void setMaxHp(int maxHp) {
+		this.maxHp = maxHp;
+	}
+
+	public int getAttackAdd() {
+		return attackAdd;
+	}
+
+	public void setAttackAdd(int attackAdd) {
+		this.attackAdd = attackAdd;
+	}
+
+	public int getDefenceAdd() {
+		return defenceAdd;
+	}
+
+	public void setDefenceAdd(int defenceAdd) {
+		this.defenceAdd = defenceAdd;
+	}
+
+	public int getHpAdd() {
+		return hpAdd;
+	}
+
+	public void setHpAdd(int hpAdd) {
+		this.hpAdd = hpAdd;
+	}
+
+	public byte getColor() {
+		return color;
+	}
+
+	public void setColor(byte color) {
+		this.color = color;
+	}
+
+	// 带兵数=将领本身+技能+装备
+	public int getSoldierNum() {
+		return this.soldierNum + tmp_add[3];
+	}
+
+	public void setSoldierNum(int soldierNum) {
+		this.soldierNum = soldierNum;
+	}
+
+	public int getWeapon() {
+		return weapon;
+	}
+
+	public void setWeapon(int weapon) {
+		this.weapon = weapon;
+	}
+
+	public int getArmour() {
+		return armour;
+	}
+
+	public void setArmour(int armour) {
+		this.armour = armour;
+	}
+
+	public int getHelmet() {
+		return helmet;
+	}
+
+	public void setHelmet(int helmet) {
+		this.helmet = helmet;
+	}
+
+	public int getHorse() {
+		return horse;
+	}
+
+	public void setHorse(int horse) {
+		this.horse = horse;
+	}
+
+	public String getSkill() {
+		return skill;
+	}
+
+	public void setSkill(String skill) {
+		this.skill = skill;
+	}
+
+	public byte getSkillNum() {
+		return skillNum;
+	}
+
+	public void setSkillNum(byte skillNum) {
+		this.skillNum = skillNum;
+	}
+
+	public String getMemo() {
+		return memo;
+	}
+
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+
+	public int getBuildId() {
+		return buildId;
+	}
+
+	public void setBuildId(int buildId) {
+		this.buildId = buildId;
+	}
+
+	public byte getStatus() {
+		return status;
+	}
+
+	public void setStatus(byte status) {
+		this.status = status;
+	}
+
+	public void setInfo(byte status, String memo, String soldier) {
+		this.status = status;
+		this.memo = memo;
+		this.soldier = soldier;
+	}
+
+	public long getTrainEndTime() {
+		return trainEndTime;
+	}
+
+	public void setTrainEndTime(long trainEndTime) {
+		this.trainEndTime = trainEndTime;
+	}
+
+	public byte getTrainType() {
+		return trainType;
+	}
+
+	public void setTrainType(byte trainType) {
+		this.trainType = trainType;
+	}
+
+	public byte getTrainIndex() {
+		return trainIndex;
+	}
+
+	public void setTrainIndex(byte trainIndex) {
+		this.trainIndex = trainIndex;
+	}
+
+	public int getAddExp() {
+		return addExp;
+	}
+
+	public void setAddExp(int addExp) {
+		this.addExp = addExp;
+	}
+
+	public long getEffectTime() {
+		return effectTime;
+	}
+
+	public void setEffectTime(long effectTime) {
+		this.effectTime = effectTime;
+	}
+	
+
+	public int getAttackTotal() {
+		return attackTotal;
+	}
+
+	public void setAttackTotal(int attackTotal) {
+		this.attackTotal = attackTotal;
+	}
+
+	public int getDefenceTotal() {
+		return defenceTotal;
+	}
+
+	public void setDefenceTotal(int defenceTotal) {
+		this.defenceTotal = defenceTotal;
+	}
+
+	public int getHpTotal() {
+		return hpTotal;
+	}
+
+	public void setHpTotal(int hpTotal) {
+		this.hpTotal = hpTotal;
+	}
+
+	@Override
+	public byte getModuleType() {
+		return NTC_DTCD_PLAYERHERO;
+	}
+
+	@Override
+	public void _serialize(JoyBuffer out) {
+		out.putInt(id);
+		out.putInt(userId);
+		// System.out.println(name.getBytes().length);
+		out.putPrefixedString(name, (byte) 2);
+		out.putPrefixedString(icon, (byte) 2);
+		out.putInt(level);
+		out.putInt(exp);
+		out.put(sex);
+		out.putInt(this.getAttack());
+		out.putInt(this.getDefence());
+		out.putInt(this.getHp());
+		out.putInt(maxHp);
+		out.putPrefixedString(memo, (byte) 2);
+		out.putInt(attackAdd);
+		out.putInt(defenceAdd);
+		out.putInt(hpAdd);
+		out.put(color);
+		out.putInt(this.getSoldierNum());
+		out.putInt(weapon);
+		out.putInt(armour);
+		out.putInt(helmet);
+		out.putInt(horse);
+		out.put(skillNum);
+		// 技能的特殊处理去掉天生技能的标示
+		String skArray[] = skill.split(",");
+		skArray[0] = "";
+		String str = StringUtils.recoverNewStr(skArray, ",");
+		out.putPrefixedString(str, (byte) 2);
+		//
+		out.putInt(buildId);
+		out.put(status);
+		out.putLong(trainEndTime / 1000);
+		out.put(trainType);
+		out.put(trainIndex);
+		out.putInt(getBornSkill());
+		out.putPrefixedString(this.soldier, JoyBuffer.STRING_TYPE_SHORT);
+		// out.putInt(temp[0]);
+		// out.putInt(temp[1]);
+		// out.putInt(temp[2]);
+		// out.putInt(temp[3]);
+	}
+
+	@Override
+	public void deserialize(JoyBuffer in) {
+		// byte modelType = in.get();
+		this.id = in.getInt();
+		this.userId = in.getInt();
+		this.name = in.getPrefixedString(JoyBuffer.STRING_TYPE_SHORT);
+		this.icon = in.getPrefixedString(JoyBuffer.STRING_TYPE_SHORT);
+		this.level = in.getInt();
+		this.exp = in.getInt();
+		this.sex = in.get();
+		this.attack = in.getInt();
+		this.defence = in.getInt();
+		this.hp = in.getInt();
+		this.maxHp = in.getInt();
+		this.memo = in.getPrefixedString(JoyBuffer.STRING_TYPE_SHORT);
+		this.attackAdd = in.getInt();
+		this.defenceAdd = in.getInt();
+		this.hpAdd = in.getInt();
+		this.color = in.get();
+		this.soldierNum = in.getInt();
+		this.weapon = in.getInt();
+		this.armour = in.getInt();
+		this.helmet = in.getInt();
+		this.horse = in.getInt();
+		this.skillNum = in.get();
+		this.skill = in.getPrefixedString(JoyBuffer.STRING_TYPE_SHORT);
+		this.buildId = in.getInt();
+		this.status = in.get();
+		this.trainEndTime = in.getLong();
+		this.trainType = in.get();
+		this.trainIndex = in.get();
+		in.getInt();
+		this.soldier = in.getPrefixedString(JoyBuffer.STRING_TYPE_SHORT);
+	}
+
+	// public void print() {
+	// System.out.println("id==" + getId());
+	// System.out.println("userId==" + getUserId());
+	// System.out.println("name==" + getName());
+	// System.out.println("icon==" + getIcon());
+	// System.out.println("level==" + getLevel());
+	// System.out.println("exp==" + getExp());
+	// System.out.println("sex==" + getSex());
+	// System.out.println("attack==" + getAttack());
+	// System.out.println("defence==" + getDefence());
+	// System.out.println("hp==" + getHp());
+	// System.out.println("maxHp==" + getMaxHp());
+	// System.out.println("memo==" + getMemo());
+	// System.out.println("attackAdd==" + getAttackAdd());
+	// System.out.println("defenceAdd==" + getDefenceAdd());
+	// System.out.println("hpAdd==" + getHpAdd());
+	// System.out.println("color==" + getColor());
+	// System.out.println("soldierNum==" + getSoldierNum());
+	// System.out.println("weapon==" + getWeapon());
+	// System.out.println("armour==" + getArmour());
+	// System.out.println("helmet==" + getHelmet());
+	// System.out.println("horse==" + getHorse());
+	// System.out.println("skillNum==" + getSkillNum());
+	// System.out.println("skill==" + getSkill());
+	// System.out.println("buildId==" + getBuildId());
+	// System.out.println("status==" + getStatus());
+	// System.out.println("trainEndTime==" + getTrainEndTime());
+	// System.out.println("trainType==" + getTrainType());
+	// System.out.println("trainIndex==" + getTrainIndex());
+	// System.out.println("soldier==" + this.getSoldier());
+	// }
+
+	/**
+	 * 变更将领属性
+	 */
+	public void updateHeroAttri() {
+		tmp_skillAdd = new int[6];
+		tmp_equipAdd = new int[6];
+		int a[] = getEquipAttri();
+		String str = "";
+		for (int i = 0; i < tmp_equipAdd.length; i++) {
+			str += "," + tmp_equipAdd[i];
+		}
+		// logger.info("装备加成="+str);
+		int b[] = getSkillAttri();
+		str = "";
+		for (int i = 0; i < tmp_skillAdd.length; i++) {
+			str += "," + tmp_skillAdd[i];
+		}
+		// logger.info("技能加成="+str);
+		str = "";
+		for (int i = 0; i < tmp_add.length; i++) {
+			tmp_add[i] = a[i] + b[i];
+			str += "," + tmp_add[i];
+		}
+		if(getPlayer() != null){
+			getPlayer().getPlayerHeroManager().save(getId());//保存进数据库
+		}
+		// logger.info("总加成="+str);
+	}
+
+	/**
+	 * 获得装备属性的叠加，属性变更时调用该方法
+	 * 
+	 * @return
+	 */
+	public int[] getEquipAttri() {
+
+		for (int i = 0; i < 4; i++) {
+			// 武器// 铠甲// 头盔// 马
+			int eid = 0;
+			switch (i) {
+			case 0:
+				eid = weapon;
+				break;
+			case 1:
+				eid = armour;
+				break;
+			case 2:
+				eid = helmet;
+				break;
+			case 3:
+				eid = horse;
+				break;
+			}
+			try {
+				tmp_equipAdd[i] = player.getFirmPoint(eid, getId());
+			} catch (Exception ex) {
+				logger.info("getEquipAttri error !,eid=" + eid);
+			}
+
+		}
+		return tmp_equipAdd;
+	}
+
+	/**
+	 * 技能效果,依赖于装备的获得 技能学习，移除和装备的脱穿需要调用该方法,升级也调用该方法
+	 * 
+	 * @return
+	 */
+	public int[] getSkillAttri() {
+		// 获得所学习的技能id
+		int ids[] = getAllSkillIds();
+		for (int i = 0; i < ids.length; i++) {
+			Skill sk = GameDataManager.skillManager.getSKill(ids[i]);
+			if (sk == null) {
+				continue;
+			}
+			if (sk.getBackup2() != SkillConst.SKILLTYPE_1) {
+				continue;
+			}
+			int sid = sk.getBackup4();
+			int attackR = sk.getAttackRate();
+			int defR = sk.getDefenceRate();
+			int hpR = sk.getHpRate();
+			if (sid == 1) {// 直接增加
+				tmp_skillAdd[0] += Math
+						.ceil((double) (this.attack * attackR) / 100);
+				tmp_skillAdd[1] += Math
+						.ceil((double) this.defence * defR / 100);
+				tmp_skillAdd[2] += Math.ceil((double) this.hp * hpR / 100);
+			} else if (sid == 2) {// 根据武器增加
+				tmp_skillAdd[0] += Math.ceil((double) tmp_equipAdd[0] * attackR
+						/ 100);
+				tmp_skillAdd[1] += Math.ceil((double) tmp_equipAdd[1] * defR
+						/ 100);
+				tmp_skillAdd[2] += Math.ceil((double) tmp_equipAdd[2] * hpR
+						/ 100);
+			} else if (sid == 3) {// 带兵数
+				tmp_skillAdd[3] += Math.ceil((double) this.soldierNum
+						* sk.getSoldierNum() / 100);
+			} else if (sid == 4) {// 经验数值
+				tmp_skillAdd[4] += Math.ceil((double) sk.getEndExp());
+			} else if (sid == 5) {// 训练时间
+				tmp_skillAdd[5] += Math.ceil((double) sk.getTrainTime());
+			}
+		}
+		return tmp_skillAdd;
+	}
+
+	/**
+	 * 增加经验数值
+	 * 
+	 * @param addNum
+	 * @return
+	 */
+	public void addExp(int addNum) {
+
+		this.setExp(this.getExp() + addNum);
+		levelUp();
+	}
+
+	public void mathLevel() {
+		// 当前经验比 当前级别上限高 并且 当前级别<玩家级别+10
+		while ((this.exp >= GameDataManager.heroManager.getExp(this.getLevel()))
+				&& (this.level < this.player.getData().getLevel() + 10)) {
+			if (this.level < GameDataManager.heroManager.maxLevel()) {
+				this.exp -= GameDataManager.heroManager.getExp(this.getLevel());
+				this.level++;
+				// 升级后级别>当前级别+10
+				if (this.level >= this.player.getData().getLevel() + 10) {
+					// 不再升级
+					logger.info("mathLevel hero level=" + this.level
+							+ " player level="
+							+ this.player.getData().getLevel());
+					break;
+				}
+				mathLevel();
+			} else {
+				// 已经到最大级别了
+				break;
+			}
+		}
+		// 已经到最大级别了
+		if (this.exp > GameDataManager.heroManager.getExp(this.getLevel())) {
+			this.exp = GameDataManager.heroManager.getExp(this.getLevel());
+		}
+		// 根据升级后的级别设置玩家属性
+		// 四舍五入 new BigDecimal("2").setScale(0, BigDecimal.ROUND_HALF_UP)
+		// 向上取整Math.ceil（）
+		// 舍掉小数Math.floor(2)
+
+	}
+
+	/**
+	 * 将领升级
+	 * 
+	 * @param addExp
+	 */
+	public void levelUp() {
+		int lastLevel = this.level;
+		// 获得当前级别经验上限
+		// 比下一级经验数值大
+//		logger.info("升级前经验=" + this.exp + " 级别=" + this.level + " 经验上限="
+//				+ GameDataManager.heroManager.getExp(this.getLevel()));
+//		logger.info("升级前属性,hp=" + hp + " attack=" + attack + " defence="
+//				+ defence);
+		mathLevel();
+//		logger.info("升级后经验=" + this.exp + " 级别=" + this.level + " 经验上限="
+//				+ GameDataManager.heroManager.getExp(this.getLevel()));
+		float fhp = this.hpAdd * (this.level - 1) / 10;
+		float fattack = this.attackAdd * (this.level - 1) / 10;
+		float fdef = this.defenceAdd * (this.level - 1) / 10;
+		logger.info("init=" + this.initHp + "," + this.initAttack + ","
+				+ this.initDefence);
+		logger.info("add=" + this.hpAdd + "," + this.attackAdd + ","
+				+ this.defenceAdd);
+//		logger.info("升级后属性增加,hp" + fhp + " fattack=" + fattack + " fdef="
+//				+ fdef + " init=" + this.initHp + "," + this.initAttack + ","
+//				+ this.initDefence);
+		this.hp = this.initHp + (int) Math.ceil(fhp);
+		this.maxHp = this.hp;
+		this.attack = this.initAttack + (int) Math.ceil(fattack);
+		this.defence = this.initDefence + (int) Math.ceil(fdef);
+		this.updateHeroAttri();
+//		logger.info("升级后属性,hp=" + hp + " attack=" + attack + " defence="
+//				+ defence);
+		this.soldierNum = GameDataManager.soldierNumManager.getSoldierNumMap()
+				.get(this.level).getNum();
+		if(getPlayer() != null){
+			getPlayer().getPlayerHeroManager().save(getId());//保存进数据库
+		}
+		
+		QuestUtils.checkFinish(this.player, QuestUtils.TYPE31, true);
+	}
+
+	/**
+	 * 获得技能数组
+	 * 
+	 * @return
+	 */
+	public List<Skill> getSkills() {
+		int ids[] = this.getSkillIds();
+		List<Skill> list = new ArrayList<Skill>();
+		for (int i = 0; i < ids.length; i++) {
+			Skill sk = SkillManager.getInstance().getSKill(ids[i]);
+			if (sk != null) {
+				list.add(sk);
+			}
+		}
+		return list;
+	}
+
+	public List<Equipment> getEquips() {
+		List<Equipment> list = new ArrayList<Equipment>();
+		Equipment eq = player.getPlayerStorageAgent().getHeroEquipment(
+				this.weapon, this.id);
+		if (eq != null) {
+//			EquipPrototype ep = eq.getPrototype();
+			list.add(eq);
+
+		}
+		eq = player.getPlayerStorageAgent().getHeroEquipment(this.armour,
+				this.id);
+		if (eq != null) {
+//			EquipPrototype ep = eq.getPrototype();
+			list.add(eq);
+
+		}
+		eq = player.getPlayerStorageAgent().getHeroEquipment(this.helmet,
+				this.id);
+		if (eq != null) {
+//			EquipPrototype ep = eq.getPrototype();
+			list.add(eq);
+
+		}
+		eq = player.getPlayerStorageAgent().getHeroEquipment(this.horse,
+				this.id);
+		if (eq != null) {
+//			EquipPrototype ep = eq.getPrototype();
+			list.add(eq);
+
+		}
+		return list;
+	}
+
+	/**
+	 * 获得将领自带技能， 排除天生技能的表示符号
+	 * 
+	 * @return
+	 */
+	public int[] getSkillIds() {
+		if (skill.equals("")) {
+			return null;
+		}
+		String ids[] = skill.split(",");
+		int s[] = new int[ids.length - 1];
+		for (int i = 0; i < s.length; i++) {
+			s[i] = Integer.parseInt(ids[i + 1]);
+		}
+		return s;
+	}
+
+	/**
+	 * 获得将领全部技能，包括装备加制效果
+	 * 
+	 * @return
+	 */
+	public int[] getAllSkillIds() {
+		int ids[] = getSkillIds();
+		if (ids == null) {
+			return null;
+		}
+		// 加入装备加制后的效果
+		List<Integer> equipSkill = getEquipSkill();
+		if (equipSkill != null && equipSkill.size() != 0) {
+			int newArray[] = new int[ids.length + equipSkill.size()];
+			System.arraycopy(ids, 0, newArray, 0, ids.length);
+			int j = ids.length;
+			for (Integer i : equipSkill) {
+				newArray[j] = i;
+				j++;
+			}
+			ids = newArray;
+		}
+		return ids;
+	}
+
+	/**
+	 * 增加一个技能
+	 */
+	public boolean addSkill(int newId) {
+		if (this.getStatus() != GameConst.HEROSTATUS_TRAIN
+				&& this.getStatus() != GameConst.HEROSTATUS_IDEL) {
+			setTipMessage("将领不在空闲状态，无法学习", GameConst.GAME_RESP_FAIL);
+			if(I18nGreeting.LANLANGUAGE_TIPS == 1){
+				setTipMessage("Your hero is busy, you can not train it.",
+						GameConst.GAME_RESP_FAIL);
+			}
+			return false;
+		}
+		// 判断技能是否存在
+		Skill newSkill = GameDataManager.skillManager.getSKill(newId);
+		if (newSkill == null) {
+			setTipMessage("增加的新技能=null,id=" + newId, GameConst.GAME_RESP_FAIL);
+			if(I18nGreeting.LANLANGUAGE_TIPS == 1){
+				setTipMessage("error",
+						GameConst.GAME_RESP_FAIL);
+			}
+			return false;
+		}
+		// 加入新技能
+		int bornId = this.getBornSkillId();
+		if (bornId != 0) {// 有天生技能
+			Skill bornSkill = GameDataManager.skillManager.getSKill(bornId);
+			if (bornSkill == null) {
+				setTipMessage("天生技能=null,id=" + bornId,
+						GameConst.GAME_RESP_FAIL);
+				if(I18nGreeting.LANLANGUAGE_TIPS == 1){
+					setTipMessage("error",
+							GameConst.GAME_RESP_FAIL);
+				}
+				return false;
+			}
+			if (bornSkill.getSkillType() == newSkill.getSkillType()) {// 如果加入的新技能类型和天生技能相同
+				setTipMessage("新学习的技能和天生技能类型相同", GameConst.GAME_RESP_FAIL);
+				logger.info("新学习的技能和天生技能类型相同,bornId=" + bornId + " newId==",
+						GameConst.GAME_RESP_FAIL);
+				if(I18nGreeting.LANLANGUAGE_TIPS == 1){
+					setTipMessage("The new skill is the same with your innate skill.",
+							GameConst.GAME_RESP_FAIL);
+				}
+				return false;
+			}
+		}
+		int ids[] = getSkillIds();
+		// 判断技能栏是否够
+		int num = 0;
+		for (int i = 0; i < ids.length; i++) {
+			if (ids[i] > 0) {
+				num++;
+			}
+		}
+		if (num >= skillNum) {
+			setTipMessage("已经学习的技能数=" + num + " 最大能拥有的技能数量为=" + skillNum,
+					GameConst.GAME_RESP_FAIL);
+			if(I18nGreeting.LANLANGUAGE_TIPS == 1){
+				setTipMessage("The skills you have learned=" + num + " , the skills you can have =" + skillNum,
+						GameConst.GAME_RESP_FAIL);
+			}
+			return false;
+		}
+		// 遍历已经拥有的技能，如果类型一样，级别《则不能学习
+		for (int i = 0; i < ids.length; i++) {
+			Skill sk = GameDataManager.skillManager.getSKill(ids[i]);
+			if (sk == null) {
+				continue;
+			}
+			if (newSkill.getSkillType() == sk.getSkillType()) {// 如果有类型相同的
+				// if (newSkill.getLevel() <= sk.getLevel()) {
+				// setTipMessage("所学习的技能已经有相同类型，并且级别过低",GameConst.GAME_RESP_FAIL);
+				// return false;
+				// } else {
+				// // 移除掉低级别的技能
+				// ids[i] = 0;
+				// }
+				String str = "所学习的技能已经有相同类型";
+				if(I18nGreeting.LANLANGUAGE_TIPS == 1){
+					str = "You have learned the different level of the same skill.";
+				}
+				setTipMessage(str, GameConst.GAME_RESP_FAIL);
+				return false;
+			}
+		}
+
+		if (bornId == 0) {// 没有天生技能
+			for (int i = 0; i < ids.length; i++) {
+				if (ids[i] == 0) {
+					ids[i] = newId;
+					break;
+				}
+			}
+		} else {
+			for (int i = 1; i < ids.length; i++) {
+				if (ids[i] == 0) {
+					ids[i] = newId;
+					break;
+				}
+			}
+		}
+		// 还原为string类型
+		String skArray[] = skill.split(",");
+		logger.info("当前技能=" + skill);
+		// int hasBornSkill = Integer.parseInt(skArray[0]);
+		for (int i = 0; i < ids.length; i++) {
+			skArray[i + 1] = String.valueOf(ids[i]);
+		}
+		this.skill = StringUtils.recoverNewStr(skArray, ",");
+		logger.info("学习后技能=" + skill);
+		// setTipMessage("获得技能=" +
+		// newSkill.getName(),GameConst.GAME_RESP_SUCCESS);
+
+		updateHeroAttri();
+		return true;
+	}
+
+	/**
+	 * 设置初始技能
+	 */
+	public void createSkill(Hero hero) {
+		// 技能，根据技能数量初始化技能id
+		String oldString[] = new String[hero.getSkillNum() + 1];
+		for (int i = 0; i < oldString.length; i++) {
+			oldString[i] = "0";
+		}
+		if (hero.getBornSkill() == 0) {// 没有天生技能
+			oldString[0] = "-1";
+		} else {// 有天生技能
+			oldString[0] = "-2";
+			oldString[1] = String.valueOf(hero.getBornSkill());
+		}
+		this.skill = StringUtils.recoverNewStr(oldString, ",");
+	}
+
+	/**
+	 * 获得天生技能的id
+	 * 
+	 * @return
+	 */
+	public int getBornSkillId() {
+		String skArray[] = skill.split(",");
+		int hasBornSkill = Integer.parseInt(skArray[0]);
+		if (hasBornSkill == -1) {
+			return 0;
+		} else {
+			return Integer.parseInt(skArray[1]);
+		}
+	}
+
+	/**
+	 * 移除一个技能,天生技能不能移除
+	 */
+	public boolean removeSkill(int skId) {
+		if (this.getStatus() != GameConst.HEROSTATUS_IDEL) {
+			if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+				setTipMessage("Your hero is busy, you can not train it.", GameConst.GAME_RESP_FAIL);
+			}else{
+				setTipMessage("将领不在空闲状态，无法学习", GameConst.GAME_RESP_FAIL);
+			}
+			
+			return false;
+		}
+		logger.info("遗忘技能，当前技能=" + skill + "  id=" + skId);
+		String skArray[] = skill.split(",");
+		int hasBornSkill = Integer.parseInt(skArray[0]);
+		boolean b = false;
+		for (int i = 1; i < skArray.length; i++) {
+			int _id = Integer.parseInt(skArray[i]);
+			if (hasBornSkill == -1) {// 如果没有天生技能
+				if (_id == skId) {
+					skArray[i] = "0";
+					b = true;
+					break;
+				}
+			} else {
+				if ((i > 0) && (_id == skId)) {
+					skArray[i] = "0";
+					b = true;
+					break;
+				}
+			}
+		}
+		if (!b) {
+			logger.info("遗忘技能，没有找到相同的技能id=" + skId);
+			if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+				setTipMessage("Retrain failed. Can't find the same skill. id=" + skId, GameConst.GAME_RESP_FAIL);
+			}else{
+				setTipMessage("遗忘技能，没有找到相同的技能id=" + skId, GameConst.GAME_RESP_FAIL);
+			}
+			
+			return false;
+		}
+		this.skill = StringUtils.recoverNewStr(skArray, ",");
+		updateHeroAttri();
+		return true;
+
+	}
+
+	/**
+	 * 获得装备技能id
+	 */
+	public List<Integer> getEquipSkill() {
+		List<Integer> list = new ArrayList<Integer>();
+		for (int i = 0; i < 4; i++) {
+			// 武器// 铠甲// 头盔// 马
+			int eid = 0;
+			switch (i) {
+			case 0:
+				eid = weapon;
+				break;
+			case 1:
+				eid = armour;
+				break;
+			case 2:
+				eid = helmet;
+				break;
+			case 3:
+				eid = horse;
+				break;
+			}
+			if (player == null) {
+				logger.info("getEquipSkill error");
+			} else {
+				int skillId = player.getFirmId(eid, getId());
+				// logger.info("getEquipSkill eid="+eid+" heroId="+this.id+" skillId="+skillId);
+				if (skillId != 0) {
+					list.add(skillId);
+				}
+			}
+
+		}
+		return list;
+	}
+
+	/**
+	 * 判断是否有装备的加制技能，0没有，1有
+	 * 
+	 * @return
+	 */
+	public byte[] hasEquipSkill() {
+		byte data[] = new byte[4];
+		for (int i = 0; i < 4; i++) {
+			// 武器// 铠甲// 头盔// 马
+			int eid = 0;
+			switch (i) {
+			case 0:
+				eid = weapon;
+				break;
+			case 1:
+				eid = armour;
+				break;
+			case 2:
+				eid = helmet;
+				break;
+			case 3:
+				eid = horse;
+				break;
+			}
+			if (player == null) {
+				logger.info("getEquipSkill error");
+			} else {
+				int skillId = player.getFirmId(eid, getId());
+				// logger.info("getEquipSkill eid="+eid+" heroId="+this.id+" skillId="+skillId);
+				if (skillId != 0) {
+					data[i] = 1;
+				}
+			}
+
+		}
+		return data;
+	}
+
+	/**
+	 * 穿装备
+	 * 
+	 * @param e
+	 */
+	public void mountEquip(Equipment e) {
+		byte type = e.getPrototype().getEquipmentType();
+		switch (type) {
+		case Equipment.SWORD:
+			weapon = e.getId();
+			break;
+		case Equipment.ARMOR:
+			armour = e.getId();
+			break;
+		case Equipment.HELMET:
+			helmet = e.getId();
+			break;
+		case Equipment.MOUNTS:
+			horse = e.getId();
+			break;
+		default:
+			logger.info("mountEquip error,id=" + e.getId());
+		}
+		QuestUtils.checkFinish(player, QuestUtils.TYPE10, true);
+		updateHeroAttri();
+	}
+
+	/**
+	 * 脱装备
+	 * 
+	 * @param e
+	 */
+	public void unmountEquip(Equipment e) {
+		byte type = e.getPrototype().getEquipmentType();
+		switch (type) {
+		case Equipment.SWORD:
+			weapon = 0;
+			break;
+		case Equipment.ARMOR:
+			armour = 0;
+			break;
+		case Equipment.HELMET:
+			helmet = 0;
+			break;
+		case Equipment.MOUNTS:
+			horse = 0;
+			break;
+		default:
+			System.out.println("mountEquip error,id=" + e.getId());
+		}
+		updateHeroAttri();
+	}
+
+	/**
+	 * 开始训练
+	 * 
+	 * @param _type
+	 *            训练类型 0经验 1金钱
+	 */
+	public boolean startTrain(byte _type, byte index) {
+		// 获得当前将领状态，判断是否可以开始训练
+		// 设置将领状态为训练，计算结束时间，设置训练类型
+		// 必须为空闲状态
+		if (status != GameConst.HEROSTATUS_IDEL) {
+			if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+				setTipMessage("Train failed. The hero is busy.", GameConst.GAME_RESP_FAIL);
+			}else{
+				setTipMessage("训练失败，状态不是空闲=" + status, GameConst.GAME_RESP_FAIL);
+			}
+			
+			return false;
+		}
+		// 训练还未结束
+		if (trainEndTime > TimeUtils.nowLong()) {
+			if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+				setTipMessage("Train failed. trainEndTime>Current time", GameConst.GAME_RESP_FAIL);
+			}else{
+				setTipMessage("训练失败，trainEndTime>当前时间", GameConst.GAME_RESP_FAIL);
+			}
+			
+			return false;
+		}
+		// this.status = GameConst.HEROSTATUS_TRAIN;
+		this.trainType = _type;
+		this.trainIndex = index;
+		this.memo = index + 1 + "号,训练位" + "训练中...";
+		// 训练结束时间
+		int time = 0;
+		TrainingBits tb = null;
+		if (_type == 0) {
+			tb = player.getTrainingBits(this.trainIndex);
+			if (tb == null) {
+				if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+					setTipMessage("failed", GameConst.GAME_RESP_FAIL);
+				}else{
+					setTipMessage("训练失败，tb=null", GameConst.GAME_RESP_FAIL);
+				}
+				return false;
+			}
+			if(player.saveResources(GameConfig.GAME_MONEY, -500) <0){
+				if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+					setTipMessage("Train EXP failed. Not enough Gold!", GameConst.GAME_RESP_FAIL);
+				}else{
+					setTipMessage("经验训练失败，金钱不足", GameConst.GAME_RESP_FAIL);
+				}
+				return false;
+			}
+			time = tb.getExpTime();
+		} else {
+			tb = player.getTrainingBits(this.trainIndex);
+			if (tb == null) {
+				if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+					setTipMessage("failed", GameConst.GAME_RESP_FAIL);
+				}else{
+					setTipMessage("训练失败，tb=null", GameConst.GAME_RESP_FAIL);
+				}
+				return false;
+			}
+			if(player.saveResources(GameConfig.GAME_MONEY, -2000) <0){
+				if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+					setTipMessage("Train EXP failed. Not enough Gold!", GameConst.GAME_RESP_FAIL);
+				}else{
+					setTipMessage("技能训练失败，金钱不足", GameConst.GAME_RESP_FAIL);
+				}
+				
+				return false;
+			}
+			time = tb.getSkillTime();
+		}
+		//写入日志  玩家 在日期xx开始训练id,type
+		GameLog.logPlayerEvent(player, LogEvent.HERO_TRAIN, new LogBuffer().add(_type));
+
+		logger.info("默认训练时间=" + time + "秒，减少比例=" + tmp_add[5] + ",_type="
+				+ _type);
+		time += time * tmp_add[5] / 100;
+		logger.info("训练开始，结束时间为当前时间之后" + time + "秒");
+		this.trainEndTime = TimeUtils.nowLong() + time * 1000;
+		this.player.getPlayerHeroManager().motifyStatus(this.id,
+				GameConst.HEROSTATUS_TRAIN, "", "", this.trainEndTime);
+		QuestUtils.checkFinish(player, QuestUtils.TYPE29, true);
+		return true;
+	}
+
+	public int getExpAdd() {
+		int n = 0;
+		PropsDelay prop = player.getPlayerStorageAgent().getPis()
+				.getDelay(ItemConst.HERO_EXP_CARD_TYPE);
+		if (prop != null) {
+			n = prop.getAdditionCount();
+		}
+		logger.info("skill 增加比例=" + tmp_add[4] + " prop增加比例=" + n);
+		return tmp_add[4] + n;
+	}
+
+	/**
+	 * 结束训练
+	 */
+	public boolean stopTrain() {
+		// 获得当前将领状态和时间，判断是否可以结束训练
+		if (status != GameConst.HEROSTATUS_TRAIN) {
+			if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+				setTipMessage(" Train failed. This hero is not in training.", GameConst.GAME_RESP_FAIL);
+			}else{
+				setTipMessage("训练失败,当前将领不在训练中", GameConst.GAME_RESP_FAIL);
+			}
+			
+			return false;
+		}
+		// 设置将领状态为空闲，时间和类型不需要重置，
+		// 根据级别和类型获得相应的 经验或者技能
+		if (TimeUtils.nowLong() >= trainEndTime) {
+			if (this.trainType == 0) {
+				// 获得当前级别可以获得经验数值
+				int[] exp = player.getPlayerBuilgingManager().getTrainExp(
+						this.trainIndex);
+				// 获得当前训练台的级别
+				if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+					setTipMessage("Train hero successfully. Obtains EXP " + exp[this.level],
+							GameConst.GAME_RESP_SUCCESS);
+				}else{
+					setTipMessage("将领训练成功,获得经验" + exp[this.level],
+							GameConst.GAME_RESP_SUCCESS);
+				}
+				addExp(exp[this.level]);
+			} else {
+				// 获得各个级别技能的几率
+				int[] skillRate = player.getPlayerBuilgingManager()
+						.getTrainSkill(this.trainIndex);
+				// 技能级别上限为10
+				int[] skillLevel = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+				int slevel = MathUtils.getRandomId2(skillLevel, skillRate, 100);
+				int sid = GameDataManager.skillManager
+						.randomSkillByLevel(slevel);
+				if (addSkill(sid)) {
+					logger.info("将领训练，获得一个技能，级别=" + slevel + " id=" + sid
+							+ " skill=" + this.skill);
+					
+					if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+						setTipMessage("Train hero successfully." + this.tip.getMessage(),
+								GameConst.GAME_RESP_SUCCESS);
+					}else{
+						setTipMessage("将领训练成功," + this.tip.getMessage(),
+								GameConst.GAME_RESP_SUCCESS);
+					}
+				}
+			}
+		} else {
+			logger.info(" 未到训练时间");
+		}
+		trainEndTime = TimeUtils.nowLong();
+		this.player.getPlayerHeroManager().motifyStatus(this.id,
+				GameConst.HEROSTATUS_IDEL, "", "", 0);
+		memo = "";
+		return true;
+	}
+
+	/**
+	 * 扩展技能格子
+	 * 
+	 * @return
+	 */
+	public boolean expandSkill(byte type) {
+		if (skillNum >= 6) {
+			if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+				setTipMessage("Expand skillslot failed. Current skill number >=6 ", GameConst.GAME_RESP_FAIL);
+			}else{
+				setTipMessage("扩展技能格失败，当前技能数>=6", GameConst.GAME_RESP_FAIL);
+			}
+			
+			return false;
+		}
+		int m = GameConfig.heroSkill5;
+		if (skillNum == 5) {
+			m = GameConfig.heroSkill6;
+		}
+		// 根据类型消耗金钱
+		if (player.saveResources(GameConfig.JOY_MONEY, -m) < 0) {
+			String msg = I18nGreeting.getInstance().getMessage(
+					"dimond.not.enough", null);
+			setTipMessage(msg, GameConst.GAME_RESP_FAIL);
+			return false;
+		}
+
+		this.skillNum++;
+		int oldId[] = StringUtils.changeToInt(this.skill, ",");
+		int newId[] = StringUtils.addNew(oldId, 0);
+		String str[] = StringUtils.changeToString(newId);
+		this.skill = StringUtils.recoverNewStr(str, ",");
+		return true;
+	}
+
+	/**
+	 * 获得出生技能
+	 * 
+	 * @return
+	 */
+	public int getBornSkill() {
+
+		int bid = getBornSkillId();
+		if (bid == 0) {// 没有天生技能
+			return 0;
+		} else {
+			return bid;
+		}
+	}
+
+	/**
+	 * 加速训练
+	 * 
+	 * @return
+	 */
+	public boolean speedUp() {
+		// 获得当前将领状态和时间，判断是否可以结束训练
+		if (status != GameConst.HEROSTATUS_TRAIN) {
+			if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+				setTipMessage("Accelerate failed. This hero is not in training.", GameConst.GAME_RESP_FAIL);
+			}else{
+				setTipMessage("加速训练失败,当前将领不在训练中", GameConst.GAME_RESP_FAIL);
+			}
+			
+			return false;
+		}
+		trainEndTime = TimeUtils.nowLong();// 立即完成
+		stopTrain();
+		return true;
+	}
+
+	public PlayerCharacter getPlayer() {
+		return player;
+	}
+
+	public void setPlayer(PlayerCharacter player) {
+		this.player = player;
+	}
+
+	public String getSoldier() {
+		return soldier;
+	}
+
+	public void setSoldier(String soldier) {
+		this.soldier = soldier;
+	}
+
+	@Override
+	public TipMessage getTip() {
+		return this.tip;
+	}
+
+	@Override
+	public void setTip(TipMessage tip) {
+		this.tip = tip;
+	}
+
+	public int getInitHp() {
+		return initHp;
+	}
+
+	public void setInitHp(int initHp) {
+		this.initHp = initHp;
+	}
+
+	public int getInitAttack() {
+		return initAttack;
+	}
+
+	public void setInitAttack(int initAttack) {
+		this.initAttack = initAttack;
+	}
+
+	public int getInitDefence() {
+		return initDefence;
+	}
+
+	public void setInitDefence(int initDefence) {
+		this.initDefence = initDefence;
+	}
+
+	public void setTipMessage(String str, byte result) {
+		if (tip == null) {
+			logger.info("tip  is null,str=" + str + " result=" + result);
+			return;
+		}
+		tip.setMessage(str);
+		tip.setResult(result);
+	}
+
+	public boolean remove() {
+		// 只有空闲状态才能移除
+		if (this.status != GameConst.HEROSTATUS_IDEL) {
+			if(I18nGreeting.LANLANGUAGE_TIPS ==1){
+				setTipMessage(" Can't delete the hero. The hero is busy now.", GameConst.GAME_RESP_FAIL);
+			}else{
+				setTipMessage("不能移除该将领，状态不为空闲", GameConst.GAME_RESP_FAIL);
+			}
+			
+			return false;
+		}
+		// // 脱下装备
+		// RespModuleSet rms = new RespModuleSet(ProcotolType.HERO_RESP);// 模块消息
+		// Cell cell = player.getPlayerStorageAgent().takeOffCell(this.weapon,
+		// id);
+		// rms.addModule(cell);
+		// cell = player.getPlayerStorageAgent().takeOffCell(this.armour, id);
+		// rms.addModule(cell);
+		// cell = player.getPlayerStorageAgent().takeOffCell(this.helmet, id);
+		// rms.addModule(cell);
+		// cell = player.getPlayerStorageAgent().takeOffCell(this.horse, id);
+		// rms.addModule(cell);
+		// AndroidMessageSender.sendMessage(rms, player);
+		return true;
+	}
+
+	// public int[] getTemp() {
+	// return temp;
+	// }
+	//
+	// public void setTemp(int[] temp) {
+	// this.temp = temp;
+	// }
+
+}

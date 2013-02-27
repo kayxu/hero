@@ -1,0 +1,66 @@
+package com.joymeng.core.spring;
+
+import groovy.lang.GroovyShell;
+
+import com.joymeng.game.domain.role.PlayerCharacter;
+import com.joymeng.game.domain.role.RoleData;
+
+import ognl.Ognl;
+import ognl.OgnlException;
+import junit.framework.TestCase;
+
+public class Test {
+	public static void main(String args[]) {
+		testOgnlSimpleProperty();
+	}
+
+	/**
+	 * 测试简单属性
+	 * */
+	public static void testOgnlSimpleProperty() {
+		User user = new User();
+		user.setName("abc");
+		try {
+			Object result = Ognl.getValue("name", user);// ********(1)
+			System.out.println("***简单属性**********result::" + result);
+			// 输出：***简单属性**********result::abc
+			Company com = new Company();
+			com.setCompanyName("某某科技有限公司");
+			user.setCompany(com);
+
+			result = Ognl.getValue("company.companyName", user);// *******(2)
+			System.out.println("***嵌套属性**********result::" + result);
+			// 输出：***嵌套属性**********result::某某科技有限公司
+			PlayerCharacter pc = new PlayerCharacter();
+			RoleData data = RoleData.create();
+			pc.setData(data);
+			long now = System.nanoTime();
+			for (int i = 0; i < 10000; i++) {
+				result = Ognl.getValue("data.gameMoney<9999", pc);// ********(1)
+			}
+			System.out.println("time1==" + (System.nanoTime() - now));
+			now = System.currentTimeMillis();
+			for (int i = 0; i < 10000; i++) {
+				if (pc.getData().getGameMoney() < 9999) {
+
+				}
+			}
+			System.out.println("time2==" + (System.nanoTime() - now));
+//			System.out.println("***简单属性1**********result::" + result);
+			GroovyShell shell = new GroovyShell();
+			shell.setProperty("data", data);
+			String ruleStirng = "data.gameMoney<9999";
+			now = System.nanoTime();
+			for (int i = 0; i < 10000; i++) {
+				shell.evaluate(ruleStirng);
+			}
+			System.out.println("time3==" + (System.nanoTime() - now));
+//			System.out.println("***简单属性2**********result::" + result);
+		} catch (OgnlException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

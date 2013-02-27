@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/8F_TEAM/!svn/ver/7583/CODE/Server/resource2/data
+END
+game_server1-clear.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/8F_TEAM/!svn/ver/7582/CODE/Server/resource2/data/game_server1-clear.sql
+END
+import-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/8F_TEAM/!svn/ver/6054/CODE/Server/resource2/data/import-data.sql
+END
+cleanup-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/8F_TEAM/!svn/ver/6054/CODE/Server/resource2/data/cleanup-data.sql
+END
+game_server1-init.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/8F_TEAM/!svn/ver/7583/CODE/Server/resource2/data/game_server1-init.sql
+END

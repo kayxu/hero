@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HeroDatas>
+  <!--id:HeroData,nameType:姓名
+1：随机男
+2：随机女
+3：名将,sex:性别
+0：男
+1：女,icon:头像,levelId:品级,memo:说明,money:招募价格,bornSkill:天生技能,minLevel:酒馆等级下限,maxLevel:酒馆等级上限,groupId:酒馆武将组,:,:,:,-->
+  <HeroData id="1" nameType="1" sex="0" icon="male1" levelId="1" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="7" groupId="1"/>
+  <HeroData id="2" nameType="1" sex="0" icon="male2" levelId="2" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="14" groupId="1"/>
+  <HeroData id="3" nameType="1" sex="0" icon="male3" levelId="3" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="20" groupId="1"/>
+  <HeroData id="4" nameType="1" sex="0" icon="male4" levelId="4" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="5" nameType="1" sex="0" icon="male5" levelId="5" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="6" nameType="1" sex="0" icon="male3" levelId="6" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="7" nameType="2" sex="1" icon="female1" levelId="7" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="8" nameType="1" sex="0" icon="male1" levelId="8" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="9" nameType="1" sex="0" icon="male2" levelId="9" memo="1" money="1000" bornSkill="0" minLevel="1" maxLevel="30" groupId="1"/>
+  <HeroData id="10" nameType="1" sex="0" icon="male3" levelId="10" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="7" groupId="2"/>
+  <HeroData id="11" nameType="1" sex="0" icon="male4" levelId="11" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="14" groupId="2"/>
+  <HeroData id="12" nameType="1" sex="0" icon="male5" levelId="12" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="20" groupId="2"/>
+  <HeroData id="13" nameType="2" sex="1" icon="female2" levelId="13" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="14" nameType="1" sex="0" icon="male1" levelId="14" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="15" nameType="1" sex="0" icon="male2" levelId="15" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="16" nameType="1" sex="0" icon="male3" levelId="16" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="17" nameType="2" sex="1" icon="female3" levelId="17" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="18" nameType="1" sex="0" icon="male1" levelId="18" memo="1" money="2000" bornSkill="0" minLevel="1" maxLevel="30" groupId="2"/>
+  <HeroData id="19" nameType="1" sex="0" icon="male2" levelId="19" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="12" groupId="3"/>
+  <HeroData id="20" nameType="1" sex="0" icon="male3" levelId="20" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="19" groupId="3"/>
+  <HeroData id="21" nameType="1" sex="0" icon="male4" levelId="21" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="24" groupId="3"/>
+  <HeroData id="22" nameType="1" sex="0" icon="male5" levelId="22" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="23" nameType="1" sex="0" icon="male2" levelId="23" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="24" nameType="1" sex="0" icon="male3" levelId="24" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="25" nameType="2" sex="1" icon="female1" levelId="25" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="26" nameType="2" sex="1" icon="female2" levelId="26" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="27" nameType="1" sex="0" icon="male1" levelId="27" memo="1" money="4000" bornSkill="0" minLevel="1" maxLevel="30" groupId="3"/>
+  <HeroData id="28" nameType="1" sex="0" icon="male2" levelId="28" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="8" groupId="4"/>
+  <HeroData id="29" nameType="1" sex="0" icon="male3" levelId="29" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="20" groupId="4"/>
+  <HeroData id="30" nameType="1" sex="0" icon="male4" levelId="30" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="24" groupId="4"/>
+  <HeroData id="31" nameType="1" sex="0" icon="male5" levelId="31" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="32" nameType="2" sex="1" icon="female3" levelId="32" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="33" nameType="1" sex="0" icon="male1" levelId="33" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="34" nameType="1" sex="0" icon="male2" levelId="34" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="35" nameType="1" sex="0" icon="male3" levelId="35" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="36" nameType="1" sex="0" icon="male4" levelId="36" memo="1" money="8000" bornSkill="0" minLevel="5" maxLevel="30" groupId="4"/>
+  <HeroData id="37" nameType="2" sex="1" icon="female1" levelId="37" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="12" groupId="5"/>
+  <HeroData id="38" nameType="1" sex="0" icon="male1" levelId="38" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="14" groupId="5"/>
+  <HeroData id="39" nameType="1" sex="0" icon="male2" levelId="39" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="16" groupId="5"/>
+  <HeroData id="40" nameType="1" sex="0" icon="male3" levelId="40" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="18" groupId="5"/>
+  <HeroData id="41" nameType="2" sex="1" icon="female2" levelId="41" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="18" groupId="5"/>
+  <HeroData id="42" nameType="1" sex="0" icon="male4" levelId="42" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="18" groupId="5"/>
+  <HeroData id="43" nameType="1" sex="0" icon="male5" levelId="43" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="20" groupId="5"/>
+  <HeroData id="44" nameType="1" sex="0" icon="male1" levelId="44" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="20" groupId="5"/>
+  <HeroData id="45" nameType="2" sex="1" icon="female3" levelId="45" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="20" groupId="5"/>
+  <HeroData id="46" nameType="1" sex="0" icon="male2" levelId="46" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="22" groupId="5"/>
+  <HeroData id="47" nameType="1" sex="0" icon="male3" levelId="47" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="24" groupId="5"/>
+  <HeroData id="48" nameType="1" sex="0" icon="male4" levelId="48" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="26" groupId="5"/>
+  <HeroData id="49" nameType="1" sex="0" icon="male5" levelId="49" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="28" groupId="5"/>
+  <HeroData id="50" nameType="2" sex="1" icon="female1" levelId="50" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="28" groupId="5"/>
+  <HeroData id="51" nameType="1" sex="0" icon="male1" levelId="51" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="28" groupId="5"/>
+  <HeroData id="52" nameType="1" sex="0" icon="male2" levelId="52" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="53" nameType="1" sex="0" icon="male3" levelId="53" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="54" nameType="2" sex="1" icon="female2" levelId="54" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="55" nameType="1" sex="0" icon="male4" levelId="55" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="56" nameType="1" sex="0" icon="male5" levelId="56" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="57" nameType="2" sex="1" icon="female3" levelId="57" memo="1" money="16000" bornSkill="0" minLevel="10" maxLevel="30" groupId="5"/>
+  <HeroData id="58" nameType="201" sex="0" icon="Arthur" levelId="57" memo="作为狮鹫国王法拉西斯三世的弟弟，亚瑟的睿智和善良似乎更得到狮鹫臣民的拥戴。更何况，他还曾拔出过象征无上权力的“王者之剑”。" money="32000" bornSkill="5610" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="59" nameType="202" sex="0" icon="thor" levelId="56" memo="梅林拥有着整个米拉西斯大陆无人能及的魔法天赋，曾经有人见过他使用雷系魔法轻而易举地杀死了凶暴的巨猿。" money="32000" bornSkill="4511" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="60" nameType="203" sex="1" icon="Sylva" levelId="55" memo="据说如果有人听到希尔瓦的轻语，那她的箭，一定已经刺穿了你的心脏。" money="32000" bornSkill="3810" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="61" nameType="204" sex="0" icon="Jack" levelId="49" memo="昆卡似乎痴迷于无垠之海的秘密胜过于寻找他失踪的父母，他现在与无垠之海的娜迦有着密切的联系。" money="32000" bornSkill="1211" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="62" nameType="205" sex="0" icon="Leo" levelId="49" memo="莱欧掌握了帝国最精锐的狮鹫空军，正如他自己所说，从来没有人能够像狮鹫一样称霸天空！" money="32000" bornSkill="3910" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="63" nameType="206" sex="1" icon="Galadriel" levelId="46" memo="凯兰崔尔天生跟植物有着无比亲近的关系，并擅长利用荆棘和蔓藤作为武器。" money="32000" bornSkill="3410" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="64" nameType="207" sex="0" icon="Lancelot" levelId="53" memo="“帝国守护者”这个称号是对兰斯洛特的忠诚与才华最好的褒奖。他是帝国皇家卫队队长，与亚瑟亲如兄弟。" money="32000" bornSkill="2111" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="65" nameType="208" sex="0" icon="Lamorak" levelId="51" memo="兰马洛克是兰斯洛特的弟弟，和兄长的忠诚不同，兰马洛克野心勃勃，甚至有些阴鸷，有传言，他正在跟亡灵军队秘密接触。" money="32000" bornSkill="1712" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="66" nameType="209" sex="0" icon="Draugluin" levelId="51" memo="卓古路因已经抑制不住内心黑暗力量的涌动，杀戮的欲望正喷涌而出，传言正在变成事实！" money="32000" bornSkill="1511" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="67" nameType="210" sex="0" icon="Galahad" levelId="49" memo="格拉海德是一名见多识广、勇于拼​​搏、无比虔诚的骑士，圣光与荣耀是他一生的格言。" money="32000" bornSkill="3510" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="68" nameType="211" sex="0" icon="Marth" levelId="42" memo="玛斯是伟大的预言家，他以无比的智慧知晓了米拉西斯大陆的一切。“人生最苦之事莫过于明知要失去，但是却还没发生。”" money="32000" bornSkill="2710" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="69" nameType="212" sex="1" icon="Daenerys" levelId="39" memo="见识过丹妮莉丝美貌的人们就会明白，亚瑟帝国为了她发动与狮鹫帝国之间的战争是多么的值得。" money="32000" bornSkill="4611" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="70" nameType="213" sex="0" icon="Stark" levelId="51" memo="“我的马蹄终将踏在敌人的尸骨之上。”狮鹫帝国骑兵团团长史塔克正以他的实际行动，印证着这句话。" money="32000" bornSkill="4010" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="71" nameType="214" sex="1" icon="Medusa" levelId="49" memo="美杜莎是处于无垠之海波浪之国的公主，传说她有着连神都无法拒绝的诱惑眼神，只是所有见过她眼神的人都变成了毫无生气的石头。" money="32000" bornSkill="4610" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="72" nameType="215" sex="0" icon="Veigas" levelId="50" memo="维加斯小时候亲眼目睹黑暗骑士们杀死自己的父母，从此仇恨的种子在心中生长，他誓要让自己的剑穿透黑暗骑士的心脏。" money="32000" bornSkill="1111" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="73" nameType="216" sex="0" icon="Zanka" levelId="48" memo="巫医赞卡对于混乱之神的崇拜，让他最终葬身在自己召唤出的魔物手中，而现在，他被邪恶的德古拉领主复活，成为黑暗亡灵的重要力量。" money="32000" bornSkill="1112" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="74" nameType="217" sex="0" icon="Akilles" levelId="52" memo="阿喀琉斯强大的力量和硬如磐石般的身躯诠释了什么是搏斗的艺术，并为之狂热，他只为战斗的荣耀而活。" money="32000" bornSkill="1212" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="75" nameType="218" sex="0" icon="Draculas" levelId="57" memo="像德古拉斯这样的吸血鬼很久都没有出现在米拉西斯大陆上了，不过鄂格拉斯的苏醒让这一切变的疯狂起来。" money="32000" bornSkill="1512" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="76" nameType="219" sex="0" icon="Karl" levelId="54" memo="凯尔是天使之国的六大护卫天使之一，拥有最强健的体魄，邻国狮鹫帝国的内乱让他忧心忡忡。" money="32000" bornSkill="1912" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="77" nameType="220" sex="0" icon="Erwin" levelId="38" memo="艾尔文唯一感兴趣的是建筑，他曾在梦中见过会动的建筑，这让艾尔文感到震惊和欣喜，以至于忘掉了一切，全身心投入研究如何将魔法融合到建筑中" money="32000" bornSkill="5710" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="78" nameType="221" sex="0" icon="Nasus" levelId="54" memo="据说内瑟斯扬起的风沙，可以遮住太阳的光芒！" money="32000" bornSkill="2910" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="79" nameType="222" sex="0" icon="Zhaoyu" levelId="52" memo="“一点寒芒先至，随后枪出如龙”正是这位来自东方的勇士战斗的号角。" money="32000" bornSkill="2311" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="80" nameType="223" sex="1" icon="Rayne" levelId="50" memo="无数男人曾贪恋莱恩的美貌，不过他们最后得到的却只有烧焦的手指头或者只剩半边的眉毛。莱恩自信且骄傲，没有任何事物能抑制她的火焰。" money="32000" bornSkill="2310" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="81" nameType="224" sex="0" icon="Caesar" levelId="47" memo="凯撒试图怂恿法拉西斯三世利用与亚瑟帝国的战争除掉亚瑟，不料阴谋败露。凯撒为了夺取王位，甘心成为德古拉麾下的亡灵。" money="32000" bornSkill="3710" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="82" nameType="225" sex="0" icon="Saladin" levelId="53" memo="手持“正义使者”的萨拉丁将他对正义的执着精神附魔在剑身上，使之连最坚硬的乌岩都可以劈碎" money="32000" bornSkill="1812" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="83" nameType="226" sex="0" icon="Rolan" levelId="51" memo="现在的瑞文戴尔是一个亡灵骑士，当他被德古拉用死亡之阵复活时，连地底深处的蜘蛛穴怪都感受到了大地的颤抖" money="32000" bornSkill="2211" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="84" nameType="227" sex="0" icon="Prometheus" levelId="49" memo="普罗米修斯对于火系魔法的天赋让人叹为观止，有人甚至说他是火神的后裔" money="32000" bornSkill="4811" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="85" nameType="228" sex="0" icon="Apo" levelId="46" memo="米纳西斯大陆东方，有迷雾萦绕万年，传说迷雾那边，是神秘而古老的东方帝国，他自迷雾那边来。" money="32000" bornSkill="5610" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="86" nameType="229" sex="0" icon="Piero" levelId="51" memo="探险家皮埃尔不知疲倦的穿行在米纳西斯大陆之上，从各个古迹中找寻那场旷世的秩序之神与混乱之神之间战争的故事。" money="32000" bornSkill="3210" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="87" nameType="230" sex="0" icon="Alex" levelId="49" memo="亚历山大对于黑暗骑士的残忍不仅仅因为他们是入侵者，似乎还和他很小的时候目睹父亲被黑暗骑士杀死有关" money="32000" bornSkill="4210" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="88" nameType="231" sex="0" icon="Hinds" levelId="47" memo="希德为报父仇杀死了爱人的父亲，爱人也因此抑郁而亡，同时失去亲情和爱情，哦，可怜的希德！" money="32000" bornSkill="4810" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="89" nameType="232" sex="0" icon="Yurys" levelId="46" memo="尤利斯一生最重要的事件是发现了塔雷尔的远古遗迹，这些遗迹据说是秩序之神赐予人类用来对付恶魔的武器" money="32000" bornSkill="2810" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="90" nameType="233" sex="1" icon="Jeanned" levelId="53" memo="贞德一直不清楚该如何发挥自己惊人的水系魔法天赋，但在梅林的帮助和指导下，现在贞德对于水的控制就和翻转自己的双手一样" money="32000" bornSkill="4710" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="91" nameType="234" sex="0" icon="Moses" levelId="51" memo="摩西梦到艾尔拉思对他说：“摩西，你须帮助人类恢复原有的秩序，这是你的使命，它危险而荣耀，去吧，带着我赐予你的神力。”" money="32000" bornSkill="2610" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="92" nameType="235" sex="0" icon="meilin" levelId="51" memo="诺亚主动请求前往人间，因此主神非常欣喜并赐予他神使权杖，这意味着诺亚将是主神在人间的使者" money="32000" bornSkill="4110" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="93" nameType="236" sex="1" icon="Morgana" levelId="49" memo="作为天使之国中的异类，莫甘娜似乎更沉迷于黑暗魔法，她不断的探究秘法来获得禁忌力量，秩序正在被打破。" money="32000" bornSkill="3310" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="94" nameType="237" sex="0" icon="Don" levelId="53" memo="如今，唐可汗化身为半人马的战士，冲出来向邪恶的力量宣战！" money="32000" bornSkill="1412" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="95" nameType="238" sex="0" icon="Barbarian" levelId="49" memo="战神贝奥夫有着明亮而强大的灵魂，他是个绝对值得信任的忠实战友和守卫者。" money="32000" bornSkill="1012" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="96" nameType="239" sex="0" icon="Spartacus" levelId="50" memo="深入骨髓的对自由的向往使斯巴达克斯不愿为奴，奋起反抗，现在他正率领着追求自由的人们对抗亡灵" money="32000" bornSkill="1011" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="97" nameType="240" sex="0" icon="Arugal" levelId="48" memo="狼人的眼里永远只有鲜血跟杀戮。" money="32000" bornSkill="2411" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="98" nameType="241" sex="0" icon="Sauron" levelId="50" memo="索伦是德古拉手下最强大的亡灵，他已经没有真正的肉体，而是由一团团毒气凝聚而成，那些毒气散发着致命的瘟疫" money="32000" bornSkill="2010" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="99" nameType="242" sex="0" icon="Thrall" levelId="50" memo="由于重铸了纳西尔圣剑，索尔被授予骑士称号，战争爆发后，他被授予狮鹫帝国的首席武器技术顾问的职务" money="32000" bornSkill="2011" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="100" nameType="243" sex="0" icon="Richard" levelId="55" memo="理查挖出那头狮子的心脏的过程无人知晓，有人怀疑理查说了谎，不过你确实可以看见他戴了一串狮牙项链" money="32000" bornSkill="1611" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="101" nameType="244" sex="0" icon="poseidon" levelId="55" memo="波塞冬在冰系魔法上的天赋让人为他的叛逃感到惋惜和担忧，因为传言他很可能投靠了亡灵领主" money="32000" bornSkill="4711" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="102" nameType="245" sex="0" icon="Edward" levelId="45" memo="成为他的战俘你就会知道他为什么叫“黑王子”，因为你将受到的折磨比黑魔法带来的痛苦更强烈" money="32000" bornSkill="1612" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="103" nameType="246" sex="1" icon="Ariya" levelId="44" memo="“我要在片大陆上寻找到力量的根源，消灭一切堕落与黑暗”。这片大陆上所有黑暗与邪恶的公敌，艾瑞尔，守护着米纳西斯的光明与正义。" money="32000" bornSkill="1411" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="104" nameType="247" sex="0" icon="Rikimaru" levelId="51" memo="隼从老师那里获得了传说中的名剑疾风，这把剑让隼能够如风般移动，敌人几乎无法触摸到他" money="32000" bornSkill="1311" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="105" nameType="248" sex="0" icon="Yilong" levelId="45" memo="一龙为了极北苦寒之地的修行来到米拉西斯，希望找寻心中的那份宁静。" money="32000" bornSkill="1312" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="106" nameType="249" sex="1" icon="Medea" levelId="49" memo="承受背叛和死亡的美狄亚内心充满了古怪的道德感和正义，她热衷于使用各种毒来折磨那些背叛家庭的男人" money="32000" bornSkill="4911" minLevel="15" maxLevel="30" groupId="6"/>
+  <HeroData id="107" nameType="250" sex="1" icon="Mary" levelId="56" memo="黑色长发在空中飘舞，两颗宝石般的眸蕴涵着摄人心魄的光芒，火红色长裙包裹着傲人的身躯，宛如一团移动的火之精灵" money="32000" bornSkill="3010" minLevel="15" maxLevel="30" groupId="6"/>
+</HeroDatas>
